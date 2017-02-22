@@ -21,3 +21,12 @@ ul{
 	list-style:none !important;
 	margin-left:0 !important;
 }
+.authentication-img {
+	display: inline-block;
+}
+.authentication-img img {
+	width: 49%;
+}
+.profile-img img {
+	width: 80%;
+}
