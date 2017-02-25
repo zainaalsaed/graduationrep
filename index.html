@@ -1,251 +1,328 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-		<meta charset="utf-8">
-		<title>Ionic 2 Starter App</title>
-		<meta name="generator" content="Bootply" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-		<link href="css/bootstrap.min.css" rel="stylesheet">
-		<!--[if lt IE 9]>
-			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-		<![endif]-->
-		<link href="css/styles.css" rel="stylesheet">
-	</head>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Ionic 2 Starter App</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+</head>
+
 <body>
 
-<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container-fluid">
-        <div class="navbar-header">
-          <a href="#"><img width="100px" src="https://s3-us-west-2.amazonaws.com/fulcrumy-ionic2/logo.png"></a>
-        </div>
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>     
-        </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
-</nav>
+    <div id="wrapper" data-spy="scroll" data-target="#spy" class="">
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper" class="">
+        <nav id="spy">
+            <ul class="sidebar-nav nav">
 
-<!-- Begin Body -->
-<div class="container">
-	<div class="row">
-  			<div class="col-md-3" id="leftCol">
-            <div class="sidebar-nav-fixed affix">  	
-              <div class="well"> 
-                  <ul class="nav nav-stacked navbar navbar-fixed-left" id="sidebar">
-                    <li><a href="#overview">Overview</a></li>
-                    <li><a href="#demo">Demo</a></li>
-                    <li><a href="#platform_support">Platform Support</a></li>
-                    <li><a href="#screens">Screens</a></li>
-                    <li><a href="#features">Features</a></li>
-                    <li><a href="#authentication">Authentication</a></li>
-                    <li><a href="#sidemenu">Side Menu</a></li>
-                    <li><a href="#profile">Profile Pages</a></li>
-                    <li><a href="#calendar">Calendar</a></li>
-                    <li><a href="#map">Google Map</a></li>
-                    <li><a href="#chart">Chart</a></li>
-                    <li><a href="#ecommerce">Ecommerce</a></li>
-                    <li><a href="#chat">Chat</a></li>
-                    <li><a href="#internationalization">Internationalization (i18n)</a></li>
-                  </ul>
+               <li class="sidebar-brand active"><a href="#overview">Overview</a></li>
+                <li><a href="#demo" data-scroll="" class="">Demo</a></li>
+                <li><a href="#platform_support" data-scroll="" class="">Platform Support</a></li>
+                <li><a href="#screens" data-scroll="" class="">Screens</a></li>
+                <li><a href="#features" data-scroll="" class="">Features</a></li>
+                <li><a href="#authentication" data-scroll="" class="">Authentication</a></li>
+                <li><a href="#sidemenu" data-scroll="" class="">Side Menu</a></li>
+                <li><a href="#profile" data-scroll="" class="">Profile Pages</a></li>
+                <li><a href="#calendar" data-scroll="" class="">Calendar</a></li>
+                <li><a href="#map" data-scroll="" class="">Google Map</a></li>
+                <li><a href="#chart" data-scroll="" class="">Chart</a></li>
+                <li><a href="#ecommerce" data-scroll="" class="">Ecommerce</a></li>
+                <li><a href="#chat" data-scroll="" class="">Chat</a></li>
+                <li><a href="#internationalization" data-scroll="" class="">Internationalization (i18n)</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- Page content -->
+    <div id="page-content-wrapper" class="">
+        <div class="content-header">
+            
+             <h1 id="home" class="">
+                <a id="menu-toggle" href="#" class="glyphicon glyphicon-align-justify btn-menu toggle">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                Sidebar Navigation Template
+            </h1>
+        </div>
+        <div class="page-content inset">
+            <div class="row">
+                <div class="jumbotron text-center">
+                     <h1 class="">Hello Beautiful!</h1>
+
+                    <p class="">This is a sidebar navigation responsive template built off of Bootstrap
+                        3.0 and simple sidebar template. It includes anchors, scroll spy, smooth
+                        scroll, and Awesome icon fonts.</p>
+                    <p class=""><a class="btn btn-default">Click On Me!</a>
+                    <a class="btn btn-info">Tweet Me!</a>
+                    </p>
                 </div>
             </div>
-      		</div>  
-      		<div class="col-md-9">
-              	<h2 id="overview">Ionic 2 Starter Full App Supports Multiple Language i18n</h2>
-                <br><br>
-                <p>This application template build in using Ionic 2 Framework with applied i18n that is support multiple language. Now four languages applied in this app, languages are- default English, Spanish, Chinese, Arabic(RTL Support). Build In multiple theme concepts like Social media, Ecommerce, Business Logic, Map etc. Full application organised very simple design concepts with proper project structure, best practices. We applied latest version of Ionic 2, Angular 2, Typescript with i18n.
-                </p>
+            <div class="row">
+                <div class="col-md-12 well">
 
-                <br><br><br><br>
-                <hr class="col-md-12">
-                
-                <section>
-                <ul>
-                  <li>Created: 21/02/2017</li>
-                  <li>By: Afroza Yasmin</li>
-                  <li>Email: afroza021@gmail.com</li>
-                </ul>
+                    <legend id="overview">Ionic 2 Starter Full App Supports Multiple Language i18n</legend>
+                    <br>
+                    <p>This application template build in using Ionic 2 Framework with applied i18n that is support multiple language. Now four languages applied in this app, languages are- default English, Spanish, Chinese, Arabic(RTL Support). Build In multiple theme concepts like Social media, Ecommerce, Business Logic, Map etc. Full application organised very simple design concepts with proper project structure, best practices. We applied latest version of Ionic 2, Angular 2, Typescript with i18n.
+                    </p>
 
-                <p>Thank you for purchasing my theme. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form <a href="https://codecanyon.net/user/afroza021">here</a>. Thanks so much!</p>
-                </section>
+                    <hr class="col-md-12">
+                    
+                    <section>
+                    <ul>
+                    <li>Created: 21/02/2017</li>
+                    <li>By: Afroza Yasmin</li>
+                    <li>Email: afroza021@gmail.com</li>
+                    </ul>
 
-              
-              	<hr class="col-md-12">
-              
-              	<h2 id="demo">Demo</h2>
-                <br><br>
-                <h4>Ionic Viewer</h4>
-              	<p>
-                Preview this application on IOS and Android using Ionic View. Please download this Ionic View application
-                 from - <a href="http://view.ionic.io/">Ionic Viewer</a>. Use the app ID - <b>a3a6e8a9</b>
-              	</p>
+                    <p>Thank you for purchasing my theme. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form <a href="https://codecanyon.net/user/afroza021">here</a>. Thanks so much!</p>
+                    </section>
 
-              	
-                <hr class="col-md-12">
-              
-              	<h2 id="platform_support">Platform Support</h2>
-                <br><br>
-                <p>This app support all the platform - Android, IOS, Windows</p>
-
-                <hr class="col-md-12">
-              
-              	<h2 id="screens">Screens</h2>
-                <br><br>
-                <ol>
-                  <li>Landing Page</li>
-                  <li>Login Page</li>
-                  <li>Signup Page</li>
-                  <li>Forget Password</li>
-                  <li>Profile Page</li>
-                  <li>Calendar</li>
-                  <li>Location Google Map</li>
-                  <li>Chart</li>
-                  <li>Ecommerce</li>
-                  <li>Latest News</li>
-                  <li>Chat</li>
-                  <li>Components</li>
-                  <li>About Us</li>
-                  <li>Contact Us</li>
-                  <li>Settings</li>
-                  <li>Search</li>
-                  <li>Logout</li>
-                </ol>
-                <hr class="col-md-12">
-
-                <h2 id="features">Features</h2>
-                <br><br>
-                <ol>
-                <li>Technologies- Ionic 2 + Angular 2 + Typescript</li>
-                <li>Latest release of Ionic 2 and Angular 2 version</li>
-                <li>37 components</li>
-                <li>Support multiple language I18n. Implemented by Ionic 2 - <a target="_blank" href="https://ionicframework.com/docs/v2/resources/ng2-translate/">translator</a>  developed from Angular 2 (ng2-translate ).</li>
-                <li>RTL Support</li>
-                <li>Full authentication of Landing, Login and Registration page.</li>
-                <li>Side menu support with Icon and company logo</li>
-                <li>User Profile included with social options - Timeline, About Me, Friends, and Gallery tabs</li>
-                <li>Calendar component implementation of Angular 2 <a target="_blank" href="https://www.npmjs.com/package/angular2-fullcalendar">full calendar</a></li>
-                <li>Google map components added multiple view options detect current location</li>
-                <li>Chart components added multiple chart and implemented by <a target="_blank" href="http://valor-software.com/ng2-charts/">Chart.Js</a></li>
-                <li>Ecommerce Module( Category wise product list and cart options)</li>
-                <li>Latest news component slided support</li>
-                <li>Chat module</li>
-                <li>Awesome components page design</li>
-                <li>About us and contact us components</li>
-                <li>Language change options added into the Settings component </li>
-                <li>Search and logout</li>
-                <li>Very easy to customize</li>
-                <li>Support full page Image viewer of any image. Implemented from - <a target="_blank" href="https://www.npmjs.com/package/ionic-img-viewer">Image Viewer</a></li>
-                </ol>
-                <hr class="col-md-12">
-
-                <h2 id="authentication">Authentication</h2>
-                <br><br>
-                <p>
-                  The landing page contains three option naming registration, login and skip. You can create an account by clicking on registration button which will take you to the registration page and by providing username, email, password and reconfirming password you can create the account. For entering into your profile you need to click on Login button. At login page, you need to provide registered email and password. If you forget your password anytime then there have option to retrieve your password by clicking on Forget Password which will create a pop up box for entering your email.
-                </p>
-                <br>
-                <div class="authentication-img">
-                  <h3>Preview Samples</h3>
-                  <img src="images/authentication1.png" alt="Authentication">
-                  <img src="images/authentication2.png" alt="Authentication">
                 </div>
-                
-                <h2 id="sidemenu">Side Menu</h2>
-                <br><br>
-                <p>By default, side menus are hidden underneath their side menu content and can be opened by swiping the content left or right or by toggling a button to show the side menu.</p>
-                <br>
-                <div class="sidemenu-img">
-                  <h3>Preview Samples</h3>
-                  <img src="images/sidemenu.png" alt="Side Menu">
-                </div>
-                <br><br>
+                <div class="col-md-12 well">
+                    <legend id="demo">Demo</legend>
+                    <hr class="col-md-12">
 
-                <h2 id="profile">Profile Pages</h2>
-                <br><br>
-                  <p>The screenshots showing the profile pages view below. Through login one can enter into the profile page which is mixed with a number of interesting options. The header of the page contains serach option and advance menu. There have two slider view at the beginning of the page,the first slide exhibit profile picture and designation and second slide describe profile holder description. Immediate below of this there have timeline, about me, friends and gallery buttons. Timeline will show friends activities where you can give like and put your comments. About me section contains basic information, contact information and check ins. By clicking on friends button you can view your friends and can message them also. The profile gallery shows your uploaded photos and bigger photos displayed if you click on each photo. 
-                  In every page of your selection there have a round size button at below right side corner and by clicking on the button you will found sharing option to social sites like Facebook, Twitter, Google plus etc. 
-                  </p>
-                  <br>
-                  <div class="profile-img">
+                    <h4>Ionic Viewer</h4>
+                    <p>
+                    Preview this application on IOS and Android using Ionic View. Please download this Ionic View application
+                    from - <a href="http://view.ionic.io/">Ionic Viewer</a>. Use the app ID - <b>a3a6e8a9</b>
+                    </p>
+                </div>
+                <div class="col-md-12 well">
+                    <legend id="platform_support" class="">Platform Support</legend>
+                    
+                    
+                    <p>This app support all the platform - Android, IOS, Windows</p>
+                
+                    
+                </div>
+                <div class="col-md-12 well">
+                    
+                    <legend id="screens">Screens</legend>
+                    
+                    <ol>
+                        <li>Landing Page</li>
+                        <li>Login Page</li>
+                        <li>Signup Page</li>
+                        <li>Forget Password</li>
+                        <li>Profile Page</li>
+                        <li>Calendar</li>
+                        <li>Location Google Map</li>
+                        <li>Chart</li>
+                        <li>Ecommerce</li>
+                        <li>Latest News</li>
+                        <li>Chat</li>
+                        <li>Components</li>
+                        <li>About Us</li>
+                        <li>Contact Us</li>
+                        <li>Settings</li>
+                        <li>Search</li>
+                        <li>Logout</li>
+                    </ol>
+                </div>
+                <div class="col-md-12 well">
+                    <legend id="features">Features</legend>
+                    <br><br>
+                    <ol>
+                    <li>Technologies- Ionic 2 + Angular 2 + Typescript</li>
+                    <li>Latest release of Ionic 2 and Angular 2 version</li>
+                    <li>37 components</li>
+                    <li>Support multiple language I18n. Implemented by Ionic 2 - <a target="_blank" href="https://ionicframework.com/docs/v2/resources/ng2-translate/">translator</a>  developed from Angular 2 (ng2-translate ).</li>
+                    <li>RTL Support</li>
+                    <li>Full authentication of Landing, Login and Registration page.</li>
+                    <li>Side menu support with Icon and company logo</li>
+                    <li>User Profile included with social options - Timeline, About Me, Friends, and Gallery tabs</li>
+                    <li>Calendar component implementation of Angular 2 <a target="_blank" href="https://www.npmjs.com/package/angular2-fullcalendar">full calendar</a></li>
+                    <li>Google map components added multiple view options detect current location</li>
+                    <li>Chart components added multiple chart and implemented by <a target="_blank" href="http://valor-software.com/ng2-charts/">Chart.Js</a></li>
+                    <li>Ecommerce Module( Category wise product list and cart options)</li>
+                    <li>Latest news component slided support</li>
+                    <li>Chat module</li>
+                    <li>Awesome components page design</li>
+                    <li>About us and contact us components</li>
+                    <li>Language change options added into the Settings component </li>
+                    <li>Search and logout</li>
+                    <li>Very easy to customize</li>
+                    <li>Support full page Image viewer of any image. Implemented from - <a target="_blank" href="https://www.npmjs.com/package/ionic-img-viewer">Image Viewer</a></li>
+                    </ol>
+                </div>
+                <div class="col-md-12 well">
+                    <legend id="authentication">Authentication</legend>
+                    
+                    <p>
+                    The landing page contains three option naming registration, login and skip. You can create an account by clicking on registration button which will take you to the registration page and by providing username, email, password and reconfirming password you can create the account. For entering into your profile you need to click on Login button. At login page, you need to provide registered email and password. If you forget your password anytime then there have option to retrieve your password by clicking on Forget Password which will create a pop up box for entering your email.
+                    </p>
+                    <br>
+                    <div class="authentication-img">
                     <h3>Preview Samples</h3>
-                    <img src="images/profile1.png" alt="Profile">
-                    <img src="images/profile2.png" alt="Profile">
-                  </div>
-                <br><br>
-
-                <h2 id="calendar">Calendar</h2>
-                <br><br>
-                <p>The calendar is an amazing option to see any kind of events, remind friends birthday, schedule meeting and so on. </p>
-
-                <div class="calendar-img">
-                  <h3>Preview Samples</h3>
-                  <img src="images/calendar.png" alt="Calendar">
+                    <img src="images/authentication1.png" alt="Authentication">
+                    <img src="images/authentication2.png" alt="Authentication">
+                    </div>
                 </div>
-                <br><br>
-
-                <h2 id="map">Google Map</h2>
-                <br><br>
-                <p>The google map can help you to see your destined location with five types of google view naming Standard Map, Silver Map, Night Map, Dark Map and Aubergine Map. When you will enter into the map that will detect your current location automatically. </p>
-                <div class="map-img">
-                  <h3>Preview Samples</h3>
-                  <img src="images/map.png" alt="Map">
+                <div class="col-md-12 well">
+                    <legend id="sidemenu">Side Menu</legend>
+                    
+                    <p>By default, side menus are hidden underneath their side menu content and can be opened by swiping the content left or right or by toggling a button to show the side menu.</p>
+                    <br>
+                    <div class="sidemenu-img">
+                    <h3>Preview Samples</h3>
+                    <img src="images/sidemenu.png" alt="Side Menu">
+                    </div>
                 </div>
-                <br><br>
-
-                <h2 id="chart">Chart</h2>
-                <br><br>
-                <p>The chart have six chart options naming Dynamic chart, Bar chart, Doughnut chart, Pie chart, Polar chart and Radar chart. Chart.js has been applied for describing every charts. </p>
-
-                <div class="chart-img">
-                  <h3>Preview Samples</h3>
-                  <img src="images/chart.png" alt="Map">
+                <div class="col-md-12 well">
+                    <legend id="profile">Profile Pages</legend>
+                   
+                    <p>The screenshots showing the profile pages view below. Through login one can enter into the profile page which is mixed with a number of interesting options. The header of the page contains serach option and advance menu. There have two slider view at the beginning of the page,the first slide exhibit profile picture and designation and second slide describe profile holder description. Immediate below of this there have timeline, about me, friends and gallery buttons. Timeline will show friends activities where you can give like and put your comments. About me section contains basic information, contact information and check ins. By clicking on friends button you can view your friends and can message them also. The profile gallery shows your uploaded photos and bigger photos displayed if you click on each photo. 
+                    In every page of your selection there have a round size button at below right side corner and by clicking on the button you will found sharing option to social sites like Facebook, Twitter, Google plus etc. 
+                    </p>
+                    <br>
+                    <div class="profile-img">
+                        <h3>Preview Samples</h3>
+                        <img src="images/profile1.png" alt="Profile">
+                        <img src="images/profile2.png" alt="Profile">
+                    </div>
                 </div>
-                <br><br>
+                <div class="col-md-12 well">
+                    <legend id="calendar">Calendar</legend>
+                    
+                    <p>The calendar is an amazing option to see any kind of events, remind friends birthday, schedule meeting and so on. </p>
 
-                <h2 id="ecommerce">Ecommerce</h2>
-                <br><br>
-                <p>The Ecommerce site is very interesting and easy to browse. There have eight categories for browse in the site are Women, Men, Electronics, Home & Garden, Fashion, Toys & Baby, Book and Latest. Each categories are functionable. By entering into women category you can see this category product advertisement. If you select any product seller to see his/her product then you will see his/her product details, price, add to cart and related product suggestions. There also have quantity selection option for purchase the product.  The cart symbol of the page right side corner of header shows how many products you have putted on your cart. By clicking on the button you can keep or discard your product selections. </p>
-                <div class="ecommerce-img">
-                  <h3>Preview Samples</h3>
-                  <img src="images/ecommerce1.png" alt="Map">
-                  <img src="images/ecommerce2.png" alt="Map">
+                    <div class="calendar-img">
+                    <h3>Preview Samples</h3>
+                    <img src="images/calendar.png" alt="Calendar">
+                    </div>
                 </div>
-                <br><br>
-
-                <h2 id="chat">Chat</h2>
-                <br><br>
-                <p>
-                  The chat option allow you to chat with your friends who are in your contact list. By entering in contacts you can choose to whom you want to contact and by entering in to chat you can see messages and also can start to send message to your friends. 
-                </p>
-                <div class="chat-img">
-                  <h3>Preview Samples</h3>
-                  <img src="images/chat.png" alt="Map">
+                <div class="col-md-12 well">
+                    <legend id="map">Google Map</legend>
+                    
+                    <p>The google map can help you to see your destined location with five types of google view naming Standard Map, Silver Map, Night Map, Dark Map and Aubergine Map. When you will enter into the map that will detect your current location automatically. </p>
+                    <div class="map-img">
+                    <h3>Preview Samples</h3>
+                    <img src="images/map.png" alt="Map">
+                    </div>
                 </div>
-                <br><br>
+                <div class="col-md-12 well">
+                    <legend id="chart">Chart</legend>
+                    
+                    <p>The chart have six chart options naming Dynamic chart, Bar chart, Doughnut chart, Pie chart, Polar chart and Radar chart. Chart.js has been applied for describing every charts. </p>
 
-                <h2 id="internationalization">Internationalization (i18n)</h2>
-                <br><br>
-                <p>This app support multiple language options that means internationalization can provide multiple language support of this application.  This app suggests and applied best practice for internationalization. Initially we applied and used four(4) internationalization language for multiple language option. By default English(en) and others languages are - Spanish(es), Chinese(zh), Arabic(ar). Now stored all the json files assets folder assets/i18n.</p>
-                <br>
+                    <div class="chart-img">
+                    <h3>Preview Samples</h3>
+                    <img src="images/chart.png" alt="Map">
+                    </div>
+                </div>
+                <div class="col-md-12 well">
+                    <legend id="ecommerce">Ecommerce</legend>
+                    <br><br>
+                    <p>The Ecommerce site is very interesting and easy to browse. There have eight categories for browse in the site are Women, Men, Electronics, Home & Garden, Fashion, Toys & Baby, Book and Latest. Each categories are functionable. By entering into women category you can see this category product advertisement. If you select any product seller to see his/her product then you will see his/her product details, price, add to cart and related product suggestions. There also have quantity selection option for purchase the product.  The cart symbol of the page right side corner of header shows how many products you have putted on your cart. By clicking on the button you can keep or discard your product selections. </p>
+                    <div class="ecommerce-img">
+                    <h3>Preview Samples</h3>
+                    <img src="images/ecommerce1.png" alt="Map">
+                    <img src="images/ecommerce2.png" alt="Map">
+                    </div>
+                </div>
+                <div class="col-md-12 well">
+                    <legend id="chat">Chat</legend>
+                    
+                    <p>
+                    The chat option allow you to chat with your friends who are in your contact list. By entering in contacts you can choose to whom you want to contact and by entering in to chat you can see messages and also can start to send message to your friends. 
+                    </p>
+                    <div class="chat-img">
+                    <h3>Preview Samples</h3>
+                    <img src="images/chat.png" alt="Map">
+                    </div>
+                </div>
+                <div class="col-md-12 well">
+                    <legend id="internationalization">Internationalization (i18n)</legend>
+                    
+                    <p>This app support multiple language options that means internationalization can provide multiple language support of this application.  This app suggests and applied best practice for internationalization. Initially we applied and used four(4) internationalization language for multiple language option. By default English(en) and others languages are - Spanish(es), Chinese(zh), Arabic(ar). Now stored all the json files assets folder assets/i18n.</p>
+                    <br>
+                    
+                    <h4><b>JSON File Structure:</b></h4>
+                    <img src="images/json-file.png" alt="Json file">
+                    <p>For multiple language support we used ng2-translate package.</p>
+                    <br>
+                    <h4><b>Apply in Plain Html Text Page:</b></h4>
+                    <img src="images/ng2-translate-apply.png" alt="Json file">
+                    <h4><b>Preview Samples</b></h4>
+                    <img src="images/translate-preview.png" alt="preview">
+
+                    <!-- Installing -->
+                    <h4><b>Installing</b></h4>
+                    <p>To install NG2-Translate run <b>npm install ng2-translate --save</b>.</p>
+
+                    <h3>Set up:</h3>
+                    <h4><b>Bootstrapping</b></h4>
+                    <p>To use NG2-Translate, it must first be imported and added to the imports array in the NgModule of the application. </p>
+                    <img src="images/translate1.png" width="80%" alt="">
+                    <p>Translation json files stored into the src/assets/i18n/ directory. </p>
+                    <p>We create a function in app.modules.ts that returns a new TranslateLoader.</p>
+                    <img src="images/translate2.png" width="80%" alt="">
+                    <p>And then adding this function following the NgModules imports array:</p>
+                    <img src="images/translate3.png" width="50%" alt="">
+
+                    <h4><b>Usage:</b></h4>
+                    <p>Once the above steps have been completed, we can begin to use NG2-Translate in any Ionic 2 app. The first step is to set up the translation assets. The translation assets are just json objects, as shown below:</p>
+                    <img src="images/translate4.png" width="20%" alt="">
+                    <p>Now we can translate Hello following format.</p>
+                    <p><i><ion-title>{{ 'HELLO' | translate }}</ion-title></i></p>
+                    <p>Although we can use TranslateService for translate the current language the app is using and to translate JavaScript values in an application. To use the TranslateService in your app you must first import it and set the default language.</p>
+
+                    <h4><b>Import TranslateService</b></h4>
+                    <p><i>import {TranslateService} from 'ng2-translate';</i></p>
+                    <p><b>Set default language</b></p>
+                    <p><i>// this language will be used as a fallback when a translation isn't found in the current language</i></p>
+                    <p><b>translate.setDefaultLang('en');</b></p>
+                    <p>To change the language the app is currently using, there’s the use method of the TranslationService.</p>
                 
-                <h4><b>JSON File Structure:</b></h4>
-                
-                <div class="internationalization-img">
-                  <h3>Preview Samples</h3>
-                  <img src="images/chat.png" alt="Map">
+                    <p><i><b>translateService.use('en');</b></i></p>
+                    <h4>More Details - <a href="https://ionicframework.com/docs/v2/resources/ng2-translate/" target="_blank"><b>ng2-translate</b></h4>
                 </div>
-                <br><br>
-      		</div> 
-  	</div>
+                <div class="col-md-12 well">
+                    
+                </div>
+                <div class="col-md-12 well">
+                    
+                </div>
+                <div class="col-md-12 well">
+                    
+                </div>
+            </div>
+            <div class="navbar navbar-default navbar-static-bottom">
+                <p class="navbar-text pull-left">Built by <a href="#" target="_blank" class="">Michael V Nguyen
+                    </a>
+                </p><a href="#" target="_blank" class="">
+                </a>
+            </div><a href="#" target="_blank" class="">
+            </a>
+        </div><a href="#" target="_blank" class="">
+
+        </a>
+    </div><a href="#" target="_blank" class="">
+
+    </a>
 </div>
 
-	<!-- script references -->
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/scripts.js"></script>
-	</body>
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/menu.js"></script>
+</body>
+
 </html>
