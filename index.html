@@ -41,6 +41,9 @@
                 <li><a href="#ecommerce" data-scroll="" class="">Ecommerce</a></li>
                 <li><a href="#chat" data-scroll="" class="">Chat</a></li>
                 <li><a href="#internationalization" data-scroll="" class="">Internationalization (i18n)</a></li>
+                <li><a href="#rtlsupport" data-scroll="" class="">RTL Support</a></li>
+                <li><a href="#theming" data-scroll="" class="">Theming</a></li>
+                <li><a href="folder_structure">Project Folder Structure</a></li>
             </ul>
         </nav>
     </div>
@@ -289,16 +292,39 @@
                     <p>To change the language the app is currently using, there’s the use method of the TranslationService.</p>
                 
                     <p><i><b>translateService.use('en');</b></i></p>
-                    <h4>More Details - <a href="https://ionicframework.com/docs/v2/resources/ng2-translate/" target="_blank"><b>ng2-translate</b></h4>
+                    <h4>More Details - <a href="https://ionicframework.com/docs/v2/resources/ng2-translate/" target="_blank"><b>ng2-translate</b></a></h4>
                 </div>
                 <div class="col-md-12 well">
+                    <legend id="rtlsupport">RTL Support</legend>
+                    <p>This application fully works Right to left (RTL) support. Already we used one language option of Arabic for that case you select Arabic language option from the settings page then you can see this application all the contents or items will be work on right to left side. This is only possible for the Ionic framework that is RTL supported by default. We can use RTL option by adding this code <b>this.platform.setDir('rtl', true)</b> when platform ready to run.</p>
+
+                    <br>
+
+                    <p>Sample code example in app.component.ts</p>
+                    <img src="images/rtl1.png" width="40%" alt="">
+                    <h4><b>Preview Samples</b></h4>
+                    <img src="images/rtl.png" width="80%" alt="">
+                </div>
+                <div class="col-md-12 well">
+                    <legend id="theming">Theming</legend>
+                    <p>Full application based on component based and every component uses its own SASS file. For that reason full app are well structured, flexible to manage. Easily override default SASS variables where possible (in app.variables.scss). app.variables.scss is used to modify the apps shared variables.</p>
+                    <img src="images/theming.png" width="80%" alt="">
+
+                    <h4>Theming your Ionic App</h4>
+                    <a href="http://ionicframework.com/docs/v2/theming/theming-your-app/">More Details</a>
+
+                    <h4>Sass Variables</h4>
+                    <a href="http://ionicframework.com/docs/v2/theming/sass-variables/">More Details</a>
+                </div>
+                <div class="col-md-12 well">
+                    <p>Let's take a tour to see how the project has been structured before we start to talk about details of project. </p>
                     
                 </div>
                 <div class="col-md-12 well">
-                    
+                    folder_structure
                 </div>
                 <div class="col-md-12 well">
-                    
+                    folder_structure
                 </div>
             </div>
             <div class="navbar navbar-default navbar-static-bottom">
