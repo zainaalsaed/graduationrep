@@ -30,7 +30,7 @@ export class LandingPageComponent {
     this.translate.use(language);
   }
 
-  guestSite(){
-    this.navCtrl.setRoot(GuestPage);
+  guestSitat(){
+    this.navCtrl.push(GuestPage);
   }
 }
