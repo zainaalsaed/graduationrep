@@ -15,7 +15,7 @@ import { IonicPage, NavController } from 'ionic-angular';
 })
 export class GuestPage {
   latRoot = 'LatPage'
-  schoolmapRoot = 'SchoolmapPage'
+  scoRoot = 'SchoolmapPage'
   eduRoot = 'EduPage'
  
 

@@ -1,10 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-<<<<<<< HEAD
 import { PopoverController,NavController, ToastController, IonicPage, MenuController } from 'ionic-angular';
 import { NotificationsPage } from '../notifications/notifications';
-=======
-import { NavController, ToastController, IonicPage, MenuController } from 'ionic-angular';
->>>>>>> nada 1
 
 @IonicPage()
 @Component({
@@ -14,13 +10,9 @@ import { NavController, ToastController, IonicPage, MenuController } from 'ionic
 export class ProfileComponent implements OnInit {
   segment: any;
   // Constructor
-<<<<<<< HEAD
   constructor(
     public popoverCtrl: PopoverController,
     public navCtrl: NavController,
-=======
-  constructor(public navCtrl: NavController,
->>>>>>> nada 1
     public toastCtrl: ToastController,
     public menu: MenuController) {
     this.segment = "timeline"; // Default icon for segment
@@ -46,7 +38,6 @@ export class ProfileComponent implements OnInit {
   gotoSearch() {
     this.navCtrl.push('SearchComponent');
   }
-<<<<<<< HEAD
   presentNotificationat(myEventat) {
     console.log(myEventat);
     let popover = this.popoverCtrl.create(NotificationsPage);
@@ -54,6 +45,4 @@ export class ProfileComponent implements OnInit {
       ev: myEventat
     });
   }
-=======
->>>>>>> nada 1
 }

@@ -1,37 +1,11 @@
-<<<<<<< HEAD
-import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
-/**
- * Generated class for the SchoolmapPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-
-@IonicPage()
-@Component({
-  selector: 'page-schoolmap',
-  templateUrl: 'schoolmap.html',
-})
-export class SchoolmapPage {
-
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
-
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad SchoolmapPage');
-  }
-
-=======
 import { Component , ViewChild,ElementRef } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import {IonicPage, NavController } from 'ionic-angular';
 import { Http } from '@angular/http';
 import 'rxjs/add/operator/map';
 import { SchoolPage } from '../school/school';
 
 declare var google;
-
+@IonicPage()
 @Component({
   selector: 'page-schoolmap',
   templateUrl: 'schoolmap.html'
@@ -94,5 +68,4 @@ findSchool(){
   this.navCtrl.push(SchoolPage);
 }
 
->>>>>>> nada 1
 }

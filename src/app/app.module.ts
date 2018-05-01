@@ -28,6 +28,7 @@ import { JerichoschoolsPage } from '../pages/jerichoschools/jerichoschools';
 import { SchoolPage } from '../pages/school/school';
 import { HebronschoolsPage } from '../pages/hebronschools/hebronschools';
 import { GuestPage } from '../pages/guest/guest';
+import { NotificationsPage } from '../pages/notifications/notifications';
 
 
 const firebaseAuth = {
@@ -52,7 +53,8 @@ const firebaseAuth = {
     JeninschoolsPage,
     RamallahschoolsPage,
     HebronschoolsPage ,
-    SchoolPage
+    SchoolPage,
+    NotificationsPage
   ],
   imports: [
     IonicModule.forRoot(MyApp, {
@@ -87,7 +89,8 @@ const firebaseAuth = {
     JeninschoolsPage,
     RamallahschoolsPage,
     HebronschoolsPage ,
-    SchoolPage
+    SchoolPage,
+    NotificationsPage
   ],
   providers: [
     StatusBar,
