@@ -1,5 +1,5 @@
 import { Component , ViewChild,ElementRef } from '@angular/core';
-import { NavController, IonicPage } from 'ionic-angular';
+import {IonicPage, NavController } from 'ionic-angular';
 import { Http } from '@angular/http';
 import 'rxjs/add/operator/map';
 import { SchoolPage } from '../school/school';

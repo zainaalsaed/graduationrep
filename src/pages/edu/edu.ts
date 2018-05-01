@@ -9,7 +9,6 @@ import { GuestPage } from '../guest/guest';
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
-//test
 
 @IonicPage()
 @Component({

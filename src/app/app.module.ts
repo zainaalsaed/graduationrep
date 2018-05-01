@@ -34,6 +34,7 @@ import { PrivatePage } from '../pages/private/private';
 import { TableegePage } from '../pages/tableege/tableege';
 import { TableeghacPage } from '../pages/tableeghac/tableeghac';
 import { GusPage } from '../pages/gus/gus';
+import { NotificationsPage } from '../pages/notifications/notifications';
 
 
 const firebaseAuth = {
@@ -64,7 +65,10 @@ const firebaseAuth = {
     TableegePage,
     RamallahschoolsPage,
     HebronschoolsPage ,
-    SchoolPage
+    SchoolPage,
+    HebronschoolsPage ,
+    SchoolPage,
+    NotificationsPage
   ],
   imports: [
     IonicModule.forRoot(MyApp, {
@@ -91,11 +95,9 @@ const firebaseAuth = {
   entryComponents: [
     MyApp,
     GuestPage,
-    TableeghacPage,
     JerichoschoolsPage,
     BethlehemschoolsPage,
     NablusschoolsPage,
-    GusPage,
     TulkarmschoolsPage,
     QalqilyaschoolsPage,
     JeninschoolsPage,
@@ -105,7 +107,9 @@ const firebaseAuth = {
     // EduPage,
     TruckPage,
     HebronschoolsPage ,
-    SchoolPage
+    SchoolPage,
+    SchoolPage,
+    NotificationsPage
   ],
   providers: [
     StatusBar,

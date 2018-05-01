@@ -8,6 +8,9 @@
                 <button ion-button icon-only color="color1" (click)="gotoSearchnewsss()">
                     <ion-icon name="search"></ion-icon>
                 </button>
+                <button ion-button tappable color="color1" (click)="presentNotifications($event)">
+                    <ion-icon name="notifications"></ion-icon>
+                  </button>
             </ion-buttons>
         </ion-navbar>
     </ion-header>
@@ -18,7 +21,7 @@
     <ion-list>
         <ion-item>
             <ion-avatar item-left>
-                <img src="https://s3-us-west-2.amazonaws.com/fulcrumy-ionic2/avatar.png">
+                <img src="../assets/img/zainaav.jpg">
             </ion-avatar>
             <ion-textarea placeholder='Whats on your mind' [(ngModel)]="status"></ion-textarea>
         </ion-item>
