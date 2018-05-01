@@ -28,6 +28,11 @@ import { JerichoschoolsPage } from '../pages/jerichoschools/jerichoschools';
 import { SchoolPage } from '../pages/school/school';
 import { HebronschoolsPage } from '../pages/hebronschools/hebronschools';
 import { GuestPage } from '../pages/guest/guest';
+import { EduPage } from '../pages/edu/edu';
+import { TruckPage } from '../pages/truck/truck';
+import { PrivatePage } from '../pages/private/private';
+import { TableegePage } from '../pages/tableege/tableege';
+import { TableeghacPage } from '../pages/tableeghac/tableeghac';
 
 
 const firebaseAuth = {
@@ -44,12 +49,17 @@ const firebaseAuth = {
   declarations: [
     MyApp,
     GuestPage,
+    EduPage,
     JerichoschoolsPage,
     BethlehemschoolsPage,
     NablusschoolsPage,
     TulkarmschoolsPage,
     QalqilyaschoolsPage,
     JeninschoolsPage,
+    TruckPage,
+    PrivatePage,
+    TableeghacPage,
+    TableegePage,
     RamallahschoolsPage,
     HebronschoolsPage ,
     SchoolPage
@@ -79,6 +89,7 @@ const firebaseAuth = {
   entryComponents: [
     MyApp,
     GuestPage,
+    TableeghacPage,
     JerichoschoolsPage,
     BethlehemschoolsPage,
     NablusschoolsPage,
@@ -86,6 +97,10 @@ const firebaseAuth = {
     QalqilyaschoolsPage,
     JeninschoolsPage,
     RamallahschoolsPage,
+    PrivatePage,
+    TableegePage,
+    EduPage,
+    TruckPage,
     HebronschoolsPage ,
     SchoolPage
   ],

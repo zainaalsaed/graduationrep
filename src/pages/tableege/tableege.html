@@ -1,13 +1,13 @@
 <!--
-  Generated template for the TableegePage page.
+  Generated template for the ViolationsPage page.
 
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
 -->
-<ion-header>
+<ion-header >
 
   <ion-navbar>
-    <ion-title>tableege</ion-title>
+    <ion-title>  Traffic violations</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -15,4 +15,120 @@
 
 <ion-content padding>
 
+  <div class="panel-heading">
+    <h2 class="panel-title">Traffic Violations Inquiry</h2>
+           </div>
+           <div class="panel-body">
+           <div class="tab-content">
+            <div class="tab-pane fade in active" id="platNum">
+                <div class="row" style="padding-bottom: 10px;">
+                    <label class="box-title" for="platNumns_Z7_N90A19O0KG7Q20AHLB5E9P4PP6_">Plate Number  :</label>
+                  </div>
+                  <div class="row">	
+                    <div class="form-group">
+                      <input type="hidden" id="langns_Z7_N90A19O0KG7Q20AHLB5E9P4PP6_" name="lang" value="en" tabindex="0">	   
+  <input type="hidden" id="queryTypens_Z7_N90A19O0KG7Q20AHLB5E9P4PP6_" name="queryType" value="platNum" tabindex="0">	   
+                      <div class="n"><input type="text" [(ngModel)]="platNum" size="20" value=""  maxlength="6" id="platNumns_Z7_N90A19O0KG7Q20AHLB5E9P4PP6_" class="form-control input-xs enText" tabindex="0"> 
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <div class="row" style="padding-bottom: 10px;">
+                    <label class="box-title " for="platTypens_Z7_N90A19O0KG7Q20AHLB5E9P4PP6_">Type of Vehicle :</label>
+                  </div>
+                  <div class="v">
+                  <div class="row" style="padding-bottom :10px;">
+                      <select [(ngModel)]="platType" id="platTypens_Z7_N90A19O0KG7Q20AHLB5E9P4PP6_" class="form-control" tabindex="0">
+                   
+        <option value="PRV">  PRIVATE VEHICLE</option>
+        
+        <option value="G-Q">  GOVERNMENT VEHICLE</option>
+        
+        <option value="DIP">  DIPLOMATIC VEHICLE</option>
+        
+        <option value="POV">  POLICE VEHICLE</option>
+        
+        <option value="POM">  POLICE MOTORCYCLE</option>
+        
+        <option value="PRM">  PRIVATE MOTORCYCLE</option>
+        
+        <option value="TXI">  TAXI</option>
+        
+        <option value="COM">  COMMERCIAL VEHICLE</option>
+        
+        <option value="PRT">  PRIVATE TRANSPORTATION</option>
+        
+        <option value="HEQ">  HEAVY EQUIPMENT</option>
+        
+        <option value="TLR">  TRAILERS</option>
+        
+        <option value="PUT">  PUBLIC TRANSPORTATION</option>
+        
+        <option value="U-N">  UNITED NATIONS</option>
+        
+        <option value="XPO">  EXPORT PLATE</option>
+        
+        <option value="GMQ">  GOVERNMENT MECHANICAL</option>
+        
+        <option value="TMP">  TESTING PLATE</option>
+        
+        <option value="GTR">  GOVERMENT TRAILERS</option>
+        
+        <option value="LKV">  LEKHOYA CAR</option>
+        
+        <option value="LKM">  LEKHOYA MOTORCYCLE</option>
+        
+        <option value="AGV">  CAR EMIRI GUARD</option>
+        
+        <option value="AGM">  BIKE EMIRI GUARD</option>
+        
+        <option value="LMS">  LIMOUSINE</option>
+        
+        <option value="QAF">  QATAR ARMED FORCES</option>
+        
+        <option value="TME">  TEMPORARY ENTRY</option>
+        
+        <option value="EQP">  EQUIPMENT</option>
+        
+   </select>
+
+</div>				
+</div>
+	<label class="box-title" for="platNumns_Z7_N90A19O0KG7Q20AHLB5E9P4PP6_">Description  :</label>
+<div class="form-group">
+    
+  <input type="hidden" id="langns_Z7_N90A19O0KG7Q20AHLB5E9P4PP6_" name="lang" value="en" tabindex="0">	   
+<input type="hidden" id="queryTypens_Z7_N90A19O0KG7Q20AHLB5E9P4PP6_" name="queryType" value="platNum" tabindex="0">	   
+  <div class="n"><input type="text" [(ngModel)]="description" size="80" value=""   id="platNumns_Z7_N90A19O0KG7Q20AHLB5E9P4PP6_" class="form-control input-xs enText" tabindex="0"> 
+  </div>
+  <div class="col-xs-12 col-sm-6 col-md-6  ptl  ">
+    <button ion-button color="secondary" block (click)="giveaPhotofunc()">Provide a photo for the accident from gallery </button>
+
+
+</div>
+<div class="col-xs-12 col-sm-6 col-md-6  ptl  ">
+  <button ion-button color="secondary" block (click)="giveaPhotocam()">Provide a photo for the accident from camera </button>
+
+
+</div>
+</div>					
+<div class="row">
+  <div class="col-xs-12 text-center">
+      <div class="row">
+           <div class="col-xs-12 col-sm-6 col-md-6  ptl  ">
+             <button type="submit" id="submitBtnplatNum" class="buttonoo btnPadExt btn-block btn-md" tappable (click)=" createTableegh(platNum,platType,description)"> Submit</button>
+          </div>
+           <div class="col-xs-12 col-sm-6 col-md-6  ptl  ">
+                <button type="reset" id="resetBtnplatNum" class="buttonoo btnPadExt btn-block btn-md">Reset </button>
+            
+            </div>
+      </div>
+  </div>
+</div>
+            </div>
+           </div>
+
+</div>
+                  
 </ion-content>
