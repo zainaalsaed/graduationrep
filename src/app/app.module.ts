@@ -18,6 +18,8 @@ import { BarcodeScanner } from '@ionic-native/barcode-scanner';
 import * as firebase from 'firebase';
 import 'firebase/firestore';
 import { NotificationsPage } from '../pages/notifications/notifications';
+import { GuestPage } from '../pages/guest/guest';
+
 
 
 const firebaseAuth = {
@@ -33,7 +35,8 @@ const firebaseAuth = {
 @NgModule({
   declarations: [
     MyApp,
-    NotificationsPage
+    NotificationsPage,
+    GuestPage
   ],
   imports: [
     IonicModule.forRoot(MyApp, {
@@ -59,7 +62,8 @@ const firebaseAuth = {
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    NotificationsPage
+    NotificationsPage,
+    GuestPage
   ],
   providers: [
     StatusBar,
