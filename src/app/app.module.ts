@@ -19,6 +19,7 @@ import * as firebase from 'firebase';
 import 'firebase/firestore';
 import { NotificationsPage } from '../pages/notifications/notifications';
 import { GuestPage } from '../pages/guest/guest';
+import { ViolationsPage } from '../pages/violations/violations';
 
 
 
@@ -36,7 +37,8 @@ const firebaseAuth = {
   declarations: [
     MyApp,
     NotificationsPage,
-    GuestPage
+    GuestPage,
+    ViolationsPage
   ],
   imports: [
     IonicModule.forRoot(MyApp, {
@@ -63,7 +65,8 @@ const firebaseAuth = {
   entryComponents: [
     MyApp,
     NotificationsPage,
-    GuestPage
+    GuestPage,
+    ViolationsPage
   ],
   providers: [
     StatusBar,
