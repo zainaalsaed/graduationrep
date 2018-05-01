@@ -1,19 +1,13 @@
 import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
-import { TranslateModule } from 'ng2-translate/ng2-translate';
-import { LatestNewsComponent } from './latest-news';
+import { LatestNewsPage } from './latest-news';
 
 @NgModule({
   declarations: [
-    LatestNewsComponent,
+    LatestNewsPage,
   ],
   imports: [
-    IonicPageModule.forChild(LatestNewsComponent),
-    TranslateModule
+    IonicPageModule.forChild(LatestNewsPage),
   ],
-  exports: [
-    LatestNewsComponent,
-    TranslateModule
-  ]
 })
-export class LatestNewsModule {}
+export class LatestNewsPageModule {}
