@@ -1,0 +1,101 @@
+<!-- Registration Page -->
+
+<!-- Content Options -->
+<ion-content id="registration-v1">
+
+  <!-- Logo -->
+  <div class="logo animated fadeInDown">
+    <img src="assets/img/mot.png">
+    <h2>{{'REGISTRATION.TITLE' | translate}} </h2>
+  </div>
+
+  <!-- Main Body -->
+  <div class="main-body animated zoomIn" padding>
+    <form>
+      <ion-list>
+
+        <!-- Username -->
+        <ion-item>
+          <ion-label>
+            <ion-icon name="md-person"></ion-icon>
+          </ion-label>
+          <ion-input class="ion-ios-locked-outline" type="text" placeholder="{{'REGISTRATION.USERNAME' | translate}}" [(ngModel)]="name"
+            name="username"></ion-input>
+        </ion-item>
+        <ion-item >
+            <ion-label >  </ion-label>
+            <ion-input type="number" name="id" [(ngModel)]="identifierNum" type="number" placeholder="{{'REGISTRATION.IDNUM' | translate}}"></ion-input>
+          </ion-item>
+        <!-- Email -->
+        <ion-item>
+          <ion-label>
+            <ion-icon name="md-mail"></ion-icon>
+          </ion-label>
+          <ion-input class="ion-ios-locked-outline" type="text" placeholder="{{'REGISTRATION.EMAIL' | translate}}" #username [(ngModel)]="mail"
+            name="email"></ion-input>
+        </ion-item>
+
+        <!-- Password -->
+        <ion-item>
+          <ion-label>
+            <ion-icon name="md-eye"></ion-icon>
+          </ion-label>
+          <ion-input class="ion-ios-locked-outline" type="password" placeholder="{{'REGISTRATION.PASSWORD' | translate}}" #password [(ngModel)]="pas"
+            name="password"></ion-input>
+        </ion-item>
+
+        <!-- Confirm Password -->
+        <ion-item>
+          <ion-label>
+            <ion-icon name="md-eye"></ion-icon>
+          </ion-label>
+          <ion-input class="ion-ios-locked-outline" type="password" placeholder="{{'REGISTRATION.CONFIRM_PASSWORD' | translate}}" [(ngModel)]="confirmPassword"
+            name="confirmPassword"></ion-input>
+        </ion-item>
+        
+      
+      
+            <ion-item>
+              <ion-label class="text-1x bold" color="primary">Status?</ion-label>
+              <ion-select name="status" [(ngModel)]="status" (ionChange)="getStatus(status)">
+              <ion-option [value]="yes"> {{'REGISTRATION.STATUSY' | translate}}</ion-option>
+              <ion-option [value]="no"> {{'REGISTRATION.STATUSN' | translate}}</ion-option>
+             
+            
+            </ion-select>
+            </ion-item>
+      
+          
+
+
+
+
+        <!-- Buttons -->
+        <div class="buttons animated fadeInUp">
+          <div color="primary" class="khara" >
+            <button ion-button color="dark" tappable (click)="scany(); " >
+                <ion-icon name="barcode"></ion-icon>
+                {{'REGISTRATION.BARCODE' | translate}}
+              </button>
+            </div>
+              <ion-item color="primary">
+                  <h3>
+            
+                    {{'REGISTRATION.BARCODEDN' | translate}} : {{datay.text}}
+                  
+              </h3> 
+              </ion-item>
+          <button ion-button type="button" color="dark" block tappable (click)="newUser(); createPerson(name,identifierNum,mail,pas,status,datay.text,'NewsFeedComponent')">
+            {{'REGISTRATION.CREATE_ACCOUNT' | translate}}
+          </button>
+        </div>
+
+      </ion-list>
+    </form>
+
+    <!-- Skip button-->
+    <button ion-button type="button" color="white" block clear (click)="skipping()">
+      {{'REGISTRATION.SKIP' | translate}}
+    </button>
+  </div>
+</ion-content>
