@@ -17,10 +17,17 @@ import { AngularFireDatabaseModule, AngularFireDatabase } from 'angularfire2/dat
 import { BarcodeScanner } from '@ionic-native/barcode-scanner';
 import * as firebase from 'firebase';
 import 'firebase/firestore';
-import { NotificationsPage } from '../pages/notifications/notifications';
+//import { GuestPage } from '../pages/guest/guest';
+import { QalqilyaschoolsPage } from '../pages/qalqilyaschools/qalqilyaschools';
+import { JeninschoolsPage } from '../pages/jeninschools/jeninschools';
+import { RamallahschoolsPage } from '../pages/ramallahschools/ramallahschools';
+import { TulkarmschoolsPage } from '../pages/tulkarmschools/tulkarmschools';
+import { NablusschoolsPage } from '../pages/nablusschools/nablusschools';
+import { BethlehemschoolsPage } from '../pages/bethlehemschools/bethlehemschools';
+import { JerichoschoolsPage } from '../pages/jerichoschools/jerichoschools';
+import { SchoolPage } from '../pages/school/school';
+import { HebronschoolsPage } from '../pages/hebronschools/hebronschools';
 import { GuestPage } from '../pages/guest/guest';
-import { ViolationsPage } from '../pages/violations/violations';
-
 
 
 const firebaseAuth = {
@@ -36,9 +43,16 @@ const firebaseAuth = {
 @NgModule({
   declarations: [
     MyApp,
-    NotificationsPage,
     GuestPage,
-    ViolationsPage
+    JerichoschoolsPage,
+    BethlehemschoolsPage,
+    NablusschoolsPage,
+    TulkarmschoolsPage,
+    QalqilyaschoolsPage,
+    JeninschoolsPage,
+    RamallahschoolsPage,
+    HebronschoolsPage ,
+    SchoolPage
   ],
   imports: [
     IonicModule.forRoot(MyApp, {
@@ -64,9 +78,16 @@ const firebaseAuth = {
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    NotificationsPage,
     GuestPage,
-    ViolationsPage
+    JerichoschoolsPage,
+    BethlehemschoolsPage,
+    NablusschoolsPage,
+    TulkarmschoolsPage,
+    QalqilyaschoolsPage,
+    JeninschoolsPage,
+    RamallahschoolsPage,
+    HebronschoolsPage ,
+    SchoolPage
   ],
   providers: [
     StatusBar,

@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
+import { PrivatePage } from '../private/private';
+import { TruckPage } from '../truck/truck';
+import { GuestPage } from '../guest/guest';
 /**
  * Generated class for the EduPage page.
  *
@@ -21,5 +23,11 @@ export class EduPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad EduPage');
   }
-
+  priVlc(){
+    this.navCtrl.push(PrivatePage);
+  }
+  truVlc()
+  {
+    this.navCtrl.push(TruckPage);
+  }
 }

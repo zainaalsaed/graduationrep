@@ -1,0 +1,57 @@
+page-jerichoschools ,
+
+[cards] {
+    
+    .grid-full ion-col {
+        flex: 0 0 50%;
+          width: 40vw;;
+        padding: 5px 0;
+        background: thistle;
+        
+    }
+    .row {
+        padding: 0 12px;
+        height: 200px;
+    }
+    .col {
+        padding: 5px 0;
+       
+    }
+   
+    .card {
+        height: 200px;
+        margin: 0 5px;
+        width: calc(100% - 10px);
+        padding: 14px;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.10);
+        border-radius: 4px;
+        border-block-end-color: brown;
+        h1 {
+            font-weight: 400;
+           text-align: center;
+            font-size: 2rem;
+        color: rgb(91, 41, 156);
+        }
+        h2 {
+            font-weight: 200;
+           text-align: center;
+            font-size: 1.7rem;
+        
+        }
+        p {
+            font-weight: 100;
+            text-align: center;
+            font-size: 1.5rem;
+        }
+       
+        
+    }
+    .p1 {
+        font-weight: 100;
+        font-size: 1.7rem;
+        text-align: center;
+    }
+}
+
+
+

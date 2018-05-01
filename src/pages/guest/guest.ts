@@ -14,11 +14,10 @@ import { IonicPage, NavController } from 'ionic-angular';
   templateUrl: 'guest.html'
 })
 export class GuestPage {
-//iiiiiii
-  schRoot = 'SchoolmapPage'
-  eduRoot = 'EduPage'
   latRoot = 'LatPage'
-
+  schoolmapRoot = 'SchoolmapPage'
+  eduRoot = 'EduPage'
+ 
 
   constructor(public navCtrl: NavController) {}
 
