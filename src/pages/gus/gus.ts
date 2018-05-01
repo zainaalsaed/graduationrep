@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController } from 'ionic-angular';
 
 /**
- * Generated class for the GuestPage tabs.
+ * Generated class for the GusPage tabs.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -10,14 +10,15 @@ import { IonicPage, NavController } from 'ionic-angular';
 
 @IonicPage()
 @Component({
-  selector: 'page-guest',
-  templateUrl: 'guest.html'
+  selector: 'page-gus',
+  templateUrl: 'gus.html'
 })
-export class GuestPage {
-  latRoot = 'LatPage'
-  schRoot = 'SchoolmapPage'
-  eduRoot = 'EduPage'
- 
+export class GusPage {
+
+  latestNewsRoot = 'LatestNewsPage'
+  educationRoot = 'EducationPage'
+  searchSchoolRoot = 'SearchSchoolPage'
+
 
   constructor(public navCtrl: NavController) {}
 

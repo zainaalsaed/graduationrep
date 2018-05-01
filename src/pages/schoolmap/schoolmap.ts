@@ -1,11 +1,11 @@
 import { Component , ViewChild,ElementRef } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, IonicPage } from 'ionic-angular';
 import { Http } from '@angular/http';
 import 'rxjs/add/operator/map';
 import { SchoolPage } from '../school/school';
 
 declare var google;
-
+@IonicPage()
 @Component({
   selector: 'page-schoolmap',
   templateUrl: 'schoolmap.html'

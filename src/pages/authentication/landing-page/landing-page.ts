@@ -6,7 +6,9 @@ import { Component } from '@angular/core';
 import { NavController,  MenuController } from 'ionic-angular';
 import { TranslateService } from 'ng2-translate';
 import { SettingsService } from '../../settings/settings.service';
-import { GuestPage } from '../../guest/guest';
+import {  GuestPage } from '../../guest/guest';
+import { GusPage } from '../../gus/gus';
+// import { GuestPage } from '../../guest/guest';
 
 @IonicPage()
 @Component({
@@ -16,8 +18,10 @@ import { GuestPage } from '../../guest/guest';
 })
 export class LandingPageComponent {
   
-  constructor( public translate:
-    TranslateService, public navCtrl: NavController,
+  constructor( 
+    public navCtrl: NavController,
+    public translate:
+    TranslateService, 
     private menu: MenuController) {
     this.menu.enable(false); // Disable sidemenu
   }
@@ -30,7 +34,7 @@ export class LandingPageComponent {
     this.translate.use(language);
   }
 
-  guestSitat(){
-    this.navCtrl.push(GuestPage);
+  openGiiPage(){
+    this.navCtrl.setRoot(GuestPage);
   }
 }
