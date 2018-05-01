@@ -13,7 +13,7 @@ import { IonicPage, NavController } from 'ionic-angular';
   selector: 'page-guest',
   templateUrl: 'guest.html'
 })
-export class GuestPage {
+export class Guest {
 
   schoolmapRoot = 'SchoolmapPage'
   eduRoot = 'EduPage'
