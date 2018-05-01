@@ -1,0 +1,129 @@
+page-private,
+
+.section_title {
+    font-family: droid arabic kufi,Helvetica,Arial;
+    font-weight: 700;
+    text-align: center;
+    line-height: 150%;
+    color: #000;
+}
+h1 {
+    font-size: 2em;
+    margin: .67em 0;
+}
+.center-image {
+    text-align: center;
+}
+.notice {
+    padding: 1em;
+    margin-bottom: .5em;
+    margin-top: .5em;
+    background-color: #dc143c;
+    text-align: center;
+    color: #fff;
+    font-size: 1.1em;
+    font-style: bold;
+}
+input, button, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+input {
+    line-height: normal;
+}
+button, input, optgroup, select, textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0;
+}
+.center-image {
+    text-align: center;
+}
+#row_1 {
+    background-color: #f0f0f0;
+}
+
+#row_0, .white-background {
+    background-color: #fff;
+}
+table.driving-table {
+    width: 100%;
+    margin-bottom: 5px;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.choice {
+    padding-right: 7px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+    text-align: right;
+}
+td, th {
+    padding: 0;
+}
+.question {
+    padding-right: 7px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    text-decoration: none;
+    font-size: large;
+    color: #3007a9;
+    font-weight: 700;
+    text-align: right;
+}
+td, th {
+    padding: 0;
+}
+img {
+    border: 0;
+}
+img {
+    vertical-align: middle;
+}
+img {
+    border: 0;
+}
+.pagination a:hover, .pagination a:active {
+    border: 1px solid #009;
+    color: #000;
+}
+.pagination a {
+    padding: 2px 5px;
+    border: 1px solid #017ebe;
+    text-decoration: none;
+    color: #009;
+}
+a:hover {
+    color: #0477a0;
+    text-decoration: none;
+}
+a:hover, a:focus {
+    color: #23527c;
+    text-decoration: underline;
+}
+a:active, a:hover {
+    outline: 0;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+a {
+    color: #337ab7;
+    text-decoration: none;
+}
+a {
+    background-color: transparent;
+}
+.m {direction:rtl;background-color:#eee;font-family:Tahoma,Verdana,Helvetica,Arial}
+pagination span.disabled {
+    padding: 2px 5px;
+    margin: 2px;
+    border: 1px solid #eee;
+    color: #ddd;}

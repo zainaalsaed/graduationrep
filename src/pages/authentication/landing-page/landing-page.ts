@@ -29,8 +29,15 @@ export class LandingPageComponent {
   public changeLanguage(language){
     this.translate.use(language);
   }
+<<<<<<< HEAD
 openGPage(){
   this.navCtrl.setRoot(GuestPage);
 }
   
+=======
+
+  guestSite(){
+    this.navCtrl.setRoot(GuestPage);
+  }
+>>>>>>> nada 1
 }

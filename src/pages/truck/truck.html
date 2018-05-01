@@ -1,0 +1,570 @@
+<!--
+  Generated template for the TruckPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+
+<ion-content padding>
+  <div class="m">
+  <h1 class="section_title">امتحان السياقة النظري (التؤوريا)</h1>
+  <div class="center-image">
+      <div class="btn btn-default" tappable (click)="priVlc()">خصوصي</div>>
+      <!-- <button ion-button tappable (click)="priVlc()">خصوصي</button></div>-->
+     <div class="btn btn-default" tappable (click)="truVlc()" >شحن خفيف</div>
+     </div>
+    
+    <div class="space_placeholder"></div>
+    <p class="notice"> قم باختيار النموذج الذي تريد إجابته ... وبعد الإنتهاء من الإجابة عن جميع الأسئلة ... اضغط "أجب عن الاسئلة" </p>
+    <form action="/drivings/answers" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="cihPEjwYewXAfu+5PohQi6OdoWAIzXAinks5xdnNRbaqOVXl4tybGjDKS1NCIvTQVvu0Src2jBmUPSAgxdHjMw==">
+      <div class="center-image"><div class="pagination"><a class="previous_page" rel="prev" href="/drivings/questions_set?category=light_car&amp;page=3">السابق</a> <a href="/drivings/questions_set?category=light_car&amp;page=1">1</a> <a href="/drivings/questions_set?category=light_car&amp;page=2">2</a> <a rel="prev" href="/drivings/questions_set?category=light_car&amp;page=3">3</a> <em class="current">4</em> <a rel="next" href="/drivings/questions_set?category=light_car&amp;page=5">5</a> <a href="/drivings/questions_set?category=light_car&amp;page=6">6</a> <span class="gap">...</span> <a href="/drivings/questions_set?category=light_car&amp;page=18">18</a> <a href="/drivings/questions_set?category=light_car&amp;page=19">19</a> <a class="next_page" rel="next" href="/drivings/questions_set?category=light_car&amp;page=5">التالي</a></div></div>
+      <table id="row_1" class="driving-table">
+      <tbody><tr>
+      <td class="question">1. هل الإشارات المرسومة على سطح الطريق ملزمة ؟ </td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="1" name="set[781]" id="set_781_1"> فقط الخط الأصفر الذي يدل على حافة الطريق </td>
+      <td rowspan="4"></td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="2" name="set[781]" id="set_781_2"> فقط إذا كان لونها أبيض فقط </td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="3" name="set[781]" id="set_781_3"> لا</td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="4" name="set[781]" id="set_781_4"> نعم</td>
+      </tr>
+      </tbody></table>
+      <table id="row_0" class="driving-table">
+      <tbody><tr>
+      <td class="question">2. تعني الشاخصة ب- 64: </td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="1" name="set[782]" id="set_782_1"> ممنوع دخول المشاة بما في ذلك طرف الطريق . </td>
+      <td rowspan="4"><img src="/assets/img/1084.gif" alt="1084" width="80" height="80"></td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="2" name="set[782]" id="set_782_2"> ممنوع دخول المشاة باستثناء طرف الطريق . </td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="3" name="set[782]" id="set_782_3"> ممنوع سير المشاة على طرف الطريق فقط . </td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="4" name="set[782]" id="set_782_4"> ممنوع سير المشاة على الرصيف فقط . </td>
+      </tr>
+      </tbody></table>
+      <table id="row_1" class="driving-table">
+      <tbody><tr>
+      <td class="question">3. الشاخصة د-2 تعني:</td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="1" name="set[783]" id="set_783_1"> حدود مسلك للمركبات العمومية فقط.</td>
+      <td rowspan="4"><img src="/assets/img/1102.gif" alt="1102" width="80" height="80"></td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="2" name="set[783]" id="set_783_2"> ممنوع اختراق هذه الخطوط في أية حالة من الحالات.</td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="3" name="set[783]" id="set_783_3"> خطوط مسلك في شارع ذو ثلاثة مسالك أو أكثر.</td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="4" name="set[783]" id="set_783_4"> مساحة فاصلة في وسط الطريق.</td>
+      </tr>
+      </tbody></table>
+      <table id="row_0" class="driving-table">
+      <tbody><tr>
+      <td class="question">4. كيف تتصرف عند رؤياك هـ - 8 التي أقيمت قبل الاستدارة؟</td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="1" name="set[784]" id="set_784_1"> تتقدم بحذر مع الانصياع لتعليمات الشاخصات إذا وُجدت.</td>
+      <td rowspan="4"><img src="/assets/img/1126.gif" alt="1126" width="80" height="80"></td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="2" name="set[784]" id="set_784_2"> توقف مركبتك قبل خط التوقف أو قبل ممر المشاة.</td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="3" name="set[784]" id="set_784_3"> هذه الشاخصة للمشاة وليست للمركبات.</td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="4" name="set[784]" id="set_784_4"> توقف مركبتك بجانب الآلة الضوئية القريبة.</td>
+      </tr>
+      </tbody></table>
+      <table id="row_1" class="driving-table">
+      <tbody><tr>
+      <td class="question">5. هل الشاخصة ب- 44 تشير إلى طريق ذات اتجاه واحد؟</td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="1" name="set[785]" id="set_785_1"> نعم في جميع الحالات.</td>
+      <td rowspan="4"><img src="/assets/img/1065.gif" alt="1065" width="80" height="80"></td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="2" name="set[785]" id="set_785_2"> كلا وإنما تشير إلى اتجاه إلزامي وليس طريق ذات اتجاه واحد.</td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="3" name="set[785]" id="set_785_3"> في طرق داخل المدن فقط.</td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="4" name="set[785]" id="set_785_4"> في الطرق السريعة فقط.</td>
+      </tr>
+      </tbody></table>
+      <table id="row_0" class="driving-table">
+      <tbody><tr>
+      <td class="question">6. ضوء أحمر مع ضوء أصفر معا في الإشارة الضوئية, معناه :</td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="1" name="set[786]" id="set_786_1"> تقدم بحذر وتصرف حسب إشارات السير بالمفترق </td>
+      <td rowspan="4"></td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="2" name="set[786]" id="set_786_2"> استعمل الغيار النيوترال لان حالا يظهر الضوء الأحمر </td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="3" name="set[786]" id="set_786_3"> استعد للسير </td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="4" name="set[786]" id="set_786_4"> ضوء أحمر قطعيا لا يظهر مع الضوء الأصفر</td>
+      </tr>
+      </tbody></table>
+      <table id="row_1" class="driving-table">
+      <tbody><tr>
+      <td class="question">7. هل تلزم إشارات الإرشاد السائق العمل بموجبها ؟</td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="1" name="set[787]" id="set_787_1"> نعم ، فقط الإشارات الحمراء .</td>
+      <td rowspan="4"></td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="2" name="set[787]" id="set_787_2"> كلا .</td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="3" name="set[787]" id="set_787_3"> نعم .</td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="4" name="set[787]" id="set_787_4"> نعم فقط الإشارات الزرقاء .</td>
+      </tr>
+      </tbody></table>
+      <table id="row_0" class="driving-table">
+      <tbody><tr>
+      <td class="question">8. كيف تتصرف عندما تسير في طريق ضيقة ومن أمامك قدمت مركبة تجاهك ؟</td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="1" name="set[788]" id="set_788_1"> يجب عدم زيادة السرعة ومتابعة السير .</td>
+      <td rowspan="4"></td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="2" name="set[788]" id="set_788_2"> يجب الوقوف على طرف الطريق .</td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="3" name="set[788]" id="set_788_3"> يجب التمهل والسير في أقصى يمين الطريق وحتى الخروج عن حافة الطريق .</td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="4" name="set[788]" id="set_788_4"> يجب التمهل فقط ومتابعة السير في نفس المسلك .</td>
+      </tr>
+      </tbody></table>
+      <table id="row_1" class="driving-table">
+      <tbody><tr>
+      <td class="question">9. هل تعتبر الإشارات المساعدة في الطريق إشارات سير ؟</td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="1" name="set[789]" id="set_789_1"> ملزمة للمركبات الغير آلية فقط .</td>
+      <td rowspan="4"></td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="2" name="set[789]" id="set_789_2"> كلا </td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="3" name="set[789]" id="set_789_3"> نعم </td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="4" name="set[789]" id="set_789_4"> نعم فقط إذا كان معها إشارة تحذير .</td>
+      </tr>
+      </tbody></table>
+      <table id="row_0" class="driving-table">
+      <tbody><tr>
+      <td class="question">10. إذا كان لديك شك بأن المركبة التي أمامك تريد الإستدارة الى اليسار :</td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="1" name="set[790]" id="set_790_1"> تستعمل الزامور وتتجاوزها .</td>
+      <td rowspan="4"></td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="2" name="set[790]" id="set_790_2"> تتجاوزها بحذر شديد .</td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="3" name="set[790]" id="set_790_3"> لا يجوز أن تتجاوزها .</td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="4" name="set[790]" id="set_790_4"> تستعمل الأنوار العالية بشكل متقطع لكي تتجاوزها.</td>
+      </tr>
+      </tbody></table>
+      <table id="row_1" class="driving-table">
+      <tbody><tr>
+      <td class="question">11. على سائق المركبة الذي له دخل في حادث طرق أسفر عن مقتل شخص أو إصابته بأذى: </td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="1" name="set[791]" id="set_791_1"> أن يقوم بتحريك المركبة حسب أوامر المصاب أو الذي كان برفقة المصاب. </td>
+      <td rowspan="4"></td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="2" name="set[791]" id="set_791_2"> أن يقوم بتحريك المركبة وإيقافها على طرف الطريق في جميع الأحوال. </td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="3" name="set[791]" id="set_791_3"> أن يقوم بتحريك المركبة إذا كانت تعرقل حركة السير فقط. </td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="4" name="set[791]" id="set_791_4"> أن يوقف المركبة فوراً في مكان وقوع الحادث أو بالقرب منه وألا يحركها من مكانها. </td>
+      </tr>
+      </tbody></table>
+      <table id="row_0" class="driving-table">
+      <tbody><tr>
+      <td class="question">12. وضع صاحب معمل براميل أمام معمله لكي يؤمن مواقف لمركباته :</td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="1" name="set[792]" id="set_792_1"> لا يجوز له وضع أشياء قد تعرقل حركة السير .</td>
+      <td rowspan="4"></td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="2" name="set[792]" id="set_792_2"> يجوز لصاحب المعمل أن يحافظ على مواقف لمركباته .</td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="3" name="set[792]" id="set_792_3"> يجوز لصاحب المعمل المحافظ على مكان وقوف واحد لغرض التحميل والتنزيل .</td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="4" name="set[792]" id="set_792_4"> يعتبر هذا العمل قانونيا .</td>
+      </tr>
+      </tbody></table>
+      <table id="row_1" class="driving-table">
+      <tbody><tr>
+      <td class="question">13. ما هو أقصى ارتفاع لحمولة في مركبة تجارية وزنها الاجمالي المسموح به لا يزيد عن 1500 كغم ؟</td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="1" name="set[793]" id="set_793_1"> لغاية 2 متر عن سطح الطريق .</td>
+      <td rowspan="4"></td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="2" name="set[793]" id="set_793_2"> لغاية 2.5 عن سطح الطريق .</td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="3" name="set[793]" id="set_793_3"> لغاية 3.5 متر عن سطح الطريق .</td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="4" name="set[793]" id="set_793_4"> لغاية 3 أمتار عن سطح الطريق .</td>
+      </tr>
+      </tbody></table>
+      <table id="row_0" class="driving-table">
+      <tbody><tr>
+      <td class="question">14. تجهز المركبة بمصابيح عرض جانبية :</td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="1" name="set[794]" id="set_794_1"> تجهز كل مركبة يزيد عرضها عن متر واحد بمصابيح عرض .</td>
+      <td rowspan="4"></td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="2" name="set[794]" id="set_794_2"> إذا كان عرض المركبة 2,10 متر أو أكثر .</td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="3" name="set[794]" id="set_794_3"> إذا كان عرض المركبة يزيد عن 2,5 متر .</td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="4" name="set[794]" id="set_794_4"> تجهز كل مركبة شاحنة بمصابيح عرض .</td>
+      </tr>
+      </tbody></table>
+      <table id="row_1" class="driving-table">
+      <tbody><tr>
+      <td class="question">15. عندما تريد الإستدارة إلى اليسار في ملتقى طرق عليك إعطاء حق الأولوية للمركبة عندما تريد الإستدارة إلى اليسار في ملتقى طرق عليك إعطاء حق الأولوية للمركبة القادمة من أمامك :</td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="1" name="set[795]" id="set_795_1"> في جميع الحالات .</td>
+      <td rowspan="4"></td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="2" name="set[795]" id="set_795_2"> فقط إذا كان سائق المركبة التي أمامك ينوي السير إلى الأمام .</td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="3" name="set[795]" id="set_795_3"> جميع الإجابات صحيحة .</td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="4" name="set[795]" id="set_795_4"> فقط إذا كان سائق المركبة التي أمامك ينوي الاستدارة إلى اليمين .</td>
+      </tr>
+      </tbody></table>
+      <table id="row_0" class="driving-table">
+      <tbody><tr>
+      <td class="question">16. عندما تخرج إلى الطريق من طريق ترابية :</td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="1" name="set[796]" id="set_796_1"> لك حق الأولوية إذا كنت قادما من اليمين .</td>
+      <td rowspan="4"></td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="2" name="set[796]" id="set_796_2"> عليك إعطاء حق الأولوية فقط إذا كنت تريد الاستدارة إلى اليسار .</td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="3" name="set[796]" id="set_796_3"> عليك إعطاء حق الأولوية فقط إذا اقيمت هناك إشارة قف .</td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="4" name="set[796]" id="set_796_4"> عليك إعطاء حق الألوية للمركبات في الطريق القاطعة أمامك .</td>
+      </tr>
+      </tbody></table>
+      <table id="row_1" class="driving-table">
+      <tbody><tr>
+      <td class="question">17. يجب أن تكون شهادة التأمين :</td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="1" name="set[797]" id="set_797_1"> مع صاحب المركبة .</td>
+      <td rowspan="4"></td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="2" name="set[797]" id="set_797_2"> مع المسؤول عن المركبة .</td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="3" name="set[797]" id="set_797_3"> مع السائق إذا كان هو صاحب المركبة .</td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="4" name="set[797]" id="set_797_4"> مع السائق عند سوق المركبة حتى و أن لم يكن صاحبها .</td>
+      </tr>
+      </tbody></table>
+      <table id="row_0" class="driving-table">
+      <tbody><tr>
+      <td class="question">18. قبل قمة انحدار ممنوع الاجتياز :</td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="1" name="set[798]" id="set_798_1"> فقط إذا كان وزن مركبتك أكثر من 4 طن .</td>
+      <td rowspan="4"></td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="2" name="set[798]" id="set_798_2"> فقط إذا كانت هناك الإشارة ممنوع الاجتياز .</td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="3" name="set[798]" id="set_798_3"> في جميع الأحوال عندما تكون الرؤية محدودة .</td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="4" name="set[798]" id="set_798_4"> فقط في طريق ذات اتجاهين .</td>
+      </tr>
+      </tbody></table>
+      <table id="row_1" class="driving-table">
+      <tbody><tr>
+      <td class="question">19. كيف تفحص إذا كانت كمية الماء في المبرد ( الرادياتور ) كافية ؟</td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="1" name="set[799]" id="set_799_1"> تفتح غطاء المبرد وتفحص كمية الماء عندما يكون المحرك باردا .</td>
+      <td rowspan="4"></td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="2" name="set[799]" id="set_799_2"> بواسطة ساعة الحرارة .</td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="3" name="set[799]" id="set_799_3"> تتوجه إلى الكراج لفحص الرادياتور .</td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="4" name="set[799]" id="set_799_4"> تسحب مقياس الماء من الرادياتور لكي تفحص كمية الماء .</td>
+      </tr>
+      </tbody></table>
+      <table id="row_0" class="driving-table">
+      <tbody><tr>
+      <td class="question">20. ما هي وظيفة مصفاة الهواء في المحرك ؟</td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="1" name="set[800]" id="set_800_1"> تصفية الهواء لجهاز التروس .</td>
+      <td rowspan="4"></td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="2" name="set[800]" id="set_800_2"> تصفية الهواء الذي يدخل إلى الكاربوريتر لعمل الخليط من الشوائب .</td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="3" name="set[800]" id="set_800_3"> تصفية الهواء لجهاز الزيت .</td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="4" name="set[800]" id="set_800_4"> تصفية الهواء الذي يدخل إلى الرادياتور .</td>
+      </tr>
+      </tbody></table>
+      <table id="row_1" class="driving-table">
+      <tbody><tr>
+      <td class="question">21. بعد عبورك طريق مغمورة بالمياه ، أي جهاز يحتمل أن يتأثر في عمله :</td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="1" name="set[801]" id="set_801_1"> جهاز الغيارات .</td>
+      <td rowspan="4"></td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="2" name="set[801]" id="set_801_2"> جهاز الكهرباء .</td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="3" name="set[801]" id="set_801_3"> جهاز الفرامل .</td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="4" name="set[801]" id="set_801_4"> جهاز القيادة .</td>
+      </tr>
+      </tbody></table>
+      <table id="row_0" class="driving-table">
+      <tbody><tr>
+      <td class="question">22. نضغط على دعسة الفرامل في كل حالة:</td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="1" name="set[802]" id="set_802_1"> بواسطة الرجل اليمنى</td>
+      <td rowspan="4"></td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="2" name="set[802]" id="set_802_2"> بواسطة الرجل اليسرى</td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="3" name="set[802]" id="set_802_3"> هذا يعتمد على رغبة السائق</td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="4" name="set[802]" id="set_802_4"> لا توجد أهمية للأمر</td>
+      </tr>
+      </tbody></table>
+      <table id="row_1" class="driving-table">
+      <tbody><tr>
+      <td class="question">23. ما هو السبب الرئيسي لانكسار الزنبركات في المركبة ؟</td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="1" name="set[803]" id="set_803_1"> استعمال الفرامل بصورة فجائية وبصورة مبالغ فيها .</td>
+      <td rowspan="4"></td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="2" name="set[803]" id="set_803_2"> انعطافات بصورة حادة وبسرعة .</td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="3" name="set[803]" id="set_803_3"> نقل حمولة ثقيلة جدا .</td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="4" name="set[803]" id="set_803_4"> ضغط الهواء في الإطارات لا يتلاءم مع تعليمات المنتج .</td>
+      </tr>
+      </tbody></table>
+      <table id="row_0" class="driving-table">
+      <tbody><tr>
+      <td class="question">24. كيف تفحص إذا كانت كمية الماء في المبرد ( الرادياتور ) كافية ؟</td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="1" name="set[804]" id="set_804_1"> بواسطة ساعة الحرارة .</td>
+      <td rowspan="4"></td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="2" name="set[804]" id="set_804_2"> تسحب مقياس الماء من الرادياتور لكي تفحص كمية الماء .</td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="3" name="set[804]" id="set_804_3"> تتوجه إلى الكراج لفحص الرادياتور .</td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="4" name="set[804]" id="set_804_4"> تفتح غطاء المبرد وتفحص كمية الماء عندما يكون المحرك باردا .</td>
+      </tr>
+      </tbody></table>
+      <table id="row_1" class="driving-table">
+      <tbody><tr>
+      <td class="question">25. عندما تقام إشارة قف في الجهة اليسرى من المفترق :</td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="1" name="set[805]" id="set_805_1"> هذه الإشارة تلزم السائق بالوقوف في جميع الاتجاهات .</td>
+      <td rowspan="4"></td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="2" name="set[805]" id="set_805_2"> تلزم السائق بالوقوف عندما ينوي الاستدارة إلى اليسار للسير في الاتجاه المعاكس .</td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="3" name="set[805]" id="set_805_3"> هذه الإشارة تلزم السائق بالوقوف عندما ينوي الاستدارة إلى اليسار أو التوجه إلى الأمام .</td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="4" name="set[805]" id="set_805_4"> لا تلزم السائق بالوقوف عندما ينوي الاستدارة الى اليسار للسير في الاتجاه المعاكس .</td>
+      </tr>
+      </tbody></table>
+      <table id="row_0" class="driving-table">
+      <tbody><tr>
+      <td class="question">26. عند ملء الرادياتور هل من المستحسن ملؤه حتى الأعلى ؟</td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="1" name="set[806]" id="set_806_1"> من المستحسن جدا لأن أوامر المنتج تجبر على ذلك .</td>
+      <td rowspan="4"></td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="2" name="set[806]" id="set_806_2"> من المستحسن ملء الرادياتور حتى الأعلى لمنع زيادة سخونة المحرك .</td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="3" name="set[806]" id="set_806_3"> ليس من المستحسن زيادة الماء فوق انبوب التفريغ .</td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="4" name="set[806]" id="set_806_4"> ليس من المستحسن لأن زيادة الماء ترطب البوجيات .</td>
+      </tr>
+      </tbody></table>
+      <table id="row_1" class="driving-table">
+      <tbody><tr>
+      <td class="question">27. الوقت الأكثر ملاءمة لفحص ضغط الهواء في الاطارات هو :</td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="1" name="set[807]" id="set_807_1"> في كل محطة وقود عند ملء الوقود .</td>
+      <td rowspan="4"></td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="2" name="set[807]" id="set_807_2"> قبل كل دخول إلى طريق مشوشة .</td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="3" name="set[807]" id="set_807_3"> بعد سفرة طويلة عندما تكون الإطارات ساخنة .</td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="4" name="set[807]" id="set_807_4"> بعد وقوف مستمر عندما تكون الإطارات باردة .</td>
+      </tr>
+      </tbody></table>
+      <table id="row_0" class="driving-table">
+      <tbody><tr>
+      <td class="question">28. الفرملة الفجائية الأفضل على طريق رطبة هي :</td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="1" name="set[808]" id="set_808_1"> الضغط بالتدريج على دعسة الفرامل .</td>
+      <td rowspan="4"></td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="2" name="set[808]" id="set_808_2"> فرملة بواسطة فرامل اليد .</td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="3" name="set[808]" id="set_808_3"> ضغط قوي ومتواصل على دعسة الفرامل .</td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="4" name="set[808]" id="set_808_4"> فرملة بواسطة تخفيض الغيارات .</td>
+      </tr>
+      </tbody></table>
+      <table id="row_1" class="driving-table">
+      <tbody><tr>
+      <td class="question">29. ما هي وظيفة فلتر الهواء في المحرك؟</td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="1" name="set[809]" id="set_809_1"> تنقية الهواء الداخل إلى المحرك من الغبار.</td>
+      <td rowspan="4"></td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="2" name="set[809]" id="set_809_2"> نعومة صوت المحرك.</td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="3" name="set[809]" id="set_809_3"> منع حدوث الباك فاير (Back Fire).</td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="4" name="set[809]" id="set_809_4"> جميع الإجابات صحيحة.</td>
+      </tr>
+      </tbody></table>
+      <table id="row_0" class="driving-table">
+      <tbody><tr>
+      <td class="question">30. من بحوزته رخصة سواقه لمركبة خصوصية ويحصل على رخصة سواقة لشحن خفيف ، هل يعتبر سائق جديد ؟</td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="1" name="set[810]" id="set_810_1"> نعم إذا كان يحمل رخصة الخصوصي مدة تقل عن سنتين .</td>
+      <td rowspan="4"></td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="2" name="set[810]" id="set_810_2"> كلا .</td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="3" name="set[810]" id="set_810_3"> نعم .</td>
+      </tr>
+      <tr>
+      <td class="choice"><input type="radio" value="4" name="set[810]" id="set_810_4"> نعم إذا كان عمره يقل عن 19 عاما .</td>
+      </tr>
+      </tbody></table>
+      <input type="hidden" name="page" id="page" value="4">
+      <input type="hidden" name="category" id="category" value="light_car">
+      <input type="hidden" name="questions" id="questions" value="781,782,783,784,785,786,787,788,789,790,791,792,793,794,795,796,797,798,799,800,801,802,803,804,805,806,807,808,809,810,">
+      <div class="space_placeholder"></div>
+      <input type="submit" name="commit" value="أجب عن الأسئلة" data-confirm="هل أنت متأكد من الإجابات؟" class="btn btn-default">
+      </form>
+    </div>
+
+  </ion-content>
