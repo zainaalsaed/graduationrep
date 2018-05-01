@@ -1,0 +1,37 @@
+#registration-v1 {
+    .khara{
+
+        width: 100%;
+    }
+    /* Background Style */
+    height: 100%;
+    background:  url("../assets/img/tt.jpg") no-repeat;
+    background-size: cover;
+    /* Logo Style */
+    .logo {
+        margin-top: 10%;
+        margin-bottom: 10%;
+        text-align: center;
+        color: #fff;
+        img {
+            width: 200px;
+            border-radius: 50%;
+        }
+    }
+
+    /* main body part style */
+    .main-body {
+        form {
+            ion-list {
+                .item-input {
+                    ion-label {
+                        margin-left: 10px;
+                    }
+                }
+                .buttons {
+                    margin-top: 5%;
+                }
+            }
+        }
+    }
+}

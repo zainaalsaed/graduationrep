@@ -1,0 +1,30 @@
+page-school,
+.spinner-container {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+home {
+    .spinner-container {
+       
+        text-align: right;
+        
+    }
+    
+    ion-list {
+        text-align: right;
+      border-radius: 1rem;
+      overflow: hidden;
+  
+      ion-item,
+      .item:first-child,
+      .item:last-child {
+        border: none;
+      }
+  
+      ion-datetime {
+        padding-left: 0;
+      }
+    }
+  }

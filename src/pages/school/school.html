@@ -1,0 +1,31 @@
+<!-- -->
+<ion-header>
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      <strong>Search for a specific school</strong>
+    </ion-title>
+  </ion-navbar>
+  
+</ion-header>
+
+
+<ion-content>
+ 
+  <ion-searchbar [(ngModel)]="searchTerm" [formControl]="searchControl" (ionInput)="onSearchInput()"></ion-searchbar>
+
+  <div *ngIf="searching" class="spinner-container">
+      <ion-spinner></ion-spinner>
+  </div>
+
+  <ion-list>
+      <button ion-item *ngFor="let item of items" class="spinner-container" color="primary" tappable (click)="itemTapped1(event, item)">
+        {{item.title}}
+      </button>
+  </ion-list>
+  <div *ngIf="selectedItem" padding>
+    You navigated here from <b>{{selectedItem.title}}</b>
+  </div>
+</ion-content>

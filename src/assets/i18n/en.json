@@ -1,0 +1,157 @@
+{
+  "_comment": "English Language",
+  "LANDING_PAGE": {
+    "REGISTRATION": "Registration",
+    "LOGIN": "Login",
+    "SKIP": "Continue as a guest.",
+    "USER_WEBSITE":"I'm already a user."
+  },
+  "REGISTRATION": {
+    "TITLE":"Create an Account",
+    "USERNAME": "Username",
+    "EMAIL": "Email",
+    "PASSWORD": "Password",
+    "CONFIRM_PASSWORD": "Confirm Password",
+    "CREATE_ACCOUNT": "Create Account",
+    "SKIP": "Skip",
+    "STATUSN":"I don't have a driving lisence",
+    "STATUSY":"I have a drivimg lisence",
+    "BARCODE":"Scan your Barcode",
+    "BARCODEDN":"Your scanned barcode:",
+    "IDNUM":"Enter your ID Number"
+  },
+  "LOGIN": {
+    "EMAIL": "Email",
+    "PASSWORD": "Password",
+    "LOGIN": "Login",
+    "SKIP": "Skip",
+    "SIGN IN": "SIGN IN",
+    "FORGET_PASSWORD": "Forget Password"
+  },
+  "FORGET_PASSWORD": {
+    "TITLE": "Forget Password",
+    "SUBTITLE": "Enter Email Address",
+    "EMAIL": "Email",
+    "CANCEL": "Cancel",
+    "SEND": "Send"
+  },
+  "PROFILE": {
+    "TITLE": "Profile",
+    "NAME": "Zaina Al-Saed",
+    "DESIGNATION": "Driving Lisence no. 803539",
+    "DETAILS": "Hello Mrs. Zaina, your driving lisence expiration date is 15/09/2021 ",
+    "TIMELINE": "Notifications",
+    "ABOUTME": "My information",
+    "FRIENDS": "My messages",
+    "GALLERY": "Enquiries",
+    "ABOUTME_TAB": {
+      "BASIC_INFOS": "Basic Infos",
+      "CONTACT_INFOS": "Contact Info",
+      "CHECK_INS": "Violations"
+    }
+  },
+  "CALENDAR": {
+    "TITLE": "Calendar",
+    "CALENDAR_VIEW": "Calendar View",
+    "CALENDAR_LIST": "Calendar List"
+  },
+  "GOOGLE_MAP": {
+    "TITLE": "Google Map",
+    "STANDARD": "Standard",
+    "SILVER": "Silver",
+    "NIGHT": "Night",
+    "DARK": "Dark",
+    "AUBERGINE": "Aubergine"
+  },
+  "CHART": {
+    "TITLE": "Chart",
+    "BAR": "Bar",
+    "DOUGHNUT": "Doughnut",
+    "PIE": "Pie",
+    "POLAR": "Polar",
+    "DYNAMIC": "dynamic",
+    "RADAR": "radar"
+  },
+  "ECOMMERCE": {
+    "TITLE": "Ecommerce"
+  },
+  "LATEST_NEWS": {
+    "TITLE": "Latest News"
+  },
+  "LANGUAGES": [
+    {
+      "ID": "en",
+      "VALUE": "English"
+    },
+    {
+      "ID": "es",
+      "VALUE": "Spanish"
+    },
+    {
+      "ID": "ar",
+      "VALUE": "Arabic"
+    },
+    {
+      "ID": "zh",
+      "VALUE": "Chinese"
+    }
+  ],
+  "SETTINGS": {
+    "TITLE": "Settings",
+    "LANGUAGE": "Language",
+    "NOTIFICATION": "Notification",
+    "PUSH_NOTIFICATION": "Push Notification",
+    "MESSAGE_PREVIEW": "Message Preview",
+    "NEW_MESSAGE_POPUP": "New Message Popup",
+    "ADJUST_DISPLAY": "Adjust Display"
+  },
+  "SEARCH": {
+    "TITLE": "Search"
+  },
+  "CONTACT_US": {
+    "TITLE": "Contact Us",
+    "GET_IN_TOUCH": "Get in Touch",
+    "ADDRESS": "Address",
+    "CONTACT_FORM": "Contact Form",
+    "SEND_MESSAGE": "Send Message",
+    "NAME": "Name",
+    "EMAIL": "Email",
+    "YOUR_MESSAGE": "Your Message"
+  },
+  "ABOUTUS": {
+    "TITLE": "About us",
+    "SUBTITLE": "Fulcrumy is a clean and Ionic 2 app."
+  },
+  "COMPONENTS": {
+    "TITLE": "Component",
+    "PROFILE": "Profile",
+    "CALENDAR": "Calendar",
+    "MAP": "Map",
+    "CHART": "Chart",
+    "ECOMMERCE": "Ecommerce",
+    "NEWS_FEED": "News Feed",
+    "CHAT": "Chat",
+    "LATEST_NEWS": "Latest News",
+    "ABOUTUS": "About Us",
+    "CONTACTUS": "Contact Us"
+  },
+
+
+
+  "MENU_ITEMS": {
+    "PROFILE": "Profile",
+    "CALENDAR": "Calendar",
+    "GOOGLEMAP": "Google Map",
+    "CHART": "Chart",
+    "ECOMMERCE": "Ecommerce",
+    "LATESTNEWS": "Latest News",
+    "NEWSFEED": "NewsFeed",
+    "CHAT": "Chat",
+    "COMOPNENT": "Component",
+    "ABOUTUS": "About us",
+    "CONTACTUS": "Contact us",
+    "SETTINGS": "Settings",
+    "SEARCH": "Search"
+  },
+  "LOGOUT": "Logout"
+}

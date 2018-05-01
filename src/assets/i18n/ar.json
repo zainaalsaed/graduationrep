@@ -1,0 +1,155 @@
+{
+  "_comment": "Arabic Language",
+  "LANDING_PAGE": {
+    "REGISTRATION": "التسجيل",
+    "LOGIN": "تسجيل الدخول",
+    "SKIP": "الدخول كزائر",
+    "USER_WEBSITE":"الدخول كمستخدم"
+  },
+  "REGISTRATION": {
+    "TITLE":"إنشاء حساب جديد",
+    "USERNAME": "اسم المستخدم",
+    "EMAIL": "البريد الإلكتروني",
+    "PASSWORD": "كلمه السر",
+    "CONFIRM_PASSWORD": "تأكيد كلمة المرور",
+    "CREATE_ACCOUNT": " إنشاء حساب جديد!",
+    "SKIP": "لدي حساب مسجّل.",
+    "STATUSN":"لا احمل رخصة قيادة",
+    "STATUSY":"أحمل رخصة قيادة",
+    "IDNUM":"رقم الهوية",
+    "BARCODEDN":"رقم الرخصة التسلسلي",
+    "BARCODE":"أدخل الرقم التسلسلي لرخصتك"
+  },
+  "LOGIN": {
+    "EMAIL": "البريد الإلكتروني",
+    "PASSWORD": "كلمه السر",
+    "LOGIN": "تسجيل الدخول",
+    "SIGN IN":"تسجيل الدخول",
+    "SKIP": "تخطى",
+    "FORGET_PASSWORD": "هل نسيت كلمة المرور"
+  },
+  "FORGET_PASSWORD": {
+    "TITLE": "هل نسيت كلمة المرور",
+    "SUBTITLE": "أدخل عنوان البريد الالكتروني",
+    "EMAIL": "البريد الإلكتروني",
+    "CANCEL": "إلغاء",
+    "SEND": "إرسال"
+  },
+  "PROFILE": {
+    "TITLE": "الملف الشخصي",
+    "NAME": "زينة عماد عقاب ساعد",
+    "DESIGNATION": "حاملة رخصة رقم 803559",
+    "DETAILS": "أهلاً بك مجدداً سيدة زينة عماد عقاب ساعد ، رخصتك القيادة سارية المفعول حتى 15/09/2021",
+    "TIMELINE": "الاشعارات",
+    "ABOUTME": "معلوماتي",
+    "FRIENDS": "رسائلي",
+    "GALLERY": "طلباتك",
+    "ABOUTME_TAB": {
+      "BASIC_INFOS": "معلوماتك الاساسية",
+      "CONTACT_INFOS": "معلومات الاتصال بك",
+      "CHECK_INS": "مخالفاتك"
+
+    }
+  },
+  "CALENDAR": {
+    "TITLE": "التقويم",
+    "CALENDAR_VIEW": "طريقة عرض التقويم",
+    "CALENDAR_LIST": "قائمة الاحداث القائمة"
+  },
+  "GOOGLE_MAP": {
+    "TITLE": "خرائط جوجل",
+    "STANDARD": "اساسي",
+    "SILVER": "فضة",
+    "NIGHT": "ليل",
+    "DARK": "داكن",
+    "AUBERGINE": "ارجواني"
+  },
+  "CHART": {
+    "TITLE": "خريطة",
+    "BAR": "شريط",
+    "DOUGHNUT": "تبرع",
+    "PIE": "فطيرة",
+    "POLAR": "قطبي",
+    "DYNAMIC": "ديناميكي",
+    "RADAR": "رادار"
+  },
+  "ECOMMERCE": {
+    "TITLE": "التجارة الإلكترونية"
+  },
+  "LATEST_NEWS": {
+    "TITLE": "أحدث الأخبار"
+  },
+  "LANGUAGES": [
+    {
+      "ID": "en",
+      "VALUE": "الإنجليزية"
+    },
+    {
+      "ID": "es",
+      "VALUE": "الأسبانية"
+    },
+    {
+      "ID": "ar",
+      "VALUE": "عربى"
+    },
+    {
+      "ID": "zh",
+      "VALUE": "صينى"
+    }
+  ],
+  "SETTINGS": {
+    "TITLE": "إعدادات",
+    "LANGUAGE": "لغة",
+    "NOTIFICATION": "الاشعارات",
+    "PUSH_NOTIFICATION": "هل تريد اشعارات؟",
+    "MESSAGE_PREVIEW": "معاينة الرسالة",
+    "NEW_MESSAGE_POPUP": "لقد ظهرت رساله جديده",
+    "ADJUST_DISPLAY": "ضبط العرض"
+  },
+  "SEARCH": {
+    "TITLE": "بحث"
+  },
+  "CONTACT_US": {
+    "TITLE": "اتصل بنا",
+    "GET_IN_TOUCH": "ابقى على تواصل",
+    "ADDRESS": "عنوان",
+    "CONTACT_FORM": "نموذج الاتصال",
+    "SEND_MESSAGE": "إرسال رسالة",
+    "NAME": "اسم",
+    "EMAIL": "البريد الإلكتروني",
+    "YOUR_MESSAGE": "رسالتك"
+  },
+  "ABOUTUS": {
+    "TITLE": "معلومات عنا",
+    "SUBTITLE": "التطبيق الرسمي التابع لوزارة النقل والمواصلات الفلسطينية"
+  },
+  "COMPONENTS": {
+    "TITLE": "مكون",
+    "PROFILE": "الملف الشخصي",
+    "CALENDAR": "التقويم",
+    "MAP": "خريطة",
+    "CHART": "خريطة",
+    "ECOMMERCE": "التجارة الإلكترونية",
+    "NEWS_FEED": "أخبار الأعلاف",
+    "CHAT": "دردشة",
+    "LATEST_NEWS": "أحدث الأخبار",
+    "ABOUTUS": "معلومات عنا",
+    "CONTACTUS": "اتصل بنا"
+  },
+  "MENU_ITEMS": {
+    "PROFILE": "الملف الشخصي",
+    "CALENDAR": "التقويم",
+    "GOOGLEMAP": "خرائط جوجل",
+    "CHART": "خريطة",
+    "ECOMMERCE": "التجارة الإلكترونية",
+    "LATESTNEWS": "أحدث الأخبار",
+    "NEWSFEED": "مصادر الأخبار",
+    "CHAT": "دردشة",
+    "COMOPNENT": "مكون",
+    "ABOUTUS": "معلومات عنا",
+    "CONTACTUS": "اتصل بنا",
+    "SETTINGS": "إعدادات",
+    "SEARCH": "بحث"
+  },
+  "LOGOUT": "الخروج"
+}
