@@ -2,6 +2,8 @@
 
 /** Imports Modules */
 //import { Component } from '@angular/core';
+import { User } from '../../../models/user';
+
 import {  MenuController } from 'ionic-angular';
 import { Component ,ViewChild  } from '@angular/core';
 import {IonicPage, NavController, NavParams,AlertController, ToastController } from 'ionic-angular';
@@ -12,7 +14,7 @@ import { AngularFireAuth } from 'angularfire2/auth';
 import { FirebaseError } from '@firebase/util';
 import { AngularFireModule } from 'angularfire2';
 import * as firebase from 'firebase/app';
-
+import { auth } from 'firebase';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 //import { ScanPage } from "../scan/scan";
 //import { ScanRegisterPage } from "../scan-register/scan-register";
@@ -29,7 +31,7 @@ export class RegistrationComponent {
   datay={ };
   encodemyDatay:string;
 encodedDatay:{};
-
+user = {} as User;
   options:BarcodeScannerOptions ;
 
   
@@ -39,14 +41,16 @@ encodedDatay:{};
   slideTwoForm: FormGroup;
 
   submitAttempt: boolean = false;
-  peopleList :  AngularFireList<any>;
-  @ViewChild('username') user;
-  @ViewChild('password') password;
+ userList :  AngularFireList<any>;
+  // @ViewChild('username') user;
+  // @ViewChild('password') password;
   
 
-
+  public date: string = new Date().toISOString();
   
   constructor(
+    private afAuth: AngularFireAuth,
+    private afDatabase: AngularFireDatabase,
     public nav: NavController,
     private alertCtrl: AlertController,
     public navCtrl: NavController, public navParams: NavParams,
@@ -58,8 +62,9 @@ encodedDatay:{};
      public tstCtrl: ToastController,
      private menu: MenuController) {
     //this.navCtrl = navCtrl;
+    
     this.menu.enable(false); 
-    this.peopleList = db.list('/people')
+    this.userList = db.list('/user')
     // Disable sidemenu
   }
   alert(message: string) {
@@ -70,37 +75,53 @@ encodedDatay:{};
     }).present();
   }
 
-  createPerson(name,identifierNum,mail,pas,status,drivl,component){
-    this.peopleList.push({
-        name : name,
-        identifierNum : identifierNum,
-        mail : mail,
-        pas : pas,
-        status: status,
-        drivl : this.datay
-        }).then(newPerson =>{
-    this.navCtrl.push(component);
-    },error=>{console.log(error);});
+//   createUser(name,identifierNum,mail,pas,status,drivl,component){
+//     this.userList.push({
+//         name : this.user.name,
+//         identifierNum : identifierNum,
+//         mail : mail,
+//         pas : pas,
+//         status: status,
+//         drivl : this.datay
+//               }).then(newPerson =>{
+//     this.navCtrl.push(component);
+//     },error=>{console.log(error);});
+// }
+
+async newUser(user: User, component) {
+  try{
+    const result = await this.afAuth.auth.createUserWithEmailAndPassword(user.mail, user.pas);
+    console.log(result);
+    this.afAuth.authState.subscribe(auth =>{
+      this.afDatabase.object('user/'+ auth.uid).set(this.user)
+      .then(() => this.nav.setRoot(component))
+      
+      this.alert('Registered!');
+      this.navCtrl.setRoot(component);
+    })
+  }
+    catch(e){
+      console.error(e);
+    }
+  // console.log('Would register user with ', this.user.value, this.password.value);
+
+  // console.log('Would register user with ', this.user.value, this.password.value);
 }
 
-  newUser() {
-    
-    this.fire.auth.createUserWithEmailAndPassword(this.user.value , this.password.value)
-    .then(data => {
-      console.log('got data ', data);
-     this.alert('Registered!');
-     this.nav.setRoot(NewsFeedComponent);
 
-    })
+    
+    // this.fire.auth.createUserWithEmailAndPassword(this.user.value , this.password.value)
+    // .then(data => {
+    //   console.log('got data ', data);
+    //  this.alert('Registered!');
+    //  this.nav.setRoot(NewsFeedComponent);
+
+    
     
   
     
-    .catch((error:FirebaseError) => {
-      console.log('got an error ', error);
-     this.alert(error.message);
-    });
-    console.log('Would register user with ', this.user.value, this.password.value);
-  }
+   
+
   
 
 

@@ -5,6 +5,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { TranslateService } from 'ng2-translate';
 import { AdmobFreeProvider } from '../providers/admob-free/admob-free';
+import { SchoolPage } from '../pages/school/school';
 
 @Component({
   templateUrl: 'app.html'
@@ -52,6 +53,7 @@ export class MyApp {
 
     // Page navigation component
     this.pages = [
+      { title: this.translate.instant('MENU_ITEMS.PROFILE'), component: 'TetingpageComponent', leftIcon: 'person' },
       { title: this.translate.instant('MENU_ITEMS.PROFILE'), component: 'ProfileComponent', leftIcon: 'person' },
       { title: this.translate.instant('MENU_ITEMS.CALENDAR'), component: 'FullCalendarComponent', leftIcon: 'calendar' },
       { title: this.translate.instant('MENU_ITEMS.GOOGLEMAP'), component: 'GoogleMapComponent', leftIcon: 'md-pin' },

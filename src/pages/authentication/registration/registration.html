@@ -19,19 +19,19 @@
           <ion-label>
             <ion-icon name="md-person"></ion-icon>
           </ion-label>
-          <ion-input class="ion-ios-locked-outline" type="text" placeholder="{{'REGISTRATION.USERNAME' | translate}}" [(ngModel)]="name"
+          <ion-input class="ion-ios-locked-outline" type="text" placeholder="{{'REGISTRATION.USERNAME' | translate}}" [(ngModel)]="user.name"
             name="username"></ion-input>
         </ion-item>
         <ion-item >
             <ion-label >  </ion-label>
-            <ion-input type="number" name="id" [(ngModel)]="identifierNum" type="number" placeholder="{{'REGISTRATION.IDNUM' | translate}}"></ion-input>
+            <ion-input type="number" name="id" [(ngModel)]="user.identifierNum" type="number" placeholder="{{'REGISTRATION.IDNUM' | translate}}"></ion-input>
           </ion-item>
         <!-- Email -->
         <ion-item>
           <ion-label>
             <ion-icon name="md-mail"></ion-icon>
           </ion-label>
-          <ion-input class="ion-ios-locked-outline" type="text" placeholder="{{'REGISTRATION.EMAIL' | translate}}" #username [(ngModel)]="mail"
+          <ion-input class="ion-ios-locked-outline" type="text" placeholder="{{'REGISTRATION.EMAIL' | translate}}" #username [(ngModel)]="user.mail"
             name="email"></ion-input>
         </ion-item>
 
@@ -40,7 +40,7 @@
           <ion-label>
             <ion-icon name="md-eye"></ion-icon>
           </ion-label>
-          <ion-input class="ion-ios-locked-outline" type="password" placeholder="{{'REGISTRATION.PASSWORD' | translate}}" #password [(ngModel)]="pas"
+          <ion-input class="ion-ios-locked-outline" type="password" placeholder="{{'REGISTRATION.PASSWORD' | translate}}" #password [(ngModel)]="user.pas"
             name="password"></ion-input>
         </ion-item>
 
@@ -57,14 +57,19 @@
       
             <ion-item>
               <ion-label class="text-1x bold" color="primary">Status?</ion-label>
-              <ion-select name="status" [(ngModel)]="status" (ionChange)="getStatus(status)">
+              <ion-select name="status" [(ngModel)]="user.status" (ionChange)="getStatus(status)">
               <ion-option [value]="yes"> {{'REGISTRATION.STATUSY' | translate}}</ion-option>
               <ion-option [value]="no"> {{'REGISTRATION.STATUSN' | translate}}</ion-option>
              
             
             </ion-select>
             </ion-item>
-      
+            <ion-item>
+              <ion-icon name="md-calendar" color="primary" item-left></ion-icon>
+              <ion-label class="text-1x bold" color="primary">Lisence Expiraion Date</ion-label>
+
+              <ion-datetime  displayFormat="DD/MM/YYYY" pickerFormat="DD/MM/YYYY" [(ngModel)]="user.expdate"  min="2000" max="2025-10-31" name="date"> </ion-datetime>
+            </ion-item>
           
 
 
@@ -85,7 +90,7 @@
                   
               </h3> 
               </ion-item>
-          <button ion-button type="button" color="dark" block tappable (click)="newUser(); createPerson(name,identifierNum,mail,pas,status,datay.text,'NewsFeedComponent')">
+          <button ion-button type="button" color="dark" block tappable (click)="newUser(user, 'NewsFeedComponent' );">
             {{'REGISTRATION.CREATE_ACCOUNT' | translate}}
           </button>
         </div>

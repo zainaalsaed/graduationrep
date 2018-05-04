@@ -35,6 +35,8 @@ import { TableegePage } from '../pages/tableege/tableege';
 import { TableeghacPage } from '../pages/tableeghac/tableeghac';
 import { GusPage } from '../pages/gus/gus';
 import { NotificationsPage } from '../pages/notifications/notifications';
+import { ViolationsPage } from '../pages/violations/violations';
+// import { NewsFeedComponent } from '../pages/newsfeed/newsfeed';
 
 
 const firebaseAuth = {
@@ -65,12 +67,14 @@ const firebaseAuth = {
     TableegePage,
     RamallahschoolsPage,
     HebronschoolsPage ,
-    SchoolPage,
+    // SchoolPage,
     HebronschoolsPage ,
     SchoolPage,
-    NotificationsPage
+    NotificationsPage,
+    ViolationsPage
   ],
   imports: [
+    // SchoolPage,
     IonicModule.forRoot(MyApp, {
       menuType: 'overlay',
       platforms: {
@@ -108,8 +112,9 @@ const firebaseAuth = {
     TruckPage,
     HebronschoolsPage ,
     SchoolPage,
-    SchoolPage,
-    NotificationsPage
+    NotificationsPage,
+    ViolationsPage,
+    // NewsFeedComponent
   ],
   providers: [
     StatusBar,
