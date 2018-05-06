@@ -1,11 +1,11 @@
 <div id="friends-v1">
     <ion-grid no-padding>
         <ion-row wrap no-padding>
-            <ion-col no-padding col-6 *ngFor="let friend of friends" class='cell-{{friend.id}}'>
+            <ion-col no-padding col-6 *ngFor="let tc of tick" class='cell-{{friend.id}}'>
                 <ion-card>
-                    <img [src]="friend.image">
+                    <img [src]="tc.uphoto">
                     <ion-card-content>
-                        <p text-center>{{friend.name}}</p>
+                        <p text-center>{{tc.title}}</p>
                     </ion-card-content>
                     <ion-row>
                         <ion-col>
