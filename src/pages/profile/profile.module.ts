@@ -7,6 +7,8 @@ import { TimelineComponent } from './timeline/timeline';
 import { GalleryComponent } from './gallery/gallery'
 import { FriendsComponent } from './friends/friends';
 import { AboutmeComponent } from './aboutme/aboutme';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { AngularFireAuthModule } from 'angularfire2/auth';
 
 @NgModule({
   declarations: [
@@ -20,6 +22,9 @@ import { AboutmeComponent } from './aboutme/aboutme';
     IonicImageViewerModule
   ],
   exports: [
+    //AngularFireModule.initializeApp(firebaseAuth),
+    AngularFireDatabaseModule,
+    AngularFireAuthModule,
     ProfileComponent,
     TimelineComponent,
     GalleryComponent,

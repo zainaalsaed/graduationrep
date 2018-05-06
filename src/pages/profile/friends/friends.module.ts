@@ -6,6 +6,7 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 // import {IonicPageModule} from 'ionic-angular';
 import { AngularFireDatabaseModule, AngularFireDatabase } from 'angularfire2/database';
+import { ProfileComponent } from '../profile';
 
 @NgModule({
   declarations: [
@@ -13,9 +14,10 @@ import { AngularFireDatabaseModule, AngularFireDatabase } from 'angularfire2/dat
   ],
   imports: [
     // AngularFireModule.initializeApp(firebaseAuth),
-    AngularFireDatabaseModule,
-    AngularFireAuthModule,
-    IonicPageModule.forChild(FriendsComponent),
+    // AngularFireDatabaseModule,
+    // AngularFireAuthModule,
+    // ProfileComponent,
+    IonicPageModule.forChild(ProfileComponent),
     TranslateModule
   ],
   exports: [
