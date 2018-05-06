@@ -10,6 +10,7 @@ import { IonicPage, NavController } from 'ionic-angular';
 
 @IonicPage()
 @Component({
+  //testinggg
   selector: 'page-guest',
   templateUrl: 'guest.html'
 })

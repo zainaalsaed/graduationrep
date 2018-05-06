@@ -18,7 +18,7 @@
           <ion-label>
             <ion-icon name="md-mail"></ion-icon>
           </ion-label>
-          <ion-input class="ion-ios-locked-outline" type="email"#username placeholder="{{'LOGIN.EMAIL' | translate}}" [(ngModel)]="user.email"
+          <ion-input class="ion-ios-locked-outline" type="email"#username placeholder="{{'LOGIN.EMAIL' | translate}}" [(ngModel)]="user.mail"
             name="email"></ion-input>
         </ion-item>
 
@@ -27,7 +27,7 @@
           <ion-label>
             <ion-icon name="md-eye"></ion-icon>
           </ion-label>
-          <ion-input class="ion-ios-locked-outline" type="password" #password  placeholder="{{'LOGIN.PASSWORD' | translate}}" [(ngModel)]="user.password"
+          <ion-input class="ion-ios-locked-outline" type="password" #password  placeholder="{{'LOGIN.PASSWORD' | translate}}" [(ngModel)]="user.pas"
             name="password"></ion-input>
         </ion-item>
       
@@ -41,7 +41,7 @@
 
       <div padding class="animated fadeInUp">
         <div>
-          <button ion-button icon-start block color="dark" (click)="regEm('NewsFeedComponent')" class="submit-btn" *ngIf="!loggedin">
+          <button ion-button icon-start block color="dark" (click)="regEm('NewsFeedComponent',user)" class="submit-btn" *ngIf="!loggedin">
             <ion-icon name="log-in"></ion-icon>
             {{'SIGN IN' | translate}} 
           </button>

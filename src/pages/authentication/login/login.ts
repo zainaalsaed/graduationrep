@@ -2,12 +2,12 @@
 
 /** Imports Modules */
 import { Component } from '@angular/core';
-import { NavController, AlertController, IonicPage, MenuController } from 'ionic-angular';
+import { NavController, LoadingController, AlertController, IonicPage, MenuController } from 'ionic-angular';
 import { TranslateService } from 'ng2-translate'; // Translate Service
 import firebase from 'firebase';
 import { FirebaseError } from '@firebase/util';
 import { BarcodeScanner,BarcodeScannerOptions } from '@ionic-native/barcode-scanner';
-import { User } from '@firebase/auth-types';
+// import { User } from '@firebase/auth-types';
 import { AngularFireAuth } from 'angularfire2/auth';
 import { ToastController, Nav} from "ionic-angular";
 import { ViewChild   } from '@angular/core';
@@ -15,6 +15,7 @@ import { LandingPageComponent } from '../landing-page/landing-page';
 import { RegistrationComponent } from '../registration/registration';
 import { NewsFeedComponent } from '../../newsfeed/newsfeed';
 import { ProfileComponent } from '../../profile/profile';
+import { User } from '../../../models/user';
 
 @IonicPage()
 @Component({
@@ -22,17 +23,19 @@ import { ProfileComponent } from '../../profile/profile';
   templateUrl: 'login.html'
 })
 export class LoginComponent {
-  
+  user = {} as User ;
   loggedin= false;
   data={ };
   encodemyData:string;
 encodedData:{};
 
+
   option:BarcodeScannerOptions ;
   // Define Veriables
-  @ViewChild('username') user;
-	@ViewChild('password') password;
+  // @ViewChild('username') user;
+	// @ViewChild('password') password;
   constructor(public navCtrl: NavController,
+    public loadingCtrl: LoadingController,
     public barcodeScanner:BarcodeScanner,
      private afAuth: AngularFireAuth,
      private alertCtrl: AlertController,
@@ -61,12 +64,12 @@ encodedData:{};
   
 
   
-regEm(component) {
+ async regEm(component,user:User) {
 
-  this.fire.auth.signInWithEmailAndPassword(this.user.value , this.password.value)
+  this.fire.auth.signInWithEmailAndPassword(user.mail , user.pas)
   .then( data => {
     console.log('got some data', this.fire.auth.currentUser);
-    this.alert('Success! You\'re logged in');
+    this.alert('Welcome again!');
     this.navCtrl.setRoot(component);
     this.loggedin=true;
 
@@ -76,7 +79,7 @@ regEm(component) {
     console.log('got an error', error);
     this.alert(error.message);
   })
-  console.log('Would sign in with ', this.user.value, this.password.value);
+  console.log('Would sign in with ', this.user.mail, this.user.pas);
   
 }
 

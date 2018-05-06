@@ -9,20 +9,22 @@
          </button>
         </ion-item-divider>
         <ion-item>
-            <span></span>
-            <span item-right>November 26,1996</span>
+            <span>
+                Lisence expiration date:
+            </span>
+            <span item-right> {{(itemat|async)?.expdate}}</span>
         </ion-item>
         <ion-item>
             <span>Gender:</span>
             <span item-right>Female</span>
         </ion-item>
         <ion-item>
-            <span>Lisence Number:</span>
-            <span item-right>803539</span>
+            <span>Number of traffic tickets:</span>
+            <span item-right>{{(itemat|async)?.traft}}</span>
         </ion-item>
         <ion-item>
             <span>Lisence type:</span>
-            <span item-right>Personal</span>
+            <span item-right>{{(itemat|async)?.ltype}}</span>
         </ion-item>
     </ion-item-group>
 
@@ -36,16 +38,16 @@
         </ion-item-divider>
         <ion-item>
             <span>Mobile</span>
-            <span item-right>+ 00972598686960</span>
+            <span item-right>+ 972-59-868696</span>
         </ion-item>
         <ion-item>
             <span>Facebook</span>
-            <span item-right>MOT Palestine</span>
+            <span item-right>Zaina Al-Saed</span>
         </ion-item>
-        <ion-item>
+        <!-- <ion-item>
             <span>Website</span>
-            <span item-right>http://www.mot.gov.ps</span>
-        </ion-item>
+            <span item-right></span>
+        </ion-item> -->
     </ion-item-group>
 
     <!-- Check-Ins -->

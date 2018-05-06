@@ -48,16 +48,16 @@
                 <ion-row>
                     <ion-col width-100>
                         <div class="profile-part1" text-center>
-                            <img src="../assets/img/zainaav.jpg" alt="Avatar" imageViewer>
-                            <p class="name">{{'PROFILE.NAME' | translate}}</p>
-                            <p class="title">{{'PROFILE.DESIGNATION' | translate}}</p>
+                            <img src="{{(item1 | async)?.photo}}" alt="Avatar" imageViewer>
+                            <p class="name">{{(item1|async)?.name}}</p>
+                            <p class="title">{{'PROFILE.ID' | translate}}: {{(item1|async)?.identifierNum}}</p>
                         </div>
                     </ion-col>
                 </ion-row>
             </ion-grid>
         </ion-slide>
         <ion-slide class="profile-part2">
-            <p class="profile-details">{{'PROFILE.DETAILS' | translate}}</p>
+            <p class="profile-details">{{'PROFILE.DETAILS' | translate}} {{(item1|async)?.expdate}}</p>
         </ion-slide>
     </ion-slides>
 

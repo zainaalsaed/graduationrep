@@ -36,10 +36,11 @@
     "SEND": "Send"
   },
   "PROFILE": {
+    "ID":"ID No.", 
     "TITLE": "Profile",
     "NAME": "Zaina Al-Saed",
     "DESIGNATION": "Driving Lisence no. 803539",
-    "DETAILS": "Hello Mrs. Zaina, your driving lisence expiration date is 15/09/2021 ",
+    "DETAILS": "Hello Mrs. your driving lisence expiration date is ",
     "TIMELINE": "Notifications",
     "ABOUTME": "My information",
     "FRIENDS": "My messages",
