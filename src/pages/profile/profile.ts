@@ -24,7 +24,7 @@ export class ProfileComponent implements OnInit {
  uesrEventsData = []
  item1 : Observable<User>;
   itemRef : AngularFireObject<any>;
-  // person = {} as Person;
+
   segment: any;
   // Constructor
   constructor(
