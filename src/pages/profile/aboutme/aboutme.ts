@@ -12,6 +12,7 @@ import {  NavParams } from 'ionic-angular';
 // import {Person} from '../../models/person';
 import { User } from '../../../models/user';
 import { Violations } from '../../../models/violations';
+import { Event } from '../../../models/eventDet';
 
 @IonicPage()
 @Component({
@@ -41,14 +42,13 @@ export class AboutmeComponent {
           console.log(this.eventData) ;
         }
       );
-    this.segment = "timeline"; // Default icon for segment
-    this.menu.enable(true); 
+    
 
 
     }
 
  ionViewDidLoad() {
-    console.log('ionViewDidLoad ProfilePage');
+    console.log('ionViewDidLoad AboutPage');
 
     this.afAuth.authState.subscribe(data =>{
       if(data && data.email && data.uid){
@@ -56,7 +56,7 @@ export class AboutmeComponent {
        this.item1 = this.userData.valueChanges();
 
        
-       this.afDatabase.list('/user/'+ data.uid+'/violations/').valueChanges().subscribe(
+       this.afDatabase.list('/user/'+ data.uid).valueChanges().subscribe(
         _data => {
           this.uesrEventsData = _data ; 
           console.log(this.uesrEventsData) ;
