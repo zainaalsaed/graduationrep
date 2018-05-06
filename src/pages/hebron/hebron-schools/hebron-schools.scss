@@ -1,0 +1,21 @@
+.category-v1 {
+    
+    ion-row {
+        
+        ion-col {
+            height: 19%;
+            text-align: center;
+            padding-top: 50px;
+            img {
+                height: 110px;
+            
+                width: 110px;
+                border-radius: 50%;
+                border: 1px solid $color2;
+            }
+            p {
+                line-height: 0;
+            }
+        }
+    }
+}

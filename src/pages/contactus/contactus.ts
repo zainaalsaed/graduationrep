@@ -2,9 +2,9 @@
 
 /** Imports Modules */
 import { Component } from '@angular/core';
-import { IonicPage } from 'ionic-angular';
 
-@IonicPage()
+
+
 @Component({
   selector: 'contactus',
   templateUrl: 'contactus.html'

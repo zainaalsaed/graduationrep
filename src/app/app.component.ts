@@ -59,6 +59,7 @@ export class MyApp {
       { title: this.translate.instant('MENU_ITEMS.ECOMMERCE'), component: 'CategoryComponent', leftIcon: 'cart' },
       { title: this.translate.instant('MENU_ITEMS.LATESTNEWS'), component: 'LatestNewsComponent', leftIcon: 'paper-plane' },
       { title: this.translate.instant('MENU_ITEMS.NEWSFEED'), component: 'NewsFeedComponent', leftIcon: 'paper' },
+      { title: this.translate.instant('MENU_ITEMS.DRIVING'), component: 'DrivigSchoolsComponent', leftIcon: 'md-car' },
       { title: this.translate.instant('MENU_ITEMS.CHAT'), component: 'ChatComponent', leftIcon: 'chatbubbles' },
       { title: this.translate.instant('MENU_ITEMS.COMOPNENT'), component: 'ComponentComponent', leftIcon: 'keypad' },
       { title: this.translate.instant('MENU_ITEMS.ABOUTUS'), component: 'AboutUsComponent', leftIcon: 'information-circle' },

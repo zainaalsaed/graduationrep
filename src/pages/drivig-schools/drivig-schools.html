@@ -1,0 +1,28 @@
+<!-- Generated template for the DrivigSchoolsComponent component -->
+<ion-header no-border>
+  <ion-navbar color="white" hideBackButton>
+    <button ion-button menuToggle color="color1">
+        <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>{{'DRIVING.TITLE' | translate}}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<!-- Contents -->
+<ion-content>
+ 
+  <ion-searchbar [(ngModel)]="searchTerm" [formControl]="searchControl" (ionInput)="onSearchInput()"></ion-searchbar>
+
+  <div *ngIf="searching" class="spinner-container">
+      <ion-spinner></ion-spinner>
+  </div>
+
+  <ion-list>
+      <button ion-item *ngFor="let item of items" class="spinner-container" tappable (click)="itemTapped1(event,item)">
+        {{item.title}}
+      </button>
+  </ion-list>
+  <div *ngIf="selectedItem" padding>
+    You navigated here from <b>{{selectedItem.title}}</b>
+  </div>
+</ion-content>

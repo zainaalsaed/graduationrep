@@ -67,5 +67,8 @@ findSchool(){
 
   this.navCtrl.push(SchoolPage);
 }
+findSchoolat(Component){
 
+  this.navCtrl.setRoot(Component);
+}
 }

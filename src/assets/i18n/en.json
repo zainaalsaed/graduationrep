@@ -63,6 +63,10 @@
     "DARK": "Dark",
     "AUBERGINE": "Aubergine"
   },
+  "DRIVING":{
+    "TITLE": "Driving Schools"
+
+  },
   "CHART": {
     "TITLE": "Chart",
     "BAR": "Bar",
@@ -151,7 +155,8 @@
     "ABOUTUS": "About us",
     "CONTACTUS": "Contact us",
     "SETTINGS": "Settings",
-    "SEARCH": "Search"
+    "SEARCH": "Search",
+    "DRIVING":"DrivingSchools"
   },
   "LOGOUT": "Logout"
 }

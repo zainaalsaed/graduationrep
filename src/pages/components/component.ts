@@ -41,6 +41,11 @@ export class ComponentComponent {
       this.navCtrl.setRoot('AboutUsComponent');
     } else if (value === 'ContactUs') { // When value is Contact Us
       this.navCtrl.setRoot('ContactUsComponent');
+
     }
+    
+  }
+  drive(){
+    this.navCtrl.setRoot('DrivigSchoolsPage');
   }
 }
