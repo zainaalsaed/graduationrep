@@ -3,7 +3,7 @@
   	<ion-icon name="notifications" color="primary"></ion-icon>
   	<span ion-text color="primary" class="bold">Notifications</span>
   </ion-list-header>
-  <button ion-item color="secondary" class="text-1x" tappable (click)="close()">
+  <!-- <button ion-item color="secondary" class="text-1x" tappable (click)="close()">
   	<ion-icon name="mail"></ion-icon>
   	A new traffic ticket was assigned to your Lisence Number! Click to check/pay it
   </button>
@@ -18,5 +18,18 @@
   <button ion-item class="text-1x" tappable (click)="close()">
   	<ion-icon name="mail-open" color="secondary"></ion-icon>
   	<span ion-text color="secondary">Activity rescheduled</span>
-  </button>
+  </button> -->
+
+
+  <ng-container *ngFor="let seq of noti">
+    <ion-list>
+        <ion-item-divider text-wrap>
+          <ion-thumbnail item-start>
+            <img src="{{seq.uphoto}}">
+          </ion-thumbnail>
+          <h2>{{seq.message}}</h2>
+          <p>{{seq.time}}</p>
+        </ion-item-divider>
+      </ion-list>
+    </ng-container>
 </ion-list>

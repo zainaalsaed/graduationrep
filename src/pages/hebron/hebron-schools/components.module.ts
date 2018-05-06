@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
-import { JerichoSchoolsComponent } from './jericho-schools/jericho-schools';
+import { HebronSchoolsComponent } from './hebron-schools';
 @NgModule({
-	declarations: [JerichoSchoolsComponent],
+	declarations: [HebronSchoolsComponent],
 	imports: [],
-	exports: [JerichoSchoolsComponent]
+	exports: [HebronSchoolsComponent]
 })
 export class ComponentsModule {}
