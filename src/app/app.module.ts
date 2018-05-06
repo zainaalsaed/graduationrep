@@ -36,6 +36,7 @@ import { TableeghacPage } from '../pages/tableeghac/tableeghac';
 import { GusPage } from '../pages/gus/gus';
 import { NotificationsPage } from '../pages/notifications/notifications';
 import { ViolationsPage } from '../pages/violations/violations';
+import { NablusDetailPage } from '../pages/nablus-detail/nablus-detail';
 // import { NewsFeedComponent } from '../pages/newsfeed/newsfeed';
 
 
@@ -63,6 +64,7 @@ const firebaseAuth = {
     JeninschoolsPage,
     TruckPage,
     PrivatePage,
+    NablusDetailPage,
     TableeghacPage,
     TableegePage,
     RamallahschoolsPage,
@@ -110,6 +112,7 @@ const firebaseAuth = {
     TableegePage,
     // EduPage,
     TruckPage,
+    NablusDetailPage,
     HebronschoolsPage ,
     SchoolPage,
     NotificationsPage,

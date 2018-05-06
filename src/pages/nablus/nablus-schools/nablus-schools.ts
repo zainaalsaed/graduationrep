@@ -3,6 +3,7 @@ import { NavController, IonicPage } from 'ionic-angular';
 import { nablusModel } from '../models/nablus.model';
 /** Import Service */
 import { nablusService } from '../services/nablus.service';
+import { NablusDetailPage } from '../../nablus-detail/nablus-detail';
 
 /**
  * Generated class for the NablusSchoolsComponent component.
@@ -28,4 +29,8 @@ allCategories: nablusModel[];
      * Load all categories from the category service 
     */
     this.allCategories = this.categoryService.getAllCategories();
-  }}
+  }
+  viewDetail(id) {
+    this.navCtrl.push(NablusDetailPage, {id: id});
+  }
+}
