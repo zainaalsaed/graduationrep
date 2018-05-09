@@ -12,6 +12,8 @@ import {TripService} from "../services/trip-service";
 @Component({
   selector: 'page-nablus-detail',
   templateUrl: 'nablus-detail.html',
+  providers: [TripService]
+
 })
 export class NablusDetailPage {
   public trip: any;

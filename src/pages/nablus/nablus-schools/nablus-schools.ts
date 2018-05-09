@@ -4,6 +4,7 @@ import { nablusModel } from '../models/nablus.model';
 /** Import Service */
 import { nablusService } from '../services/nablus.service';
 import { NablusDetailPage } from '../../nablus-detail/nablus-detail';
+import { TripService } from '../../services/trip-service';
 
 /**
  * Generated class for the NablusSchoolsComponent component.
@@ -15,7 +16,8 @@ import { NablusDetailPage } from '../../nablus-detail/nablus-detail';
 @Component({
   selector: 'nablus-schools',
   templateUrl: 'nablus-schools.html',
-  providers: [nablusService]
+ providers: [nablusService,TripService]
+ 
 })
 export class NablusSchoolsComponent 
 {
