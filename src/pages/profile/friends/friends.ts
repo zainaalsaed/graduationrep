@@ -26,6 +26,7 @@ export class FriendsComponent {
   //   //called after the constructor and called  after the first ngOnChanges()
   //   this.friends = this.friendsService.getAllFriends();
   // }
+  eventatData = []
   userData : AngularFireObject<User> ;
   item : Observable<User>;
   itemRef : AngularFireObject<any>;
@@ -35,12 +36,13 @@ export class FriendsComponent {
     public navCtrl: NavController,
     private afAuth: AngularFireAuth ,
      private afDatabase: AngularFireDatabase,
-     public navParams: NavParams) {}
+     public navParams: NavParams) {this.afDatabase.list("/tickets/").valueChanges().subscribe(
+      _data => {
+        this.eventatData = _data ; 
+        console.log(this.eventatData) ;});
+      }
 
-  close() {
-    this.viewCtrl.dismiss();
-  }
-
+  
   ionViewDidLoad() {
     console.log('ionViewDidLoad MessagesPage');
 

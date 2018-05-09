@@ -13,7 +13,6 @@ import {  NavParams } from 'ionic-angular';
 import { User } from '../../../models/user';
 import { Violations } from '../../../models/violations';
 import { Event } from '../../../models/eventDet';
-
 @IonicPage()
 @Component({
   selector: 'aboutme',
