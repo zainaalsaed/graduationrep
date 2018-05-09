@@ -3,7 +3,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import {LoadingController, ToastController} from "ionic-angular";
 
 import {TestatService} from "../../services/testat-service";
-import { NewsPage } from '../news/news';
+// import { NewsPage } from '../news/news';
 /**
  * Generated class for the TestatPage page.
  *
@@ -47,7 +47,7 @@ export class TestatPage {
       loader.dismiss();
       toast.present();
       // back to home page
-      this.navCtrl.setRoot(NewsPage);
+      // this.navCtrl.setRoot(NewsPage);
     }, 3000)
   }
   ionViewDidLoad() {
