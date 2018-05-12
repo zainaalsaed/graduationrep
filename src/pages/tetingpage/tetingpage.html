@@ -22,11 +22,11 @@
         </button>
   </div>
   <div class="animated fadeInUp" padding color="white">
-    <ion-segment [(ngModel)]="staty">
-      <ion-segment-button value="pending" (tap)="shpending()">
+    <ion-segment [(ngModel)]="staty" (ionChange)="segmentChanged($event)">
+      <ion-segment-button value="pending" (tap)="shpendingRep()">
           Pending
       </ion-segment-button>
-      <ion-segment-button value="complete" (tap)="shcomplete()">
+      <ion-segment-button value="complete" (tap)="shcompleteRep()">
           Approved
       </ion-segment-button>
       <ion-segment-button value="denied" (tap)="shdeniedss()">

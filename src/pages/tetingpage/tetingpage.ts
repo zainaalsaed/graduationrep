@@ -92,12 +92,12 @@ export class TetingpageComponent {
           ev: myEventot
         });
       }
-      shpending(){
+      shpendingRep(){
 
 
       }
     
-      shcomplete(){
+      shcompleteRep(){
     
         
       }
@@ -107,7 +107,7 @@ export class TetingpageComponent {
       }
       openreportingPage(){
 
-        
+
       }
     
     }

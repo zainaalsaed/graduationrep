@@ -11,6 +11,7 @@ export interface User{
     expdate:any;
     traft:number;
     ltype:string;
+    tableegh: string[];
     tickets: string[];
     inquiriesArray: string[];
     
