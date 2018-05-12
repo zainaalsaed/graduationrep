@@ -53,7 +53,7 @@ export class MyApp {
 
     // Page navigation component
     this.pages = [
-      { title: this.translate.instant('MENU_ITEMS.PROFILE'), component: 'TetingpageComponent', leftIcon: 'person' },
+      { title: this.translate.instant('MENU_ITEMS.REPORTS'), component: 'TetingpageComponent', leftIcon: 'notifications' },
       { title: this.translate.instant('MENU_ITEMS.PROFILE'), component: 'ProfileComponent', leftIcon: 'person' },
       { title: this.translate.instant('MENU_ITEMS.CALENDAR'), component: 'FullCalendarComponent', leftIcon: 'calendar' },
       { title: this.translate.instant('MENU_ITEMS.GOOGLEMAP'), component: 'GoogleMapComponent', leftIcon: 'md-pin' },

@@ -37,7 +37,7 @@ export class AdminpanelPage {
   public changeLanguage(language){
     this.translate.use(language);
   }
-openschPage(){
+opensfPage(){
   this.navCtrl.setRoot(LogschoolPage);
 }
 openempPage(){

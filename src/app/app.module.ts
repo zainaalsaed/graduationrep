@@ -43,8 +43,9 @@ import { TestPage } from '../pages/test/test';
 import { SearchtestPage } from '../pages/searchtest/searchtest';
 import { TestlistPage } from '../pages/testlist/testlist';
 import { TestatPage } from '../pages/testat/testat';
-import { LogemployeePage } from 'pages/logemployee/logemployee';
-import { LogschoolPage } from 'pages/logschool/logschool';
+import { LogemployeePage } from '../pages/logemployee/logemployee';
+import { LogschoolPage } from '../pages/logschool/logschool';
+import { AdminpanelPage } from '../pages/adminpanel/adminpanel';
 // import { NewsFeedComponent } from '../pages/newsfeed/newsfeed';
 
 
@@ -62,6 +63,7 @@ const firebaseAuth = {
   declarations: [
     MyApp,
     GuestPage,
+    AdminpanelPage,
     // EduPage,
     GusPage,
     JerichoschoolsPage,
@@ -81,6 +83,7 @@ const firebaseAuth = {
     HebronschoolsPage ,
     TestPage,
     SearchtestPage,
+    // LogemployeePage,
     // SchoolPage,
     HebronschoolsPage ,
     MaapsPage,
@@ -132,6 +135,7 @@ const firebaseAuth = {
     RamallahschoolsPage,
     PrivatePage,
     TableegePage,
+    AdminpanelPage,
     TestatPage,
     // EduPage,
     TruckPage,
