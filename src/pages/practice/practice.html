@@ -1,0 +1,31 @@
+<!-- Generated template for the PracticeComponent component -->
+
+
+<ion-content>
+<div class="privite">
+<div class="image">
+<img src="assets/img/trip/thumb/car.jpg">
+</div>
+<button ion-button icon-start block color="dark" (click)="priVlc()" class="submit-btn" *ngIf="!loggedin">
+ خصوصي   
+</button>
+</div>
+<div class="image">
+  <img src= "assets/img/trip/thumb/truk.jpg">
+  <button ion-button icon-start block color="dark" (click)="truVlc()" class="submit-btn" *ngIf="!loggedin">
+  شحن خفيف   
+  </button>
+</div>
+<div class="o">
+  
+  <div class="image">
+      <img src= "assets/img/trip/thumb/edu.jpg">
+
+      
+      <button ion-button icon-start block color="dark" onClick="window.open('https://shobiddak.com/books/drivingPrivate.pdf','_blank','location=yes');return false;" class="submit-btn" *ngIf="!loggedin">
+  تحميل المنهاج النظري   
+  </button>
+    
+    </div>
+  </div>
+</ion-content>

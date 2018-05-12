@@ -5,7 +5,7 @@ import { TruckPage } from '../truck/truck';
 import { GuestPage } from '../guest/guest';
 /**
  * Generated class for the EduPage page.
- *
+ *ss
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */

@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import {LoadingController, ToastController} from "ionic-angular";
-
 import {TestatService} from "../../services/testat-service";
-import { NewsPage } from '../news/news';
+import { TripService } from '../services/trip-service';
+//import { NewsPage } from '../news/news';
 /**
  * Generated class for the TestatPage page.
  *
@@ -15,6 +15,7 @@ import { NewsPage } from '../news/news';
 @Component({
   selector: 'page-testat',
   templateUrl: 'testat.html',
+  providers: [TestatService]
 })
 export class TestatPage {
   public testat: any;
@@ -47,7 +48,7 @@ export class TestatPage {
       loader.dismiss();
       toast.present();
       // back to home page
-      this.navCtrl.setRoot(NewsPage);
+      this.navCtrl.setRoot('EducationComponent');
     }, 3000)
   }
   ionViewDidLoad() {

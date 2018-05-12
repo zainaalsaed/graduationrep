@@ -3,7 +3,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { EduPage } from '../edu/edu';
 import { GuestPage } from '../guest/guest';
 import { PrivatePage } from '../private/private';
-
+import { AlertController } from 'ionic-angular';
 /**
  * Generated class for the TruckPage page.
  *
@@ -18,7 +18,7 @@ import { PrivatePage } from '../private/private';
 })
 export class TruckPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(private alertCtrl: AlertController,public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
@@ -31,5 +31,15 @@ export class TruckPage {
   {
     this.navCtrl.push(TruckPage);
   }
-
+tru()
+{
+  let alert = this.alertCtrl.create({
+    title: '! حاول مرة اخرى',
+    subTitle: 'وحصلت علي علامه 24',
+    buttons: ['ok']
+  });
+  alert.present();
 }
+}
+
+

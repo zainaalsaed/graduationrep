@@ -9,12 +9,7 @@
 <ion-content padding>
   <div class="m">
   <h1 class="section_title">امتحان السياقة النظري (التؤوريا)</h1>
-  <div class="center-image">
-      <div class="btn btn-default" tappable (click)="priVlc()">خصوصي</div>>
-      <!-- <button ion-button tappable (click)="priVlc()">خصوصي</button></div>-->
-     <div class="btn btn-default" tappable (click)="truVlc()" >شحن خفيف</div>
-     </div>
-    
+   
     <div class="space_placeholder"></div>
     <p class="notice"> قم باختيار النموذج الذي تريد إجابته ... وبعد الإنتهاء من الإجابة عن جميع الأسئلة ... اضغط "أجب عن الاسئلة" </p>
     <form action="/drivings/answers" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="cihPEjwYewXAfu+5PohQi6OdoWAIzXAinks5xdnNRbaqOVXl4tybGjDKS1NCIvTQVvu0Src2jBmUPSAgxdHjMw==">
@@ -563,7 +558,7 @@
       <input type="hidden" name="category" id="category" value="light_car">
       <input type="hidden" name="questions" id="questions" value="781,782,783,784,785,786,787,788,789,790,791,792,793,794,795,796,797,798,799,800,801,802,803,804,805,806,807,808,809,810,">
       <div class="space_placeholder"></div>
-      <input type="submit" name="commit" value="أجب عن الأسئلة" data-confirm="هل أنت متأكد من الإجابات؟" class="btn btn-default">
+      <input type="submit" name="commit" value="أجب عن الأسئلة" data-confirm="هل أنت متأكد من الإجابات؟" class="btn btn-default" tappable (click)="tru()">
       </form>
     </div>
 

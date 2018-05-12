@@ -7,6 +7,7 @@ import { NavController,  MenuController } from 'ionic-angular';
 import { TranslateService } from 'ng2-translate';
 import { SettingsService } from '../../settings/settings.service';
 import { GuestPage } from '../../guest/guest';
+import { AdminpanelPage } from '../../adminpanel/adminpanel';
 
 @IonicPage()
 @Component({
@@ -31,6 +32,9 @@ export class LandingPageComponent {
   }
 openGPage(){
   this.navCtrl.setRoot(GuestPage);
+}
+openadminPage(){
+  this.navCtrl.setRoot(AdminpanelPage);
 }
   
 }

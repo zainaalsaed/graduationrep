@@ -1,25 +1,24 @@
-/** Represents a Component of Components page. */
-
-/** Import Modules */
 import { Component } from '@angular/core';
-import { NavController, IonicPage } from 'ionic-angular';
+import 'rxjs/add/operator/debounceTime';
+import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { AlertController } from 'ionic-angular';
+import { MaapsPage } from '../maaps/maaps';
+import { TestPage } from '../test/test';
 
+/**
+ * Generated class for the EducationComponent component.
+ *
+ * See https://angular.io/api/core/Component for more info on Angular
+ * Components.
+ */
 @IonicPage()
 @Component({
-  selector: 'component',
-  templateUrl: 'component.html'
+  selector: 'education',
+  templateUrl: 'education.html'
 })
+export class EducationComponent {
 
-export class ComponentComponent {
-
-  constructor(public navCtrl: NavController) {}
-
-  /**
-   * gotoTargetComponent(value)
-   * This function works on click event
-   * when user click any component its get the value of this specific event and
-   * NavController set this component and will take user to that component
-  */
+  constructor(public navCtrl: NavController,private alertCtrl: AlertController) {}
   gotoTargetComponent(value) {
     if (value === 'Profile') { // When value is Profile
       this.navCtrl.setRoot('ProfileComponent');
@@ -28,9 +27,14 @@ export class ComponentComponent {
     } else if (value === 'Map') { // When value is Map
       this.navCtrl.setRoot('GoogleMapComponent');
     } else if (value === 'Chart') { // When value is Chart
-      this.navCtrl.setRoot('ChartComponent');
-    } else if (value === 'Ecommerce') { // When value is Ecommerce
-      this.navCtrl.setRoot('CategoryComponent');
+      let alert = this.alertCtrl.create({
+        title: 'تهانيا لقد نجحت',
+        subTitle: '10% of battery remaining',
+        buttons: ['ok']
+      });
+      alert.present();
+    } else if (value === 'practice') { // When value is Ecommerce
+      this.navCtrl.setRoot('PracticeComponent');
     } else if (value === 'NewsFeed') { // When value is News Feed
       this.navCtrl.setRoot('NewsFeedComponent');
     } else if (value === 'Chat') { // When value is Chat
@@ -46,5 +50,15 @@ export class ComponentComponent {
     
   }
   
-  
+  search(){
+    this.navCtrl.push(MaapsPage)
+  }
+  practic(){
+    this.navCtrl.push('TruckPage')
+  }
+  testt()
+  {
+    this.navCtrl.push(TestPage)
+  }
+
 }

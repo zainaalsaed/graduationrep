@@ -5,6 +5,7 @@ import { HttpModule, Http } from '@angular/http';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { AdMobFree } from '@ionic-native/admob-free';
+import {IonicStorageModule} from '@ionic/storage';
 import { TranslateModule, TranslateStaticLoader, TranslateLoader } from 'ng2-translate/ng2-translate';
 import { Geolocation } from '@ionic-native/geolocation';
 import { IonicImageViewerModule } from 'ionic-img-viewer';
@@ -37,6 +38,13 @@ import { GusPage } from '../pages/gus/gus';
 import { NotificationsPage } from '../pages/notifications/notifications';
 import { ViolationsPage } from '../pages/violations/violations';
 import { NablusDetailPage } from '../pages/nablus-detail/nablus-detail';
+import { MaapsPage } from '../pages/maaps/maaps';
+import { TestPage } from '../pages/test/test';
+import { SearchtestPage } from '../pages/searchtest/searchtest';
+import { TestlistPage } from '../pages/testlist/testlist';
+import { TestatPage } from '../pages/testat/testat';
+import { LogemployeePage } from 'pages/logemployee/logemployee';
+import { LogschoolPage } from 'pages/logschool/logschool';
 // import { NewsFeedComponent } from '../pages/newsfeed/newsfeed';
 
 
@@ -63,17 +71,24 @@ const firebaseAuth = {
     QalqilyaschoolsPage,
     JeninschoolsPage,
     TruckPage,
+    TestlistPage,
     PrivatePage,
     NablusDetailPage,
     TableeghacPage,
     TableegePage,
+    TestatPage,
     RamallahschoolsPage,
     HebronschoolsPage ,
+    TestPage,
+    SearchtestPage,
     // SchoolPage,
     HebronschoolsPage ,
+    MaapsPage,
     SchoolPage,
     NotificationsPage,
-    ViolationsPage
+    ViolationsPage,
+    LogemployeePage,
+    LogschoolPage
   ],
   imports: [
     // SchoolPage,
@@ -84,6 +99,10 @@ const firebaseAuth = {
           menuType: 'overlay',
         }
       }
+    }),
+    IonicStorageModule.forRoot({
+      name: '__ionic3_start_theme',
+        driverOrder: ['indexeddb', 'sqlite', 'websql']
     }),
     BrowserModule,
     HttpModule,
@@ -100,18 +119,25 @@ const firebaseAuth = {
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
+    LogemployeePage,
+    LogschoolPage,
     GuestPage,
     JerichoschoolsPage,
     BethlehemschoolsPage,
     NablusschoolsPage,
     TulkarmschoolsPage,
+    SearchtestPage,
     QalqilyaschoolsPage,
     JeninschoolsPage,
     RamallahschoolsPage,
     PrivatePage,
     TableegePage,
+    TestatPage,
     // EduPage,
     TruckPage,
+    MaapsPage,
+    TestPage,
+    TestlistPage,
     NablusDetailPage,
     HebronschoolsPage ,
     SchoolPage,

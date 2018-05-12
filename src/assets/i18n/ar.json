@@ -1,6 +1,7 @@
 {
   "_comment": "Arabic Language",
   "LANDING_PAGE": {
+    "ADMIN":"الدخول كمسؤول",
     "REGISTRATION": "التسجيل",
     "LOGIN": "تسجيل الدخول",
     "SKIP": "الدخول كزائر",
