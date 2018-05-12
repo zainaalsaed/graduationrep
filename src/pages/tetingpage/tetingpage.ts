@@ -105,5 +105,9 @@ export class TetingpageComponent {
 
 
       }
+      openreportingPage(){
+
+        
+      }
     
     }
