@@ -147,6 +147,7 @@
 
 
   "MENU_ITEMS": {
+    "REPORTS":"My Traffic Reports",
     "EDU":"Education",
     "PROFILE": "Profile",
     "CALENDAR": "Calendar",

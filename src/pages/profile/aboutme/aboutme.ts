@@ -35,7 +35,7 @@ export class AboutmeComponent {
     public toastCtrl: ToastController,
     public menu: MenuController) {
 
-      this.afDatabase.list("/violations/").valueChanges().subscribe(
+      this.afDatabase.list("/user/").valueChanges().subscribe(
         _data => {
           this.eventData = _data ; 
           console.log(this.eventData) ;

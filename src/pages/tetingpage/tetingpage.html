@@ -1,4 +1,37 @@
-<!-- Generated template for the TetingpageComponent component -->
-<div>
-  {{text}}
-</div>
+<ion-header no-border>
+  <ion-navbar color="white"  hideBackButton>
+      <button ion-button menuToggle color="color1">
+          <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-title>Traffic reports</ion-title>
+      <ion-buttons end>
+          <button ion-button icon-only color="color1" (click)="gotoSearchnewsss()">
+              <ion-icon name="search"></ion-icon>
+          </button>
+          <button ion-button tappable color="color1" (click)="presentNotificationot($eventot)">
+              <ion-icon name="notifications"></ion-icon>
+            </button>
+      </ion-buttons>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <div>
+      <button ion-button color="white" full round (tap)="openreportingPage()">
+          <ion-icon name="add-circle"></ion-icon>
+           Add a traffic Report/Violation
+        </button>
+  </div>
+  <div class="animated fadeInUp" padding color="white">
+    <ion-segment [(ngModel)]="staty" (ionChange)="segmentChanged($event)">
+      <ion-segment-button value="pending" (tap)="shpendingRep()">
+          Pending
+      </ion-segment-button>
+      <ion-segment-button value="complete" (tap)="shcompleteRep()">
+          Approved
+      </ion-segment-button>
+      <ion-segment-button value="denied" (tap)="shdeniedss()">
+        Denied
+    </ion-segment-button>
+  </ion-segment>
+  </div>
+</ion-content>

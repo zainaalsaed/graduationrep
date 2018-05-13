@@ -63,6 +63,7 @@ const firebaseAuth = {
   declarations: [
     MyApp,
     GuestPage,
+    AdminpanelPage,
     // EduPage,
     GusPage,
     JerichoschoolsPage,
@@ -83,6 +84,7 @@ const firebaseAuth = {
     HebronschoolsPage ,
     TestPage,
     SearchtestPage,
+    // LogemployeePage,
     // SchoolPage,
     HebronschoolsPage ,
     MaapsPage,
@@ -134,6 +136,7 @@ const firebaseAuth = {
     RamallahschoolsPage,
     PrivatePage,
     TableegePage,
+    AdminpanelPage,
     TestatPage,
     AdminpanelPage,
     // EduPage,
