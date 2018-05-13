@@ -51,7 +51,7 @@ export class TestatPage {
     }, 3000)
   }
   ionViewDidLoad() {
-    console.log('ionViewDidLoad TestatPage');
+    console.log('ionViewDivdLoad TestatPage');
   }
 
 }

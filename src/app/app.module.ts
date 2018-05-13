@@ -43,8 +43,9 @@ import { TestPage } from '../pages/test/test';
 import { SearchtestPage } from '../pages/searchtest/searchtest';
 import { TestlistPage } from '../pages/testlist/testlist';
 import { TestatPage } from '../pages/testat/testat';
-import { LogemployeePage } from 'pages/logemployee/logemployee';
-import { LogschoolPage } from 'pages/logschool/logschool';
+import { LogemployeePage } from '../pages/logemployee/logemployee';
+import { LogschoolPage } from '../pages/logschool/logschool';
+import { AdminpanelPage } from '../pages/adminpanel/adminpanel';
 // import { NewsFeedComponent } from '../pages/newsfeed/newsfeed';
 
 
@@ -77,6 +78,7 @@ const firebaseAuth = {
     TableeghacPage,
     TableegePage,
     TestatPage,
+    AdminpanelPage,
     RamallahschoolsPage,
     HebronschoolsPage ,
     TestPage,
@@ -133,6 +135,7 @@ const firebaseAuth = {
     PrivatePage,
     TableegePage,
     TestatPage,
+    AdminpanelPage,
     // EduPage,
     TruckPage,
     MaapsPage,
