@@ -5,24 +5,23 @@ export let TRIPS = [
      // price_adult: 60,
      // price_child: 30,
       //time: "12h",
-      free_cancellation: 1,
-      electric_voucher: 1,
-      sub_name: "English Commentary Tour",
-      thumb: "assets/img/trip/thumb/thumb_101_3119.JPG",
-      description: "From sexy Ipanema and Copacabana, to more secluded and slightly lesser-known stretches of sand, like Prainha Beach, Brazil's Rio de Janeiro is best known for its beaches. Grab your sunscreen and Brazilian bikinis and head to the sunny shores of Rio's best beaches.",
-      location: "Rio de Janeiro, Brazil",
+      
+     
+      description:" Al Huda School is one of the first driving schools in the city of Nablus and the oldest one. It is the first school in Palestine to care for people with special needs",
+      location: "Al Adel st_Nablus",
       images: [
-        "assets/img/trip/thumb/thumb_101_3119.JPG",
+        "assets/img/trip/thumb/w.JPG",
         "assets/img/trip/thumb/trip_6.jpg",
         "assets/img/trip/thumb/trip_7.jpg",
         "assets/img/trip/thumb/trip_8.jpg",
       ],
       highlights: [
-        "Numerous kiosks",
-        "First in a string of Atlantic Ocean-facing beaches",
-        "Sand is flanked by mountains in the background",
-        "Swing in the turquoise waters",
-        "Water Sports",
+        "Closes in 60 minutes  8:00 AM - 5:00 PM",
+       
+        
+        "alhudadrivinschool@gmail.com",
+        "https://www.facebook.com/alhudadrivingschool",
+        
       ]
     },
     {

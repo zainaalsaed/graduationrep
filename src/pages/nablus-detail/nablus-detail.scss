@@ -1,7 +1,7 @@
 .trip-detail {
 
     ul.highlight {
-      padding-left: 0;
+      padding-right: 0;
       font-size: 1.2rem;
       list-style: none;
   
@@ -29,14 +29,7 @@
         }
       }
   
-      .form-bottom {
-        display: flex;
-        align-items: center;
-  
-        .pull-right {
-          margin-left: auto;
-        }
+     
       }
     }
-  }
-  
+

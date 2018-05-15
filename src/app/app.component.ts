@@ -34,6 +34,7 @@ export class MyApp {
       statusBar.styleDefault();
       splashScreen.hide();
       this.config.set('ios', 'backButtonText', '');
+      
 
       // Show Video Ad After 2 Minutes
       setInterval(() => {
@@ -57,9 +58,8 @@ export class MyApp {
       { title: this.translate.instant('MENU_ITEMS.PROFILE'), component: 'ProfileComponent', leftIcon: 'person' },
       { title: this.translate.instant('MENU_ITEMS.CALENDAR'), component: 'FullCalendarComponent', leftIcon: 'calendar' },
       { title: this.translate.instant('MENU_ITEMS.GOOGLEMAP'), component: 'GoogleMapComponent', leftIcon: 'md-pin' },
-      { title: this.translate.instant('MENU_ITEMS.CHART'), component: 'ChartComponent', leftIcon: 'stats' },
+      { title: this.translate.instant ('MENU_ITEMS.LATESTNEWS'), component: 'ChartComponent', leftIcon: 'paper-plane' },
       { title: this.translate.instant('MENU_ITEMS.ECOMMERCE'), component: 'CategoryComponent', leftIcon: 'cart' },
-      { title: this.translate.instant('MENU_ITEMS.LATESTNEWS'), component: 'LatestNewsComponent', leftIcon: 'paper-plane' },
       { title: this.translate.instant('MENU_ITEMS.NEWSFEED'), component: 'NewsFeedComponent', leftIcon: 'md-apps' },
       { title: this.translate.instant('MENU_ITEMS.EDU'), component: 'EducationComponent', leftIcon: 'md-paper' },
       { title: this.translate.instant('MENU_ITEMS.DRIVING'), component: 'DrivigSchoolsComponent', leftIcon: 'md-car' },

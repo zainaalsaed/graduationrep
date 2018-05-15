@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
 import { TranslateModule } from 'ng2-translate/ng2-translate';
 import { CategoryComponent } from './category';
-
+import { Contacts } from '@ionic-native/contacts';
 @NgModule({
   declarations: [
     CategoryComponent,
@@ -14,6 +14,9 @@ import { CategoryComponent } from './category';
   exports: [
     CategoryComponent,
     TranslateModule
+  ],
+  providers: [
+    Contacts
   ]
 })
 export class CategoryModule {}

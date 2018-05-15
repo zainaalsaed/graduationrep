@@ -17,6 +17,7 @@ import {IonicPageModule} from 'ionic-angular';
 import { AngularFireDatabaseModule, AngularFireDatabase } from 'angularfire2/database';
 import { BarcodeScanner } from '@ionic-native/barcode-scanner';
 import * as firebase from 'firebase';
+
 import 'firebase/firestore';
 //import { GuestPage } from '../pages/guest/guest';
 import { QalqilyaschoolsPage } from '../pages/qalqilyaschools/qalqilyaschools';
@@ -46,6 +47,10 @@ import { TestatPage } from '../pages/testat/testat';
 import { LogemployeePage } from '../pages/logemployee/logemployee';
 import { LogschoolPage } from '../pages/logschool/logschool';
 import { AdminpanelPage } from '../pages/adminpanel/adminpanel';
+import { SigninPage } from '../pages/signin/signin';
+import { RoomPage } from '../pages/room/room';
+import { HomePage } from '../pages/home/home';
+import { AddRoomPage } from '../pages/add-room/add-room';
 // import { NewsFeedComponent } from '../pages/newsfeed/newsfeed';
 
 
@@ -54,10 +59,10 @@ const firebaseAuth = {
   authDomain: "test-project-ca0ec.firebaseapp.com",
   databaseURL: "https://test-project-ca0ec.firebaseio.com",
   projectId: "test-project-ca0ec",
-  storageBucket: "",
+  storageBucket: "test-project-ca0ec.appspot.com",
   messagingSenderId: "778431294120"
   
-};
+} ;
 
 @NgModule({
   declarations: [
@@ -73,6 +78,7 @@ const firebaseAuth = {
     QalqilyaschoolsPage,
     JeninschoolsPage,
     TruckPage,
+    SigninPage,
     TestlistPage,
     PrivatePage,
     NablusDetailPage,
@@ -83,6 +89,9 @@ const firebaseAuth = {
     RamallahschoolsPage,
     HebronschoolsPage ,
     TestPage,
+    RoomPage,
+    HomePage,
+    AddRoomPage,
     SearchtestPage,
     // LogemployeePage,
     // SchoolPage,
@@ -94,8 +103,10 @@ const firebaseAuth = {
     LogemployeePage,
     LogschoolPage
   ],
+ 
   imports: [
     // SchoolPage,
+    
     IonicModule.forRoot(MyApp, {
       menuType: 'overlay',
       platforms: {
@@ -117,6 +128,7 @@ const firebaseAuth = {
     }),
     IonicImageViewerModule,
     AngularFireModule.initializeApp(firebaseAuth),
+   
     AngularFireDatabaseModule,
     AngularFireAuthModule
   ],
@@ -133,11 +145,15 @@ const firebaseAuth = {
     SearchtestPage,
     QalqilyaschoolsPage,
     JeninschoolsPage,
+    SigninPage,
     RamallahschoolsPage,
     PrivatePage,
     TableegePage,
     AdminpanelPage,
     TestatPage,
+    RoomPage,
+    AddRoomPage,
+    HomePage,
     AdminpanelPage,
     // EduPage,
     TruckPage,

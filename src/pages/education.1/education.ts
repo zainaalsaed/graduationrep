@@ -4,6 +4,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { AlertController } from 'ionic-angular';
 import { MaapsPage } from '../maaps/maaps';
 import { TestPage } from '../test/test';
+import { SigninPage } from '../signin/signin';
 
 /**
  * Generated class for the EducationComponent component.
@@ -54,7 +55,7 @@ export class EducationComponent {
     this.navCtrl.push(MaapsPage)
   }
   practic(){
-    this.navCtrl.push('TruckPage')
+    this.navCtrl.push(SigninPage)
   }
   testt()
   {

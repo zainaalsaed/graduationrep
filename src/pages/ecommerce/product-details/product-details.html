@@ -8,12 +8,7 @@
         </button>
         <ion-title>{{'ECOMMERCE.TITLE' | translate}}</ion-title>
         <!-- Cart Button-->
-        <ion-buttons end>
-            <button ion-button icon-only color="color2" item-right icon-left (click)="openModal()">
-                <ion-icon name="cart"></ion-icon>
-                {{cartItems}}
-            </button>
-        </ion-buttons>
+        
     </ion-navbar>
 </ion-header>
 
@@ -27,40 +22,13 @@
         <img [src]="productDetails.image" [alt]="productDetails.name" imageViewer>
         <ion-card-content>
             <ion-card-title>
-                <ion-item>
-                    {{productDetails.name}}
-                    <ion-badge color="color1" item-right>${{productDetails.price}}</ion-badge>
-                </ion-item>
+        
                 <p>{{productDetails.description}}</p>
             </ion-card-title>
         </ion-card-content>
     </ion-card>
 
-    <!-- Quantity option-->
-    <div class="quantity">
-        <h4 class="quantity-h4">Quantity</h4>
-        <ion-list class="quantity-body" padding>
-
-            <!-- Remove quantity button -->
-            <button ion-button class='qtyminus' color="color1" (click)="minusQuantity()">
-            <ion-icon name="remove"></ion-icon>
-         </button>
-
-            <!-- Input field of quantity -->
-            <ion-input type='number' name='quantity' text-center value="1" class='qty' [(ngModel)]="quantity"></ion-input>
-
-            <!-- Add quantity button -->
-            <button ion-button value='+' class='qtyplus' color="color1" (click)="addQuantity()">
-            <ion-icon name="add"></ion-icon>
-         </button>
-        </ion-list>
-    </div>
-
-    <!-- Add to Cart Button -->
-    <div padding class="cart-btn">
-        <button ion-button full color="color2" (click)="addToCart(productId, quantity)">Add to Cart</button>
-    </div>
-
+ 
     <!-- Product Extra details option -->
     <ion-list padding>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
@@ -92,17 +60,6 @@
     </ion-fab>
 
     <!-- Related Products -->
-    <ion-grid class="related-product" no-padding *ngIf="relatedProducts.length">
-        <h1>Related Products</h1>
-        <ion-row wrap no-padding>
-            <ion-col no-padding col-6 *ngFor="let product of relatedProducts; let i=index" class='cell-{{product.id}}'>
-                <div *ngIf="i<4" (click)="gotoRelatedProductPage(product.id)">
-                    <img class="animated bounceInRight" [src]="product.image">
-                    <p class="animated bounceInLeft" ion-text color="color1">{{product.name}}</p>
-                    <p ion-text color="tomato">${{product.price}}</p>
-                </div>
-            </ion-col>
-        </ion-row>
-    </ion-grid>
+    
 
 </ion-content>

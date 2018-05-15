@@ -1,30 +1,85 @@
-<!-- Chart Page -->
+<!-- ContactUs Page -->
 
-<!--
-  - Chart apply from - http://valor-software.com/ng2-charts/
-  - Six types of chart applied separately with individual component
-  - This file contains six tabs and every tab contain single chart component
--->
-
-<!-- Header part -->
+<!-- Header Options -->
 <ion-header no-border>
   <ion-navbar color="white" hideBackButton>
-    <button ion-button menuToggle color="color1">
-        <ion-icon name="menu"></ion-icon>
-    </button>
-    <ion-title>{{'CHART.TITLE' | translate}}</ion-title>
+      <button ion-button menuToggle color="color1">
+          <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-title>{{'LATEST_NEWS.TITLE' | translate}}</ion-title>
   </ion-navbar>
 </ion-header>
+<!-- Profile Contents -->
+<ion-content id="latest-news-v1">
+  <!-- Slider -->
+  <ion-slides padding id="slider" pager="true" zoom="true" loop autoplay="5000" style="direction:ltr">
+      <ion-slide class="slide-1">
+          <div class="logo animated zoomIn">
+              <p>
+                نابلس- معا- اعلنت قوات الاحتلال الاسرائيلي، صباح اليوم الاربعاء، اغلاق الجزء الغربي من مدينة نابلس اغلاقا كاملا حتى اشعار اخر عقب مقتل مستوطن برصاص مسلحين امس الثلاثاء.
 
-<!-- Body part -->
-<ion-content id="chart-v1">
-  <!-- Tabs for (Bar Chart, Doughnut Chart, pie Chart, Polar Area Chart, Dynamic Chart, Radar Chart) -->
-  <ion-tabs color="color1">
-    <ion-tab tabTitle="{{'CHART.BAR' | translate}}" [root]="barChart"></ion-tab>
-    <ion-tab tabTitle="{{'CHART.DOUGHNUT' | translate}}" [root]="doughnutChart"></ion-tab>
-    <ion-tab tabTitle="{{'CHART.PIE' | translate}}" [root]="pieChart"></ion-tab>
-    <ion-tab tabTitle="{{'CHART.POLAR' | translate}}" [root]="polarArea"></ion-tab>
-    <ion-tab tabTitle="{{'CHART.DYNAMIC' | translate}}" [root]="dynamic"></ion-tab>
-    <ion-tab tabTitle="{{'CHART.RADAR' | translate}}" [root]="radar"></ion-tab>
-  </ion-tabs>
+                وقالت قوات الاحتلال الاسرائيلي في بيان اصدرته ان الاغلاق يشمل شارع جيت - ايتسهار وشارع حوارة الرئيسي اضافة الى حاجز حوارة جنوب مدينه نابلس .
+              </p>
+              <ion-card>
+                <img src= "assets/img/trip/thumb/z.jpg
+                ">
+              </ion-card>
+              <p>
+                قال الجيش في بيانه " خلال عملية تقييم الوضع تقرَّر اتخاذ عدة خطوات لتحديد الذين قاموا بهذه العملية، من بينها إجراء التفتيشات الكاملة في المداخل والمخارج لمدينة نابلس، وتوزيع قوات كبيرة وحواجز في المنطقة واستدعاء قوات اضافية لتنفيذ المهام في المنطقة".
+              </p>
+          </div>
+      </ion-slide>
+      <ion-slide class="slide-2">
+          <div class="card-background-page">
+              <ion-card>
+                  <img src= "assets/img/trip/thumb/h.jpg
+                  ">
+              </ion-card>
+              <p class="short-story">
+                أكدت مصادر اعلامية في الداخل الفلسطيني، أنه تم العثور عصر اليوم، الأحد، على جثمان شاب في أوائل العشرينيات من عمره، وقد فارق الحياة في ظروف غامضة، بمنطقة وادي عتير الحرشية، مقابل قرية اللقية في النقب
+              </p>
+              <ion-card class="card-shadow">
+                 
+                  <ion-card-content>
+                    وكان قد أعلن، أمس السبت، عن اختفاء شاب (22 عاما) من سكان قرية اللقية في منطقة النقب، وناشدت عائلته، اليوم، المواطنين العرب في كافة أنحاء البلاد بمساعدتها في أعمال البحث عنه.
+
+                    وليلة أمس، السبت، طالبت الشرطة المواطنين بالمساعدة في العثور على الشاب المفقود ونشرت صورته وصورة السيارة التي كان يقودها
+                  </ion-card-content>
+              </ion-card>
+          </div>
+      </ion-slide>
+      <ion-slide class="slide-1">
+        <div class="logo animated zoomIn">
+            <p>
+              تعاملت طواقم الدفاع المدني مع ثلاثة حوادث سير منفصلة اليوم في محافظات بيت لحم ورام الله وجنين.
+            </p>
+            <ion-card>
+              <img src= "assets/img/trip/thumb/a.jpg
+              ">
+            </ion-card>
+            <p>
+              وأضاف التقرير أن طواقم الدفاع المدني هرعت وعملت على تحرير وإخلاء الإصابات من المركبات وتأمين المواطنين نتيجة لحوادث السير وتصادم المركبات ومن ثم قامت الطواقم بإزالة الزجاج والزيوت والوقود المسال من أمام حركة المرور والسير للحد من خطر إنزلاق مركبات أخرى وإعادة المركبات لمسارها وتأمين حركة المرور على الشوارع 
+            </p>
+        </div>
+    </ion-slide>
+    <ion-slide class="slide-2">
+      <div class="card-background-page">
+          <ion-card>
+              <img src= "assets/img/trip/thumb/n.jpg
+              ">
+          </ion-card>
+          <p class="short-story">
+            اصيب خمسة مواطنين بجراح وصفت حالة اثنين منهم بالخطيرة، جراء حادث سير ذاتي وقع على اول طريق سنجر في منطقة دوار التحرير بالخليل، صباح الجمعة.
+          </p>
+          <ion-card class="card-shadow">
+              
+              <ion-card-content>
+                وافادت مصادر في الاسعاف والطوارئ التابعة للهلال الاحمر ان طواقمها عملت على اخلاء المصابين الى المستشفى الاهلي لتلقي العلاج.
+                واضافت المصادر ان حالتين من المصابين في وضع خطر، وحالتين متوسطة والخامسة طفيفة.
+                
+              </ion-card-content>
+          </ion-card>
+      </div>
+  </ion-slide>
+  </ion-slides>
 </ion-content>
