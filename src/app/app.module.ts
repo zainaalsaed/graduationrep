@@ -91,6 +91,7 @@ const firebaseAuth = {
     TestPage,
     RoomPage,
     HomePage,
+   
     AddRoomPage,
     SearchtestPage,
     // LogemployeePage,
@@ -163,6 +164,7 @@ const firebaseAuth = {
     NablusDetailPage,
     HebronschoolsPage ,
     SchoolPage,
+    TableeghacPage,
     NotificationsPage,
     ViolationsPage,
     // NewsFeedComponent

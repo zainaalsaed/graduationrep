@@ -1,18 +1,146 @@
 <!--
-  Generated template for the TableeghacPage page.
+  Generated template for the ComplainsPage page.
 
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
 -->
 <ion-header>
-
   <ion-navbar>
-    <ion-title>tableeghac</ion-title>
+    <ion-title>
+     Traffic Report
+    </ion-title>
+   
   </ion-navbar>
-
 </ion-header>
 
-
 <ion-content padding>
+  <div class="panel-heading">
+      <h2 class="panel-title" color="secondary" >Traffic Report</h2>
+      </div>
+      <div class="panel-body">
+          <div class="row">
+              <label class="box-title" id="incidentNo" for="accSerial">Accedant date</label>
+               <div class="col-xs-12 col-sm-2" style="padding-left :5px; padding-right :5px;">
+                   <input type="text" class="form-control input-xs enText numeric" maxlength="6" size="6" id="accSerial" name="accSerial" title="Incident Serial Number">
+              </div>
+                 <div class="col-xs-12 col-sm-2" style="padding-left :5px; padding-right :5px;">
+                   <input name="accDptCde" id="accDptCde" type="text" class="form-control input-xs enText numeric" maxlength="2" size="2" value="01">
+                 </div>
+                 <div class="col-xs-12 col-sm-2 enText" style="padding-left :5px; padding-right :5px;">
+                     <select name="accYear" id="accYear" class="form-control">
+                     
+                       <option value="2005">2005</option>
+                     
+                       <option value="2006">2006</option>
+                     
+                       <option value="2007">2007</option>
+                     
+                       <option value="2008">2008</option>
+                     
+                       <option value="2009">2009</option>
+                     
+                       <option value="2010">2010</option>
+                     
+                       <option value="2011">2011</option>
+                     
+                       <option value="2012">2012</option>
+                     
+                       <option value="2013">2013</option>
+                     
+                       <option value="2014">2014</option>
+                     
+                       <option value="2015">2015</option>
+                     
+                       <option value="2016">2016</option>
+                     
+                       <option value="2017">2017</option>
+                     
+                       <option value="2018" selected="selected">2018</option>
+                     
+                     </select>  
+              </div>
+            </div>
+      <div class="row" style="padding-bottom: 10px;">
+        <label class="box-title" for="platNumns_Z7_N90A19O0KG7Q20AHLB5E9P4PP6_">Plate Number1  :</label>
+      </div>
+      <div class="n"><input type="text" [(ngModel)]="platNum1" size="20" value=""  maxlength="6" id="platNumns_Z7_N90A19O0KG7Q20AHLB5E9P4PP6_" class="form-control input-xs enText" tabindex="0"> 
+      </div>
+      <div class="row" style="padding-bottom: 10px;">
+        <label class="box-title" for="platNumns_Z7_N90A19O0KG7Q20AHLB5E9P4PP6_">Plate Number2  :</label>
+      </div>
+      <div class="n"><input type="text" [(ngModel)]="platNum2" size="20" value=""  maxlength="6" id="platNumns_Z7_N90A19O0KG7Q20AHLB5E9P4PP6_" class="form-control input-xs enText" tabindex="0"> 
+      </div>
+     
+        <div class="row" style="padding-bottom :10px;">
+        
+            <label class="box-title" for="platType">Type</label>
+        
+          <div class="row " style="padding-left :5px; padding-right :5px;">
+            <select  [(ngModel)]="platType1" id="platType" class="form-control">										
 
+    <option value="PRV">  PRIVATE VEHICLE</option>
+    
+    <option value="G-Q">  GOVERNMENT VEHICLE</option>
+    
+    <option value="DIP">  DIPLOMATIC VEHICLE</option>
+    
+    <option value="POV">  POLICE VEHICLE</option>
+    
+    <option value="POM">  POLICE MOTORCYCLE</option>
+    
+    <option value="PRM">  PRIVATE MOTORCYCLE</option>
+    
+    <option value="TXI">  TAXI</option>
+    
+    <option value="COM">  COMMERCIAL VEHICLE</option>
+    
+    <option value="PRT">  PRIVATE TRANSPORTATION</option>
+    
+    <option value="HEQ">  HEAVY EQUIPMENT</option>
+    
+    <option value="TLR">  TRAILERS</option>
+    
+    <option value="PUT">  PUBLIC TRANSPORTATION</option>
+    
+    <option value="U-N">  UNITED NATIONS</option>
+    
+    <option value="XPO">  EXPORT PLATE</option>
+    
+    <option value="GMQ">  GOVERNMENT MECHANICAL</option>
+    
+    <option value="TMP">  TESTING PLATE</option>
+    
+    <option value="GTR">  GOVERMENT TRAILERS</option>
+    
+    <option value="LKV">  LEKHOYA CAR</option>
+    
+    <option value="LKM">  LEKHOYA MOTORCYCLE</option>
+    
+    <option value="AGV">  CAR EMIRI GUARD</option>
+    
+    <option value="AGM">  BIKE EMIRI GUARD</option>
+    
+    <option value="LMS">  LIMOUSINE</option>
+    
+    <option value="QAF">  QATAR ARMED FORCES</option>
+    
+    <option value="TME">  TEMPORARY ENTRY</option>
+    
+    <option value="EQP">  EQUIPMENT</option>
+    
+  </select>
+</div>
+        </div>
+        
+        <label class="box-title" for="platNumns_Z7_N90A19O0KG7Q20AHLB5E9P4PP6_">Description  :</label>
+        <div class="n"><input type="text" [(ngModel)]="description1" size="80" value=""   id="platNumns_Z7_N90A19O0KG7Q20AHLB5E9P4PP6_" class="form-control input-xs enText" tabindex="0"> 
+        </div>
+      
+      
+        
+        <div class="b">
+        <button ion-button color="secondary" full round   tappable (click)="createTableeghac(platNum1,platNum2,platType1,description1)">Submit </button>
+      </div>
+      
+        </div>
 </ion-content>

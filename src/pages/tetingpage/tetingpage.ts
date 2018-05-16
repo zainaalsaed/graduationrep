@@ -18,6 +18,8 @@ import {ProfileComponent} from '../../pages/profile/profile';
 // Timeline Service
 // import { TimelineService } from '../profile/timeline/timeline.service';
 import { NotificationsPage } from '../notifications/notifications';
+import { TableegePage } from '../tableege/tableege';
+import { TableeghacPage } from '../tableeghac/tableeghac';
 
 /**
  * Generated class for the TetingpageComponent component.
@@ -27,7 +29,6 @@ import { NotificationsPage } from '../notifications/notifications';
  */
 
 @IonicPage()
-
 @Component({
   selector: 'tetingpage',
   templateUrl: 'tetingpage.html'
@@ -106,7 +107,8 @@ export class TetingpageComponent {
 
       }
       openreportingPage(){
-
+        
+        this.navCtrl.push(TableeghacPage);
 
       }
     
