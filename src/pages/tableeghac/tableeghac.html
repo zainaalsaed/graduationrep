@@ -14,6 +14,7 @@
 </ion-header>
 
 <ion-content padding>
+    
   <div class="panel-heading">
       <h2 class="panel-title" color="secondary" >Traffic Report</h2>
       </div>
@@ -136,11 +137,15 @@
         <div class="n"><input type="text" [(ngModel)]="description1" size="80" value=""   id="platNumns_Z7_N90A19O0KG7Q20AHLB5E9P4PP6_" class="form-control input-xs enText" tabindex="0"> 
         </div>
       
-      
+        <div class="b">
+          <button ion-button color="secondary" full round   tappable (click)="maplo()">Add Location </button>
+         
+        </div>
         
         <div class="b">
-        <button ion-button color="secondary" full round   tappable (click)="createTableeghac(platNum1,platNum2,platType1,description1)">Submit </button>
-      </div>
-      
+       
+          <button ion-button color="secondary" full round   tappable (click)="createTableeghac(platNum1,platNum2,platType1,description1)">Submit </button>
+         
         </div>
+       </div>
 </ion-content>

@@ -41,16 +41,19 @@ export class TableeghacPage {
           }).then(newTableeghac =>{
       this.navCtrl.setRoot("TetingpageComponent");
       let alert = this.alertCtrl.create({
-        title: 'Low battery',
-        subTitle: '10% of battery remaining',
-        buttons: ['Dismiss']
+        title: 'success!',
+        subTitle: 'Your report was successfully submitted,  to track its status go to report status page',
+        buttons: ['OK']
       });
       alert.present();
     
       },error=>{console.log(error);});
   }
   
-
+  maplo()
+{
+  this.navCtrl.setRoot('GoogleMapComponent');
+}
   ionViewDidLoad() {
     console.log('ionViewDidLoad TableeghacPage');
   }

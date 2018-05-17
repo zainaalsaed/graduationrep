@@ -2,9 +2,10 @@
 
 /** Imports Modules */
 import { Component, ViewChild, ElementRef } from '@angular/core';
-import { IonicPage } from 'ionic-angular';
+import { IonicPage,AlertController,NavController } from 'ionic-angular';
 import { Geolocation } from '@ionic-native/geolocation';
 import { LoaderService } from '../../../common/services/loader.service';
+import { TableeghacPage } from '../../tableeghac/tableeghac';
 declare var google;
 
 @IonicPage()
@@ -16,7 +17,7 @@ declare var google;
 export class StandardMapComponent {
   @ViewChild('map') mapElement: ElementRef;
   map: any;
-  constructor(private loaderService: LoaderService, private geolocation: Geolocation) {
+  constructor( private alertCtrl: AlertController,public navCtrl: NavController,private loaderService: LoaderService, private geolocation: Geolocation) {
     this.loadMap();
   }
   /** Initialize Map */
@@ -65,4 +66,15 @@ export class StandardMapComponent {
       infoWindow.open(this.map, marker);
     });
   }
+mapn(){
+    this.navCtrl.push(TableeghacPage);
+    let alert = this.alertCtrl.create({
+      title: 'success!',
+      subTitle: 'Your location was sent to the nearest policeman',
+      buttons: ['Ok']
+    });
+    alert.present();
+  }
+
+  
 }
