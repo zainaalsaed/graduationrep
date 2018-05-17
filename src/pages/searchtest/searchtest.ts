@@ -41,6 +41,7 @@ export class SearchtestPage {
       {
         id: 5,
         name: "Jaricho"
+        //nada
       },
       {
         id: 6,
