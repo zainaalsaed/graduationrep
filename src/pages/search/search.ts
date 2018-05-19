@@ -14,7 +14,7 @@ export class SearchComponent {
   searchOptionOpen: boolean;
   searchOption;
   constructor(public alertCtrl: AlertController) {
-    this.searchOption = 'rawData';
+    // this.searchOption = 'rawData';
   }
 
   /**
@@ -25,36 +25,36 @@ export class SearchComponent {
    * 2. Search of google autocomplete
    * when choose one option from this list then its change the search option
   */
-  changeSearchOption() {
-    let alert = this.alertCtrl.create();
-    alert.setTitle('Search Options');
+  // changeSearchOption() {
+  //   let alert = this.alertCtrl.create();
+  //   alert.setTitle('Search Options');
 
-    alert.addInput({
-      type: 'radio',
-      label: 'Raw Data',
-      value: 'rawData',
-      checked: true
-    });
+  //   alert.addInput({
+  //     type: 'radio',
+  //     label: 'Raw Data',
+  //     value: 'rawData',
+  //     checked: true
+  //   });
 
-    alert.addInput({
-      type: 'radio',
-      label: 'Autocomplete',
-      value: 'autocomplete'
-    });
+  //   alert.addInput({
+  //     type: 'radio',
+  //     label: 'Autocomplete',
+  //     value: 'autocomplete'
+  //   });
 
-    alert.addButton('Cancel');
-    alert.addButton({
-      text: 'Ok',
-      handler: data => {
-        console.log('Radio data:', data);
-        this.searchOptionOpen = false;
-        this.searchOption = data;
-      }
-    });
+  //   alert.addButton('Cancel');
+  //   alert.addButton({
+  //     text: 'Ok',
+  //     handler: data => {
+  //       console.log('Radio data:', data);
+  //       this.searchOptionOpen = false;
+  //       this.searchOption = data;
+  //     }
+  //   });
 
-    alert.present().then(() => {
-      this.searchOptionOpen = true;
-    });
-  }
+  //   alert.present().then(() => {
+  //     this.searchOptionOpen = true;
+  //   });
+  // }
 
 }
