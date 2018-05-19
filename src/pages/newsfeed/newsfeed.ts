@@ -13,7 +13,8 @@ import { AngularFireObject } from 'angularfire2/database';
 import {LandingPageComponent} from '../../pages/authentication/landing-page/landing-page';
 // import { DISABLED } from '@angular/forms/src/model';
 import { Observable } from 'rxjs/Observable';
-import {ProfileComponent} from '../../pages/profile/profile';
+import {ProfileComponent
+} from '../../pages/profile/profile';
 import { TimelineModel } from '../profile/timeline/timeline.model';
 // Timeline Service
 import { TimelineService } from '../profile/timeline/timeline.service';

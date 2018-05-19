@@ -14,6 +14,7 @@ import { SigninPage } from '../signin/signin';
  */
 @IonicPage()
 @Component({
+  
   selector: 'education',
   templateUrl: 'education.html'
 })
