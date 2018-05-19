@@ -1,0 +1,60 @@
+<!--
+  Generated template for the TickethistoryPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>My Trffic Tickets</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <div class="animated fadeInUp" padding color="white">
+        <ion-segment [(ngModel)]="staty" (ionChange)="segmentChanged($event)">
+          <ion-segment-button value="pending" (tap)="shpaidticket()">
+              Paid
+          </ion-segment-button>
+          <ion-segment-button value="complete" (tap)="shunpaidticket()">
+              Unpaid
+          </ion-segment-button>
+          
+      </ion-segment>
+    
+      <ion-card>
+    
+        <img src="assets/img/viologo.jpg">
+        <ion-fab right top>
+          <button ion-fab>
+            <ion-icon name="pin"></ion-icon>
+          </button>
+        </ion-fab>
+      
+        <ion-item>
+          <ion-icon name="car" item-start large></ion-icon>
+          <h2>Traffic Violation report</h2>
+          <p>Nablus street , (35.111, 34.225)</p>
+        
+      
+        <!-- <ion-item></ion-item> -->
+          <!-- <ion-icon name="pen" item-left large ></ion-icon> -->
+          <p>April, 11th 2018</p>
+          <p>Report no. 22689</p>
+        <!-- </ion-item> -->
+      </ion-item>
+        <ion-item>
+          <!-- <span item-left>18 min</span>
+          <span item-left>(2.6 mi)</span> -->
+          <button ion-button icon-left clear item-end>
+            <ion-icon name="navigate"></ion-icon>
+            View Details
+          </button>
+        </ion-item>
+      
+      </ion-card>
+      </div>
+</ion-content>

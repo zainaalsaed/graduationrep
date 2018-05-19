@@ -59,7 +59,12 @@ export class MyApp {
       { title: this.translate.instant('MENU_ITEMS.CALENDAR'), component: 'FullCalendarComponent', leftIcon: 'calendar' },
       { title: this.translate.instant('MENU_ITEMS.GOOGLEMAP'), component: 'GoogleMapComponent', leftIcon: 'md-pin' },
       { title: this.translate.instant ('MENU_ITEMS.LATESTNEWS'), component: 'ChartComponent', leftIcon: 'paper-plane' },
+<<<<<<< HEAD
       { title: this.translate.instant('MENU_ITEMS.ECOMMERCE'), component: 'CategoryComponent', leftIcon: 'cart' },
+=======
+      { title: this.translate.instant('MENU_ITEMS.ECOMMERCE'), component: 'CategoryComponent', leftIcon: 'card' },
+      { title: this.translate.instant('MENU_ITEMS.NEWSFEED'), component: 'NewsFeedComponent', leftIcon: 'md-apps' },
+>>>>>>> c47c33296b73bc3282274760a24e2da501b51ef3
       { title: this.translate.instant('MENU_ITEMS.EDU'), component: 'EducationComponent', leftIcon: 'md-paper' },
       { title: this.translate.instant('MENU_ITEMS.DRIVING'), component: 'DrivigSchoolsComponent', leftIcon: 'md-car' },
       { title: this.translate.instant('MENU_ITEMS.CHAT'), component: 'ChatComponent', leftIcon: 'chatbubbles' },

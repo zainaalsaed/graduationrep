@@ -3,26 +3,50 @@
       <button ion-button menuToggle color="color1">
           <ion-icon name="menu"></ion-icon>
       </button>
-      <ion-title>Contact</ion-title>
+      <ion-title>My Traffic tickets</ion-title>
   </ion-navbar>
 </ion-header>
 <!-- End Header -->
 
 <!-- Content Body-->
 <ion-content id="contact-v1">
-  <ion-list>
+    <div class="background">
+
+
+            <div class="animated fadeInUp" padding>
+                <div>
+                    <!-- <button ion-button color="white" full round (tap)="openPage('RegistrationComponent')">
+                         {{'LANDING_PAGE.REGISTRATION' | translate}}
+                      </button> -->
+                    <button ion-button color="white" full round (tap)="gotohist()">
+                      <ion-icon name="pricetags"></ion-icon> 
+                      Show my Traffic tickets History
+                      </button>
+                    <button ion-button color="white" full round (tap)="gotocalendar('FullCalendarComponent')" >
+                        <ion-icon name="calendar"></ion-icon>
+                         Go to my Calendar
+                      </button>
+                      <button ion-button color="white" full round (tap)="showmahakem()">
+                          <ion-icon name="navigate"></ion-icon>
+                           Show nearest places to pay tickets
+                        </button>
+                    </div>
+</div>
+
+    </div>
+  <!-- <ion-list>
       <!-- Run loop depend on all contact list -->
-      <ion-item-sliding *ngFor="let contact of allContacts">
+      <!-- <ion-item-sliding *ngFor="let contact of allContacts">
           <ion-item class="bloc-contact" (click)="gotoChatBox()">
-              <!-- Display name of contact -->
-              <h2>{{contact.displayName}}</h2>
-              <!-- Run loop depend on contact phone number -->
-              <div *ngFor="let phone of contact.phoneNumbers" item-right>
-                  <!-- Display contact phone number -->
-                  <ion-badge teal *ngIf="phone.type == 'mobile'">{{phone.value}}</ion-badge>
+              Display name of contact -->
+              <!-- <h2>{{contact.displayName}}</h2>
+              Run loop depend on contact phone number -->
+              <!-- <div *ngFor="let phone of contact.phoneNumbers" item-right>
+                  Display contact phone number -->
+                  <!-- <ion-badge teal *ngIf="phone.type == 'mobile'">{{phone.value}}</ion-badge>
               </div>
           </ion-item>
       </ion-item-sliding>
-  </ion-list>
+  </ion-list> --> 
 </ion-content>
 <!-- End Body-->

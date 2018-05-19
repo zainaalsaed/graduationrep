@@ -134,10 +134,10 @@
     "CALENDAR": "Calendar",
     "MAP": "Map",
     "CHART": "Chart",
-    "ECOMMERCE": "Ecommerce",
+    "ECOMMERCE": "Show My traffic tickets",
     "NEWS_FEED": "News Feed",
     "CHAT": "Chat",
-    "EDU":"Education",
+    "EDU":"Practical Application",
     "LATEST_NEWS": "Latest News",
     "ABOUTUS": "About Us",
     "CONTACTUS": "Contact Us"
@@ -148,12 +148,12 @@
 
   "MENU_ITEMS": {
     "REPORTS":"My Traffic Reports",
-    "EDU":"Education",
+    "EDU":"Practical Application",
     "PROFILE": "Profile",
     "CALENDAR": "Calendar",
     "GOOGLEMAP": "Google Map",
     "CHART": "Chart",
-    "ECOMMERCE": "Ecommerce",
+    "ECOMMERCE": "Show My traffic tickets",
     "LATESTNEWS": "Latest News",
     "NEWSFEED": "Emergency Call",
     "CHAT": "Chat",

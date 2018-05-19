@@ -3,7 +3,7 @@ import { Platform, IonicPage } from 'ionic-angular';
 
 /** Imports Modules */
 import { Component } from '@angular/core';
-import { NavController,  MenuController } from 'ionic-angular';
+import { NavController,  MenuController, LoadingController } from 'ionic-angular';
 import { TranslateService } from 'ng2-translate';
 import { SettingsService } from '../../settings/settings.service';
 import { GuestPage } from '../../guest/guest';
@@ -20,9 +20,61 @@ export class LandingPageComponent {
   
   constructor( public translate:
     TranslateService, public navCtrl: NavController,
-    private menu: MenuController) {
+    private menu: MenuController , public loadingCtrl: LoadingController) {
     this.menu.enable(false); // Disable sidemenu
   }
+
+
+
+ 
+  
+  presentLoadingDefault() {
+    let loading = this.loadingCtrl.create({
+      content: 'Please wait...'
+    });
+  
+    loading.present();
+  
+    setTimeout(() => {
+      loading.dismiss();
+    }, 5000);
+  }
+  
+  presentLoadingCustom() {
+    let loading = this.loadingCtrl.create({
+      spinner: 'hide',
+      content: `
+        <div class="custom-spinner-container">
+          <div class="custom-spinner-box"></div>
+        </div>`,
+      duration: 5000
+    });
+  
+    loading.onDidDismiss(() => {
+      console.log('Dismissed loading');
+    });
+  
+    loading.present();
+  }
+  
+  presentLoadingText() {
+    let loading = this.loadingCtrl.create({
+      spinner: 'hide',
+      content: 'Loading Please Wait...'
+    });
+  
+    loading.present();
+  
+    setTimeout(() => {
+      this.navCtrl.setRoot(LandingPageComponent);
+    }, 1000);
+  
+    setTimeout(() => {
+      loading.dismiss();
+    }, 5000);
+  }
+
+
 
   openPage(component) {
     console.log(component)

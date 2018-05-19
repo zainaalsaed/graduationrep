@@ -93,16 +93,16 @@ export class TetingpageComponent {
           ev: myEventot
         });
       }
-      shpendingRep(){
+      shpendingReping(){
 
 
       }
     
-      shcompleteRep(){
+      shcompleteReporting(){
     
         
       }
-      shdeniedss(){
+      shdeniedssing(){
 
 
       }

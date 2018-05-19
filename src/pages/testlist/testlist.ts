@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { TestatPage } from '../testat/testat';
-import { TripService } from '../services/trip-service';
+import { TetService } from '../services/tet-service';
 /**
  * Generated class for the TestlistPage page.
  *
@@ -12,16 +12,16 @@ import { TripService } from '../services/trip-service';
 @Component({
   selector: 'page-testlist',
   templateUrl: 'testlist.html',
-  providers: [TripService]
+  providers: [TetService]
 
 })
 export class TestlistPage {
 
-  public trips: any;
+  public tets: any;
 
-  constructor(public nav: NavController, public tripService: TripService) {
+  constructor(public nav: NavController, public tripService: TetService) {
     // set sample data
-    this.trips = tripService.getAll();
+    this.tets = tripService.getAll();
   }
 
   // view trip detail
