@@ -23,15 +23,47 @@
   </div>
   <div class="animated fadeInUp" padding color="white">
     <ion-segment [(ngModel)]="staty" (ionChange)="segmentChanged($event)">
-      <ion-segment-button value="pending" (tap)="shpendingRep()">
+      <ion-segment-button value="pending" (tap)="shpendingReping()">
           Pending
       </ion-segment-button>
-      <ion-segment-button value="complete" (tap)="shcompleteRep()">
+      <ion-segment-button value="complete" (tap)="shcompleteReporting()">
           Approved
       </ion-segment-button>
-      <ion-segment-button value="denied" (tap)="shdeniedss()">
+      <ion-segment-button value="denied" (tap)="shdeniedssing()">
         Denied
     </ion-segment-button>
   </ion-segment>
+
+  <ion-card>
+
+    <img src="assets/img/viologo.jpg">
+    <ion-fab right top>
+      <button ion-fab>
+        <ion-icon name="pin"></ion-icon>
+      </button>
+    </ion-fab>
+  
+    <ion-item>
+      <ion-icon name="car" item-start large></ion-icon>
+      <h2>Traffic Violation report</h2>
+      <p>Nablus street , (35.111, 34.225)</p>
+    
+  
+    <!-- <ion-item></ion-item> -->
+      <!-- <ion-icon name="pen" item-left large ></ion-icon> -->
+      <p>April, 11th 2018</p>
+      <p>Report no. 22689</p>
+    <!-- </ion-item> -->
+  </ion-item>
+    <ion-item>
+      <!-- <span item-left>18 min</span>
+      <span item-left>(2.6 mi)</span> -->
+      <button ion-button icon-left clear item-end>
+        <ion-icon name="navigate"></ion-icon>
+        View Details
+      </button>
+    </ion-item>
+  
+  </ion-card>
   </div>
 </ion-content>

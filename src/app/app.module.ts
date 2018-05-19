@@ -51,6 +51,8 @@ import { SigninPage } from '../pages/signin/signin';
 import { RoomPage } from '../pages/room/room';
 import { HomePage } from '../pages/home/home';
 import { AddRoomPage } from '../pages/add-room/add-room';
+import { MahakemmapPage } from '../pages/mahakemmap/mahakemmap';
+import { TickethistoryPage } from '../pages/tickethistory/tickethistory';
 // import { NewsFeedComponent } from '../pages/newsfeed/newsfeed';
 
 
@@ -71,6 +73,7 @@ const firebaseAuth = {
     AdminpanelPage,
     // EduPage,
     GusPage,
+    TickethistoryPage,
     JerichoschoolsPage,
     BethlehemschoolsPage,
     NablusschoolsPage,
@@ -91,7 +94,7 @@ const firebaseAuth = {
     TestPage,
     RoomPage,
     HomePage,
-   
+   MahakemmapPage,
     AddRoomPage,
     SearchtestPage,
     // LogemployeePage,
@@ -156,6 +159,7 @@ const firebaseAuth = {
     AddRoomPage,
     HomePage,
     AdminpanelPage,
+    TickethistoryPage,
     // EduPage,
     TruckPage,
     MaapsPage,
@@ -167,6 +171,7 @@ const firebaseAuth = {
     TableeghacPage,
     NotificationsPage,
     ViolationsPage,
+    MahakemmapPage
     // NewsFeedComponent
   ],
   providers: [

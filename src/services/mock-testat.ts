@@ -2,12 +2,12 @@ export let TESTATON = [
     {
       id: 1,
       name: "Nablus Street",
-      price_adult: 60,
+      price_adult: 300,
       price_child: 30,
-      time: "12h",
+      time: "15m",
       free_cancellation: 1,
       electric_voucher: 1,
-      sub_name: "test swaqa",
+      sub_name: "Driving test",
       thumb: "../assets/img/testat/testt1.PNG",
       description: "15m test starting from Rafidia st. to ANNU.",
       location: "Nablus, Palestine",
@@ -18,11 +18,11 @@ export let TESTATON = [
         //  "assets/img/trip/thumb/trip_8.jpg",
       ],
       highlights: [
-        "Please be on time",
-         "First in a string of Atlantic Ocean-facing beaches",
-         "Sand is flanked by mountains in the background",
-         "Swing in the turquoise waters",
-         "Water Sports",
+        "Please be on time"
+        //  "First in a string of Atlantic Ocean-facing beaches",
+        //  "Sand is flanked by mountains in the background",
+        //  "Swing in the turquoise waters",
+        //  "Water Sports",
       ]
     },
     // {
