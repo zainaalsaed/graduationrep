@@ -160,6 +160,7 @@ const firebaseAuth = {
     TruckPage,
     MaapsPage,
     TestPage,
+  
     TestlistPage,
     NablusDetailPage,
     HebronschoolsPage ,
