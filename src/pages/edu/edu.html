@@ -1,48 +1,18 @@
-<!--
-  Generated template for the EduPage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
 
+    <ion-toolbar>
+        <ion-buttons>
+          <button ion-button menuToggle>
+            <ion-icon name="menu" color="primary"></ion-icon>
+          </button>
+          
+        </ion-buttons>
+      </ion-toolbar>
   <ion-navbar>
-    <ion-title>edu</ion-title>
+    <ion-title>Accidents near your Location</ion-title>
   </ion-navbar>
-
 </ion-header>
 
-
 <ion-content padding>
-  <div class="m">
-              <h1 class="section_title">امتحان السياقة النظري (التؤوريا)</h1>
-            <div class="center-image">
-                <div class="btn btn-default" tappable (click)="priVlc()">خصوصي</div>>
-                 <!-- <button ion-button tappable (click)="priVlc()">خصوصي</button></div>-->
-                <div class="btn btn-default" tappable (click)="truVlc()" >شحن خفيف</div>
-                </div>
-                <h3 class="section_title" style="padding: 8px;">
-                    امتحان التؤوريا الفلسطيني او امتحان السياقة النظري يساعدك على التدرب لامتحان التؤوريا النظري الفلسطيني مجانا </h3>
-                    <p class="notice">كل ما عليك فعله هو اختيار نوع الرخصة ومن ثم اختار النموذج واجب عن الاسئلة </p>
-                    <div class="space_placeholder"></div>
-    <div class="center-image">
-        <h3 class="section_title">تحميل المناهج النظرية</h3>
-        
-        <a href="#" class="btn btn-default" onClick="window.open('https://shobiddak.com/books/drivingPrivate.pdf','_blank','location=yes');return false;"> المنهاج'خصوصي'</a>
-        <a href="#" class="btn btn-default" onClick="window.open('https://shobiddak.com/books/drivingTruck.pdf','_blank','location=yes');return false;">المنهاج 'شحن خفيف'</a>
-        
-        <div class="space_placeholder"></div>
-        <div class="space_placeholder"></div>
-        <h3 class="section_title">
-          zzainanan
-          تطبيق التؤوريا - يعمل بدون إنترنت
-        </h3>
-        <a href="https://goo.gl/o64boL" target="_blank"><img alt="احصل عليه من Google Play" src="https://play.google.com/intl/en_us/badges/images/generic/ar_badge_web_generic.png" width="200px"></a>
-        
-        
-        
-          
-              </div>
-            </div>
-
+  <div #map id="map" style="height:100%"></div>
 </ion-content>

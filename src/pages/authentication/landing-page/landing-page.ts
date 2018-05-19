@@ -8,6 +8,7 @@ import { TranslateService } from 'ng2-translate';
 import { SettingsService } from '../../settings/settings.service';
 import { GuestPage } from '../../guest/guest';
 import { AdminpanelPage } from '../../adminpanel/adminpanel';
+import { LogschoolPage } from '../../logschool/logschool';
 
 @IonicPage()
 @Component({
@@ -86,7 +87,7 @@ openGPage(){
   this.navCtrl.setRoot(GuestPage);
 }
 openadminPage(){
-  this.navCtrl.setRoot(AdminpanelPage);
+  this.navCtrl.setRoot(LogschoolPage);
 }
   
 }
