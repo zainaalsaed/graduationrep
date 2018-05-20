@@ -60,7 +60,6 @@ export class MyApp {
       { title: this.translate.instant('MENU_ITEMS.GOOGLEMAP'), component: 'GoogleMapComponent', leftIcon: 'md-pin' },
       { title: this.translate.instant ('MENU_ITEMS.LATESTNEWS'), component: 'ChartComponent', leftIcon: 'paper-plane' },
       { title: this.translate.instant('MENU_ITEMS.ECOMMERCE'), component: 'CategoryComponent', leftIcon: 'card' },
-      { title: this.translate.instant('MENU_ITEMS.NEWSFEED'), component: 'NewsFeedComponent', leftIcon: 'md-apps' },
       { title: this.translate.instant('MENU_ITEMS.EDU'), component: 'EducationComponent', leftIcon: 'md-paper' },
       { title: this.translate.instant('MENU_ITEMS.DRIVING'), component: 'DrivigSchoolsComponent', leftIcon: 'md-car' },
       { title: this.translate.instant('MENU_ITEMS.CHAT'), component: 'ChatComponent', leftIcon: 'chatbubbles' },

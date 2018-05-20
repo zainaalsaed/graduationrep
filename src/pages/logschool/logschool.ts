@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage,PopoverController, NavController, NavParams } from 'ionic-angular';
 import { NotificationsPage } from '../notifications/notifications';
+import { UsersPage } from '../users/users';
 /**
  * Generated class for the LogschoolPage page.
  *
@@ -13,6 +14,8 @@ import { NotificationsPage } from '../notifications/notifications';
   selector: 'page-logschool',
   templateUrl: 'logschool.html',
 })
+
+
 export class LogschoolPage {
 
   constructor(public navCtrl: NavController,public popoverCtrl: PopoverController, public navParams: NavParams) {
@@ -28,5 +31,9 @@ export class LogschoolPage {
     popover.present({
       ev: myEvent
     });
+  }
+  usss()
+  {
+    this.navCtrl.push(UsersPage);
   }
 }

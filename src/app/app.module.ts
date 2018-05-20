@@ -53,6 +53,8 @@ import { HomePage } from '../pages/home/home';
 import { AddRoomPage } from '../pages/add-room/add-room';
 import { MahakemmapPage } from '../pages/mahakemmap/mahakemmap';
 import { TickethistoryPage } from '../pages/tickethistory/tickethistory';
+import { UsersPage } from '../pages/users/users';
+import { ViewPage } from '../pages/view/view';
 // import { NewsFeedComponent } from '../pages/newsfeed/newsfeed';
 
 
@@ -81,6 +83,7 @@ const firebaseAuth = {
     QalqilyaschoolsPage,
     JeninschoolsPage,
     TruckPage,
+    UsersPage,
     SigninPage,
     TestlistPage,
     PrivatePage,
@@ -96,6 +99,7 @@ const firebaseAuth = {
     HomePage,
    MahakemmapPage,
     AddRoomPage,
+    ViewPage,
     SearchtestPage,
     // LogemployeePage,
     // SchoolPage,
@@ -155,9 +159,11 @@ const firebaseAuth = {
     TableegePage,
     AdminpanelPage,
     TestatPage,
+    ViewPage,
     RoomPage,
     AddRoomPage,
     HomePage,
+    UsersPage,
     AdminpanelPage,
     TickethistoryPage,
     // EduPage,
@@ -177,6 +183,7 @@ const firebaseAuth = {
   ],
   providers: [
     StatusBar,
+    
     SplashScreen,
     { provide: ErrorHandler, useClass: IonicErrorHandler },
     AdMobFree,
