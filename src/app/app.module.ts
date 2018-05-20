@@ -124,7 +124,7 @@ const firebaseAuth = {
       }
     }),
     IonicStorageModule.forRoot({
-      name: '__ionic3_start_theme',
+      name: 'PalDrive',
         driverOrder: ['indexeddb', 'sqlite', 'websql']
     }),
     BrowserModule,
@@ -136,7 +136,7 @@ const firebaseAuth = {
     }),
     IonicImageViewerModule,
     AngularFireModule.initializeApp(firebaseAuth),
-   
+    // AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,
     AngularFireAuthModule
   ],
