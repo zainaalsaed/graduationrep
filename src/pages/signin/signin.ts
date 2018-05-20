@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { RoomPage } from  '../room/room';
+import * as firebase from 'Firebase';
 
 /**
  * Generated class for the SigninPage page.
