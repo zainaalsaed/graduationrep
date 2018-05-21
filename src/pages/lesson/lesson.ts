@@ -4,6 +4,7 @@ import { NavController, IonicPage } from 'ionic-angular';
 import { Geolocation , Geoposition} from '@ionic-native/geolocation';
 import { BackgroundGeolocation } from '@ionic-native/background-geolocation';
 import 'rxjs/add/operator/filter';
+
 @IonicPage()
 @Component({
   selector: 'lesson-home',
