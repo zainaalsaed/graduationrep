@@ -16,7 +16,7 @@ import { IonicPage, NavController } from 'ionic-angular';
 export class ViewPage {
 
   reportRoot = 'ReportPage'
-  chatRoot = 'ChatPage'
+  chatRoot = 'SigninPage'
   lessonRoot = 'LessonPage'
 
 

@@ -4,29 +4,29 @@
                 <ion-icon name="menu"></ion-icon>
             </button>
             <ion-title>Emergancy Call</ion-title>
-            <ion-buttons end>
-                <button ion-button icon-only color="color1" (click)="gotoSearchnewsss()">
-                    <ion-icon name="search"></ion-icon>
-                </button>
-                <button ion-button tappable color="color1" (click)="presentNotifications($event)">
-                    <ion-icon name="notifications"></ion-icon>
-                  </button>
-            </ion-buttons>
+    
         </ion-navbar>
     </ion-header>
-
-<ion-content >
-
-    <!-- Status Options -->
+<ion-content>
     <ion-list>
-        <ion-item>
-            <button type="button" ion-button color="primary" (click)="callNumber()">Call Number</button>
-        </ion-item>
-        <ion-item>
-            <button type="button" ion-button color="primary" (click)="callNumber()">Call Number</button>
-        </ion-item>
-    </ion-list>
-    <!-- All posts card (Loaded from profile timeline) -->
-   
-    
+            <ion-item>
+              <ion-thumbnail item-start>
+                    <ion-icon ios="ios-call" md="md-call" color="pramiry">0592494198</ion-icon>
+              </ion-thumbnail>
+              <button ion-button clear item-end  color="pramiry">call</button>
+            </ion-item>
+            <ion-item>
+                    <ion-thumbnail item-start>
+                            <ion-icon ios="ios-call" md="md-call" color="pramiry">0627282 </ion-icon>
+                    </ion-thumbnail>
+                   
+                    <button ion-button clear item-end  color="pramiry">call</button>
+                </ion-item>
+               <ion-thumbnail item-start>
+                            <ion-icon ios="ios-call" md="md-call" color="pramiry">0595432345 </ion-icon>
+                    </ion-thumbnail>
+                   
+                    <button ion-button clear item-end  color="pramiry">call</button>
+                </ion-item>
+          </ion-list>
 </ion-content>
