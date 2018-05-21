@@ -55,6 +55,7 @@ import { MahakemmapPage } from '../pages/mahakemmap/mahakemmap';
 import { TickethistoryPage } from '../pages/tickethistory/tickethistory';
 import { UsersPage } from '../pages/users/users';
 import { ViewPage } from '../pages/view/view';
+import { BackgroundGeolocation } from '@ionic-native/background-geolocation';
 // import { NewsFeedComponent } from '../pages/newsfeed/newsfeed';
 
 
@@ -101,6 +102,7 @@ const firebaseAuth = {
     AddRoomPage,
     ViewPage,
     SearchtestPage,
+    
     // LogemployeePage,
     // SchoolPage,
     HebronschoolsPage ,
@@ -183,7 +185,8 @@ const firebaseAuth = {
   ],
   providers: [
     StatusBar,
-    
+    BackgroundGeolocation,
+
     SplashScreen,
     { provide: ErrorHandler, useClass: IonicErrorHandler },
     AdMobFree,

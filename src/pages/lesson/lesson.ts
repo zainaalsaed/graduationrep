@@ -1,25 +1,77 @@
-import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { Component,NgZone } from '@angular/core';
+import { NavController, IonicPage } from 'ionic-angular';
 
-/**
- * Generated class for the LessonPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-
+import { Geolocation , Geoposition} from '@ionic-native/geolocation';
+import { BackgroundGeolocation } from '@ionic-native/background-geolocation';
+import 'rxjs/add/operator/filter';
 @IonicPage()
 @Component({
-  selector: 'page-lesson',
-  templateUrl: 'lesson.html',
+  selector: 'lesson-home',
+  templateUrl: 'lesson.html'
+
 })
 export class LessonPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  latt : number = 0;
+  lat : number = 0;
+  long: number = 0;
+  accu: number = 0;
+  watch:any;
+
+  constructor(public navCtrl: NavController ,
+    public zone:NgZone,
+  public backgroundGeolocation:BackgroundGeolocation,
+public geolocation:Geolocation) {
+
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad LessonPage');
+  startGps(){
+
+var config = {
+  desiredAccuracy :0,
+  stationaryRadius:20,
+  distanceFilter: 9,
+  debug:true,
+  interval : 2000
+}
+
+this.backgroundGeolocation.configure(config).subscribe((location)=>{
+  console.log('Background running'+location.latitude+','+location.longitude);
+this.zone.run(()=>{
+  this.lat  =location.latitude;
+  this.long  = location.longitude;
+  this.latt = location.altitude;
+  this.accu = location.accuracy;
+});
+
+
+},(error)=>{
+  console.log('error : '+error);
+});
+
+this.backgroundGeolocation.start();
+
+let options = {
+  frequency : 3000,
+  enableHighAccuracy: true
+};
+
+this.watch = this.geolocation.watchPosition(options).filter((p:any)=> p.code === undefined).subscribe((position:Geoposition)=>{
+  console.log(position);
+
+  this.zone.run(()=>{
+    this.lat = position.coords.latitude;
+    this.long = position.coords.longitude;
+    this.latt = position.coords.altitude;
+    this.accu = position.coords.accuracy;
+  });
+});
+  }
+
+  stopGps(){
+this.backgroundGeolocation.finish();
+this.watch.unsubscribe();
+console.log('the GPS stopped ... ')
   }
 
 }
